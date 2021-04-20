@@ -2015,7 +2015,7 @@ html.wp-toolbar {
 
 .widefat th,
 .widefat td {
-	color: #50575e;
+	color: var(--wp-admin--text--color);
 }
 
 .widefat th,
@@ -2028,7 +2028,7 @@ html.wp-toolbar {
 .widefat thead tr td,
 .widefat tfoot tr th,
 .widefat tfoot tr td {
-	color: #2c3338;
+	color: var(--wp-admin--heading--color);
 }
 
 .widefat td p {
@@ -2038,7 +2038,7 @@ html.wp-toolbar {
 .widefat p,
 .widefat ol,
 .widefat ul {
-	color: #2c3338;
+	color: var(--wp-admin--text--color);
 }
 
 .widefat .column-comment p {
@@ -2257,7 +2257,7 @@ html.wp-toolbar {
 	left: 0;
 	right: 0;
 	padding: 10px 20px;
-	color: #50575e;
+	color: var(--wp-admin--text-secondary--color);
 }
 
 #wpfooter p {
