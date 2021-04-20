@@ -233,7 +233,7 @@ p.popular-tags,
 .feature-filter,
 .imgedit-group,
 .comment-ays {
-	border: 1px solid #c3c4c7;
+	border: 1px solid var(--wp-admin--surface--border);
 	box-shadow: 0 1px 1px rgba(0, 0, 0, 0.04);
 }
 
@@ -523,12 +523,12 @@ code {
 
 .widefat thead th,
 .widefat thead td {
-	border-bottom: 1px solid #c3c4c7;
+	border-bottom: 1px solid var(--wp-admin--surface--border);
 }
 
 .widefat tfoot th,
 .widefat tfoot td {
-	border-top: 1px solid #c3c4c7;
+	border-top: 1px solid var(--wp-admin--surface--border);
 	border-bottom: none;
 }
 
@@ -814,7 +814,7 @@ img.emoji {
 }
 
 .stuffbox .hndle {
-	border-bottom: 1px solid #c3c4c7;
+	border-bottom: 1px solid var(--wp-admin--surface--border);
 }
 
 .quicktags {
@@ -1045,7 +1045,7 @@ th.action-links {
 	padding: 0 10px;
 	width: 100%;
 	box-shadow: 0 1px 1px rgba(0, 0, 0, 0.04);
-	border: 1px solid #c3c4c7;
+	border: 1px solid var(--wp-admin--surface--border);
 	background: #fff;
 	color: #50575e;
 	font-size: 13px;
@@ -1422,7 +1422,7 @@ th.action-links {
 div.updated,
 div.error {
 	background: #fff;
-	border: 1px solid #c3c4c7;
+	border: 1px solid var(--wp-admin--surface--border);
 	border-left-width: 4px;
 	box-shadow: 0 1px 1px rgba(0, 0, 0, 0.04);
 	margin: 5px 15px 2px;
@@ -1752,7 +1752,7 @@ p.auto-update-status {
 	margin: 0 20px -1px 0px;
 	position: relative;
 	background-color: #fff;
-	border: 1px solid #c3c4c7;
+	border: 1px solid var(--wp-admin--surface--border);
 	border-top: none;
 	box-shadow: 0 0 0 transparent;
 }
@@ -1769,7 +1769,7 @@ p.auto-update-status {
 }
 
 #screen-meta-links .show-settings {
-	border: 1px solid #c3c4c7;
+	border: 1px solid var(--wp-admin--surface--border);
 	border-top: none;
 	height: auto;
 	margin-bottom: 0;
@@ -1913,7 +1913,7 @@ p.auto-update-status {
 	bottom: 0;
 	left: 150px;
 	right: 170px;
-	border: 1px solid #c3c4c7;
+	border: 1px solid var(--wp-admin--surface--border);
 	border-top: none;
 	border-bottom: none;
 	background: #f0f6fc;
@@ -2108,7 +2108,7 @@ html.wp-toolbar {
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
-	border-bottom: 1px solid #c3c4c7;
+	border-bottom: 1px solid var(--wp-admin--surface--border);
 }
 
 .postbox-header .hndle {
@@ -2270,7 +2270,7 @@ html.wp-toolbar {
 
 .nav-tab {
 	float: left;
-	border: 1px solid #c3c4c7;
+	border: 1px solid var(--wp-admin--surface--border);
 	border-bottom: none;
 	margin-left: 0.5em; /* half the font size so set the font size properly */
 	padding: 5px 10px;
@@ -2318,7 +2318,7 @@ h3 .nav-tab, /* Back-compat for pre-4.4 */
 h1.nav-tab-wrapper, /* Back-compat for pre-4.4 */
 .wrap h2.nav-tab-wrapper, /* higher specificity to override .wrap > h2:first-child */
 .nav-tab-wrapper {
-	border-bottom: 1px solid #c3c4c7;
+	border-bottom: 1px solid var(--wp-admin--surface--border);
 	margin: 0;
 	padding-top: 9px;
 	padding-bottom: 0;
@@ -2903,7 +2903,7 @@ div.action-links {
 #plugin-information pre {
 	padding: 7px;
 	overflow: auto;
-	border: 1px solid #c3c4c7;
+	border: 1px solid var(--wp-admin--surface--border);
 }
 
 #plugin-information blockquote {
@@ -3294,7 +3294,7 @@ img {
 	display: block;
 	position: absolute;
 	left: 2px;
-	border-left: 1px solid #c3c4c7;
+	border-left: 1px solid var(--wp-admin--surface--border);
 	top: -13px;
 	bottom: 10px;
 }
@@ -3302,18 +3302,18 @@ img {
 	content: "";
 	position: absolute;
 	display: block;
-	border-left: 1px solid #c3c4c7;
+	border-left: 1px solid var(--wp-admin--surface--border);
 	left: 2px;
 	top: -5px;
 	height: 18px;
 	width: 7px;
-	border-bottom: 1px solid #c3c4c7;
+	border-bottom: 1px solid var(--wp-admin--surface--border);
 }
 .tree-folder > li::after {
 	content: "";
 	position: absolute;
 	display: block;
-	border-left: 1px solid #c3c4c7;
+	border-left: 1px solid var(--wp-admin--surface--border);
 	left: 2px;
 	bottom: -7px;
 	top: 0;
@@ -4142,13 +4142,13 @@ img {
 	h3 .nav-tab,
 	nav .nav-tab {
 		margin: 10px 10px 0 0;
-		border-bottom: 1px solid #c3c4c7;
+		border-bottom: 1px solid var(--wp-admin--surface--border);
 	}
 
 	.nav-tab-active:hover,
 	.nav-tab-active:focus,
 	.nav-tab-active:focus:active {
-		border-bottom: 1px solid #c3c4c7;
+		border-bottom: 1px solid var(--wp-admin--surface--border);
 	}
 
 	.wp-filter .search-form input[type="search"] {
