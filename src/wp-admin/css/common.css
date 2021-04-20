@@ -44,6 +44,8 @@ body {
 
 	--wp-admin--nav-tab--background--active: var(--wp-admin--page--background);
 	--wp-admin--nav-tab--color--active: var(--wp-admin--heading--color);
+
+	--wp-admin--rating--fill: #dba617;
 }
 
 body {
@@ -54,6 +56,8 @@ body {
 
   --wp-admin--help-tab--background: #f0f2ff;
   --wp-admin--help-tab--border--active: #3858e9;
+
+  --wp-admin--rating--fill: #f2a60f;
 }
 
 
@@ -2593,7 +2597,7 @@ div.star-holder .star-rating {
 	vertical-align: top;
 	transition: color .1s ease-in;
 	text-align: center;
-	color: #dba617;
+	color: var(--wp-admin--rating--fill);
 }
 
 .star-rating .star-full:before {
