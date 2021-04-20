@@ -115,9 +115,9 @@ TABLE OF CONTENTS:
 
 .wp-core-ui .button,
 .wp-core-ui .button-secondary {
-	color: #2271b1;
-	border-color: #2271b1;
-	background: #f6f7f7;
+	background: var(--wp-admin--button-secondary);
+	border-color: var(--wp-admin--button-primary);
+	color: var(--wp-admin--button-secondary--text);
 	vertical-align: top;
 }
 
@@ -128,18 +128,18 @@ TABLE OF CONTENTS:
 .wp-core-ui .button.hover,
 .wp-core-ui .button:hover,
 .wp-core-ui .button-secondary:hover{
-	background: #f0f0f1;
-	border-color: #0a4b78;
-	color: #0a4b78;
+	background: var(--wp-admin--button-secondary--hover);
+	border-color: var(--wp-admin--button-primary--hover);
+	color: var(--wp-admin--button-secondary--text);
 }
 
 .wp-core-ui .button.focus,
 .wp-core-ui .button:focus,
 .wp-core-ui .button-secondary:focus {
-	background: #f6f7f7;
-	border-color: #3582c4;
-	color: #0a4b78;
-	box-shadow: 0 0 0 1px #3582c4;
+	background: var(--wp-admin--button-secondary--hover);
+	border-color: var(--wp-admin--button-primary--hover);
+	box-shadow: 0 0 0 1px var(--wp-admin--button-primary);
+	color: var(--wp-admin--button-secondary--text);
 	/* Only visible in Windows High Contrast mode */
 	outline: 2px solid transparent;
 	/* Reset inherited offset from Gutenberg */
@@ -149,25 +149,23 @@ TABLE OF CONTENTS:
 /* :active state */
 .wp-core-ui .button:active,
 .wp-core-ui .button-secondary:active {
-	background: #f6f7f7;
-	border-color: #8c8f94;
 	box-shadow: none;
 }
 
 /* pressed state e.g. a selected setting */
 .wp-core-ui .button.active,
 .wp-core-ui .button.active:hover {
-	background-color: #dcdcde;
-	color: #135e96;
-	border-color: #0a4b78;
-	box-shadow: inset 0 2px 5px -3px #0a4b78;
+	background-color: var(--wp-admin--button-secondary--shadow);
+	border-color: var(--wp-admin--button-primary--hover);
+	box-shadow: inset 0 2px 5px -3px var(--wp-admin--button-primary--hover);
+	color: var(--wp-admin--button-secondary--text);
 }
 
 .wp-core-ui .button.active:focus {
-	border-color: #3582c4;
+	border-color: var(--wp-admin--button-primary);
 	box-shadow:
-		inset 0 2px 5px -3px #0a4b78,
-		0 0 0 1px #3582c4;
+		inset 0 2px 5px -3px var(--wp-admin--button-primary--hover),
+		0 0 0 1px var(--wp-admin--button-primary);
 }
 
 .wp-core-ui .button[disabled],
@@ -177,10 +175,10 @@ TABLE OF CONTENTS:
 .wp-core-ui .button-secondary:disabled,
 .wp-core-ui .button-secondary.disabled,
 .wp-core-ui .button-disabled {
-	color: #a7aaad !important;
-	border-color: #dcdcde !important;
-	background: #f6f7f7 !important;
+	background: var(--wp-admin--button-secondary) !important;
+	border-color: var(--wp-admin--button--border--disabled) !important;
 	box-shadow: none !important;
+	color: var(--wp-admin--text-secondary--color) !important;
 	cursor: default;
 	transform: none !important;
 }
@@ -196,7 +194,7 @@ TABLE OF CONTENTS:
 	cursor: pointer;
 	text-align: left;
 	/* Mimics the default link style in common.css */
-	color: #2271b1;
+	color: var(--wp-admin--link--color);
 	text-decoration: underline;
 	transition-property: border, background, color;
 	transition-duration: .05s;
@@ -205,25 +203,25 @@ TABLE OF CONTENTS:
 
 .wp-core-ui .button-link:hover,
 .wp-core-ui .button-link:active {
-	color: #135e96;
+	color: var(--wp-admin--link--color--hover);
 }
 
 .wp-core-ui .button-link:focus {
-	color: #043959;
+	color: var(--wp-admin--link--color--hover);
 	box-shadow:
-		0 0 0 1px #4f94d4,
-		0 0 2px 1px rgba(79, 148, 212, 0.8);
+		0 0 0 1px var(--wp-admin--button-primary--hover),
+		0 0 2px 1px var(--wp-admin--button-primary);
 	/* Only visible in Windows High Contrast mode */
 	outline: 1px solid transparent;
 }
 
 .wp-core-ui .button-link-delete {
-	color: #d63638;
+	color: var(--wp-admin--link--color--delete);
 }
 
 .wp-core-ui .button-link-delete:hover,
 .wp-core-ui .button-link-delete:focus {
-	color: #d63638;
+	color: var(--wp-admin--link--color--delete-hover);
 	background: transparent;
 }
 
@@ -238,9 +236,9 @@ TABLE OF CONTENTS:
 ---------------------------------------------------------------------------- */
 
 .wp-core-ui .button-primary {
-	background: #2271b1;
-	border-color: #2271b1;
-	color: #fff;
+	background: var(--wp-admin--button-primary);
+	border-color: var(--wp-admin--button-primary);
+	color: var(--wp-admin--button-primary--text);
 	text-decoration: none;
 	text-shadow: none;
 }
@@ -249,36 +247,36 @@ TABLE OF CONTENTS:
 .wp-core-ui .button-primary:hover,
 .wp-core-ui .button-primary.focus,
 .wp-core-ui .button-primary:focus {
-	background: #135e96;
-	border-color: #135e96;
-	color: #fff;
+	background: var(--wp-admin--button-primary--hover);
+	border-color: var(--wp-admin--button-primary--hover);
+	color: var(--wp-admin--button-primary--text);
 }
 
 .wp-core-ui .button-primary.focus,
 .wp-core-ui .button-primary:focus {
 	box-shadow:
-		0 0 0 1px #fff,
-		0 0 0 3px #2271b1;
+		0 0 0 1px var(--wp-admin--button-secondary),
+		0 0 0 3px var(--wp-admin--button-primary);
 }
 
 .wp-core-ui .button-primary.active,
 .wp-core-ui .button-primary.active:hover,
 .wp-core-ui .button-primary.active:focus,
 .wp-core-ui .button-primary:active {
-	background: #135e96;
-	border-color: #135e96;
+	background: var(--wp-admin--button-primary--hover);
+	border-color: var(--wp-admin--button-primary--hover);
 	box-shadow: none;
-	color: #fff;
+	color: var(--wp-admin--button-primary--text);
 }
 
 .wp-core-ui .button-primary[disabled],
 .wp-core-ui .button-primary:disabled,
 .wp-core-ui .button-primary-disabled,
 .wp-core-ui .button-primary.disabled {
-	color: #a7aaad !important;
-	background: #f6f7f7 !important;
-	border-color: #dcdcde !important;
+	background: var(--wp-admin--button-secondary) !important;
+	border-color: var(--wp-admin--button--border--disabled) !important;
 	box-shadow: none !important;
+	color: var(--wp-admin--text-secondary--color) !important;
 	text-shadow: none !important;
 	cursor: default;
 }
@@ -320,17 +318,17 @@ TABLE OF CONTENTS:
 
 /* pressed state e.g. a selected setting */
 .wp-core-ui .button-group > .button.active {
-	background-color: #dcdcde;
-	color: #135e96;
-	border-color: #0a4b78;
-	box-shadow: inset 0 2px 5px -3px #0a4b78;
+	background-color: var(--wp-admin--button-secondary--shadow);
+	border-color: var(--wp-admin--button-primary--hover);
+	box-shadow: inset 0 2px 5px -3px var(--wp-admin--button-primary--hover);
+	color: var(--wp-admin--button-secondary--text);
 }
 
 .wp-core-ui .button-group > .button.active:focus {
-	border-color: #3582c4;
+	border-color: var(--wp-admin--button-primary);
 	box-shadow:
-		inset 0 2px 5px -3px #0a4b78,
-		0 0 0 1px #3582c4;
+		inset 0 2px 5px -3px var(--wp-admin--button-primary--hover),
+		0 0 0 1px var(--wp-admin--button-primary);
 }
 
 /* ----------------------------------------------------------------------------
