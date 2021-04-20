@@ -34,6 +34,16 @@ body {
 
 	--wp-admin--help-tab--background: #f0f6fc;
 	--wp-admin--help-tab--border--active: #72aee6;
+
+	--wp-admin--nav-tab--background: #dcdcde;
+	--wp-admin--nav-tab--border: var(--wp-admin--surface--border);
+	--wp-admin--nav-tab--color: #50575e;
+
+	--wp-admin--nav-tab--background--hover: var(--wp-admin--surface--background);
+	--wp-admin--nav-tab--color--hover: #3c434a;
+
+	--wp-admin--nav-tab--background--active: var(--wp-admin--page--background);
+	--wp-admin--nav-tab--color--active: var(--wp-admin--heading--color);
 }
 
 body {
@@ -2276,15 +2286,15 @@ html.wp-toolbar {
 
 .nav-tab {
 	float: left;
-	border: 1px solid var(--wp-admin--surface--border);
+	border: 1px solid var(--wp-admin--nav-tab--border);
 	border-bottom: none;
 	margin-left: 0.5em; /* half the font size so set the font size properly */
 	padding: 5px 10px;
 	font-size: 14px;
 	line-height: 1.71428571;
 	font-weight: 600;
-	background: #dcdcde;
-	color: #50575e;
+	background: var(--wp-admin--nav-tab--background);
+	color: var(--wp-admin--nav-tab--color);
 	text-decoration: none;
 	white-space: nowrap;
 }
@@ -2298,8 +2308,8 @@ h3 .nav-tab, /* Back-compat for pre-4.4 */
 
 .nav-tab:hover,
 .nav-tab:focus {
-	background-color: #fff;
-	color: #3c434a;
+	background-color: var(--wp-admin--nav-tab--background--hover);
+	color: var(--wp-admin--nav-tab--color--hover);
 }
 
 .nav-tab-active,
@@ -2309,16 +2319,15 @@ h3 .nav-tab, /* Back-compat for pre-4.4 */
 
 .nav-tab-active {
 	margin-bottom: -1px;
-	color: #3c434a;
 }
 
 .nav-tab-active,
 .nav-tab-active:hover,
 .nav-tab-active:focus,
 .nav-tab-active:focus:active {
-	border-bottom: 1px solid #f0f0f1;
-	background: #f0f0f1;
-	color: #000;
+	border-bottom: 1px solid var(--wp-admin--nav-tab--background--active);
+	background: var(--wp-admin--nav-tab--background--active);
+	color: var(--wp-admin--nav-tab--color--active);
 }
 
 h1.nav-tab-wrapper, /* Back-compat for pre-4.4 */
