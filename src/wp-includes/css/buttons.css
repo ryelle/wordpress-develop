@@ -115,9 +115,9 @@ TABLE OF CONTENTS:
 
 .wp-core-ui .button,
 .wp-core-ui .button-secondary {
-	background: var(--wp-admin--button-secondary);
+	background: var(--wp-admin--button);
 	border-color: var(--wp-admin--button-primary);
-	color: var(--wp-admin--button-secondary--text);
+	color: var(--wp-admin--button--text);
 	vertical-align: top;
 }
 
@@ -128,18 +128,18 @@ TABLE OF CONTENTS:
 .wp-core-ui .button.hover,
 .wp-core-ui .button:hover,
 .wp-core-ui .button-secondary:hover{
-	background: var(--wp-admin--button-secondary--hover);
+	background: var(--wp-admin--button--hover);
 	border-color: var(--wp-admin--button-primary--hover);
-	color: var(--wp-admin--button-secondary--text);
+	color: var(--wp-admin--button--text);
 }
 
 .wp-core-ui .button.focus,
 .wp-core-ui .button:focus,
 .wp-core-ui .button-secondary:focus {
-	background: var(--wp-admin--button-secondary--hover);
+	background: var(--wp-admin--button--hover);
 	border-color: var(--wp-admin--button-primary--hover);
 	box-shadow: 0 0 0 1px var(--wp-admin--button-primary);
-	color: var(--wp-admin--button-secondary--text);
+	color: var(--wp-admin--button--text);
 	/* Only visible in Windows High Contrast mode */
 	outline: 2px solid transparent;
 	/* Reset inherited offset from Gutenberg */
@@ -155,10 +155,10 @@ TABLE OF CONTENTS:
 /* pressed state e.g. a selected setting */
 .wp-core-ui .button.active,
 .wp-core-ui .button.active:hover {
-	background-color: var(--wp-admin--button-secondary--shadow);
+	background-color: var(--wp-admin--button--shadow);
 	border-color: var(--wp-admin--button-primary--hover);
 	box-shadow: inset 0 2px 5px -3px var(--wp-admin--button-primary--hover);
-	color: var(--wp-admin--button-secondary--text);
+	color: var(--wp-admin--button--text);
 }
 
 .wp-core-ui .button.active:focus {
@@ -175,7 +175,7 @@ TABLE OF CONTENTS:
 .wp-core-ui .button-secondary:disabled,
 .wp-core-ui .button-secondary.disabled,
 .wp-core-ui .button-disabled {
-	background: var(--wp-admin--button-secondary) !important;
+	background: var(--wp-admin--button) !important;
 	border-color: var(--wp-admin--button--border--disabled) !important;
 	box-shadow: none !important;
 	color: var(--wp-admin--text-secondary--color) !important;
@@ -216,12 +216,12 @@ TABLE OF CONTENTS:
 }
 
 .wp-core-ui .button-link-delete {
-	color: var(--wp-admin--link--color--delete);
+	color: var(--wp-admin--link-delete--color);
 }
 
 .wp-core-ui .button-link-delete:hover,
 .wp-core-ui .button-link-delete:focus {
-	color: var(--wp-admin--link--color--delete-hover);
+	color: var(--wp-admin--link-delete--color--hover);
 	background: transparent;
 }
 
@@ -255,7 +255,7 @@ TABLE OF CONTENTS:
 .wp-core-ui .button-primary.focus,
 .wp-core-ui .button-primary:focus {
 	box-shadow:
-		0 0 0 1px var(--wp-admin--button-secondary),
+		0 0 0 1px var(--wp-admin--button),
 		0 0 0 3px var(--wp-admin--button-primary);
 }
 
@@ -273,7 +273,7 @@ TABLE OF CONTENTS:
 .wp-core-ui .button-primary:disabled,
 .wp-core-ui .button-primary-disabled,
 .wp-core-ui .button-primary.disabled {
-	background: var(--wp-admin--button-secondary) !important;
+	background: var(--wp-admin--button) !important;
 	border-color: var(--wp-admin--button--border--disabled) !important;
 	box-shadow: none !important;
 	color: var(--wp-admin--text-secondary--color) !important;
@@ -318,10 +318,10 @@ TABLE OF CONTENTS:
 
 /* pressed state e.g. a selected setting */
 .wp-core-ui .button-group > .button.active {
-	background-color: var(--wp-admin--button-secondary--shadow);
+	background-color: var(--wp-admin--button--shadow);
 	border-color: var(--wp-admin--button-primary--hover);
 	box-shadow: inset 0 2px 5px -3px var(--wp-admin--button-primary--hover);
-	color: var(--wp-admin--button-secondary--text);
+	color: var(--wp-admin--button--text);
 }
 
 .wp-core-ui .button-group > .button.active:focus {
