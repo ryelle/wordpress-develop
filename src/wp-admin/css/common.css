@@ -1370,7 +1370,7 @@ th.action-links {
 .notice,
 div.updated,
 div.error {
-	background: #fff;
+	background: var(--wp-admin--surface--background);
 	border: 1px solid var(--wp-admin--surface--border);
 	border-left-width: 4px;
 	box-shadow: 0 1px 1px rgba(0, 0, 0, 0.04);
@@ -1409,7 +1409,7 @@ div.error p,
 
 .notice-title {
 	display: inline-block;
-	color: #1d2327;
+	color: var(--wp-admin--heading--color);
 	font-size: 18px;
 }
 
@@ -1426,14 +1426,14 @@ div.error p,
 	margin: 0;
 	padding: 9px;
 	background: none;
-	color: #787c82;
+	color: var(--wp-admin--icon--fill);
 	cursor: pointer;
 }
 
 .notice-dismiss:hover:before,
 .notice-dismiss:active:before,
 .notice-dismiss:focus:before {
-	color: #d63638;
+	color: var(--wp-admin--icon-destructive--fill);
 }
 
 .notice-dismiss:focus {
@@ -1445,36 +1445,36 @@ div.error p,
 
 .notice-success,
 div.updated {
-	border-left-color: #00a32a;
+	border-left-color: var(--wp-admin--notice-success--border);
 }
 
 .notice-success.notice-alt {
-	background-color: #edfaef;
+	background-color: var(--wp-admin--notice-success--background);
 }
 
 .notice-warning {
-	border-left-color: #dba617;
+	border-left-color: var(--wp-admin--notice-warning--border);
 }
 
 .notice-warning.notice-alt {
-	background-color: #fcf9e8;
+	background-color: var(--wp-admin--notice-warning--background);
 }
 
 .notice-error,
 div.error {
-	border-left-color: #d63638;
+	border-left-color: var(--wp-admin--notice-error--border);
 }
 
 .notice-error.notice-alt {
-	background-color: #fcf0f1;
+	background-color: var(--wp-admin--notice-error--background);
 }
 
 .notice-info {
-	border-left-color: #72aee6;
+	border-left-color: var(--wp-admin--notice-info--border);
 }
 
 .notice-info.notice-alt {
-	background-color: #f0f6fc;
+	background-color: var(--wp-admin--notice-info--background);
 }
 
 .update-message p:before,
@@ -1522,7 +1522,7 @@ div.error {
 .import-php .updating-message:before,
 .button.updating-message:before,
 .button.installing:before {
-	color: #d63638;
+	color: var(--wp-admin--icon-destructive--fill);
 	content: "\f463";
 }
 
@@ -1555,13 +1555,13 @@ div.error {
 .updated-message p:before,
 .installed p:before,
 .button.updated-message:before {
-	color: #68de7c;
+	color: var(--wp-admin--icon-success--fill);
 	content: "\f147";
 }
 
 /* Error icon. */
 .update-message.notice-error p:before {
-	color: #d63638;
+	color: var(--wp-admin--icon-error--fill);
 	content: "\f534";
 }
 
