@@ -662,7 +662,7 @@ code {
 }
 
 .wp-dialog {
-	background-color: #fff;
+	background-color: var(--wp-admin--surface--background);
 }
 
 .widgets-chooser ul,
@@ -883,7 +883,7 @@ hr {
 #nav-menu-footer .menu-delete,
 #delete-link a.delete,
 a#remove-post-thumbnail {
-	color: #b32d2e;
+	color: var(--wp-admin--link-delete--color);
 }
 
 abbr.required,
@@ -901,7 +901,7 @@ span.required,
 #nav-menu-footer .menu-delete:hover,
 #delete-link a.delete:hover,
 a#remove-post-thumbnail:hover {
-	color: #b32d2e;
+	color: var(--wp-admin--link-delete--color--hover);
 	border: none;
 }
 
@@ -1003,7 +1003,7 @@ th.action-links {
 	width: 100%;
 	box-shadow: 0 1px 1px rgba(0, 0, 0, 0.04);
 	border: 1px solid var(--wp-admin--surface--border);
-	background: #fff;
+	background: var(--wp-admin--surface--background);
 	color: ;
 	font-size: 13px;
 }
@@ -1025,8 +1025,8 @@ th.action-links {
 	top: -1px;
 	padding: 4px 10px;
 	border-radius: 30px;
-	background: #646970;
-	color: #fff;
+	background: var(--wp-admin--bubble--background);
+	color: var(--wp-admin--bubble--color);
 	font-size: 14px;
 	font-weight: 600;
 }
@@ -1057,22 +1057,22 @@ th.action-links {
 	display: inline-block;
 	margin: 0 10px;
 	padding: 15px 0;
-	border-bottom: 4px solid #fff;
-	color: #646970;
+	border-bottom: 4px solid var(--wp-admin--surface--background);
+	color: var(--wp-admin--text-secondary--color);
 	cursor: pointer;
 }
 
 .filter-links .current {
 	box-shadow: none;
-	border-bottom: 4px solid #646970;
-	color: #1d2327;
+	border-bottom: 4px solid var(--wp-admin--text-secondary--color);
+	color: var(--wp-admin--text--color);
 }
 
 .filter-links li > a:hover,
 .filter-links li > a:focus,
 .show-filters .filter-links a.current:hover,
 .show-filters .filter-links a.current:focus {
-	color: #135e96;
+	color: var(--wp-admin--link--color--hover);
 }
 
 .wp-filter .search-form {
@@ -1115,7 +1115,7 @@ th.action-links {
 	padding: 0 10px 0 6px;
 	border-color: transparent;
 	background-color: transparent;
-	color: #646970;
+	color: var(--wp-admin--filter-button--color);
 	vertical-align: baseline;
 	box-shadow: none;
 }
@@ -1123,7 +1123,7 @@ th.action-links {
 .wp-filter .drawer-toggle:before {
 	content: "\f111";
 	margin: 0 5px 0 0;
-	color: #646970;
+	color: var(--wp-admin--filter-button--color);
 	font: normal 16px/1 dashicons;
 	vertical-align: text-bottom;
 	-webkit-font-smoothing: antialiased;
@@ -1135,7 +1135,7 @@ th.action-links {
 .wp-filter .button.drawer-toggle:focus,
 .wp-filter .drawer-toggle:focus:before {
 	background-color: transparent;
-	color: #135e96;
+	color: var(--wp-admin--filter-button--color--hover);
 }
 
 .wp-filter .button.drawer-toggle:hover,
@@ -1144,7 +1144,7 @@ th.action-links {
 }
 
 .wp-filter .button.drawer-toggle:focus {
-	border-color: #4f94d4;
+	border-color: var(--wp-admin--button-primary);
 }
 
 .wp-filter .button.drawer-toggle:active {
@@ -1153,17 +1153,13 @@ th.action-links {
 	transform: none;
 }
 
-.wp-filter .drawer-toggle.current:before {
-	color: #fff;
-}
-
 .filter-drawer,
 .wp-filter .favorites-form {
 	display: none;
 	margin: 0 -10px 0 -20px;
 	padding: 20px;
-	border-top: 1px solid #f0f0f1;
-	background: #f6f7f7;
+	border-top: 1px solid var(--wp-admin--surface--border-alternate);
+	background: var(--wp-admin--surface--background-alternate);
 	overflow: hidden;
 }
 
@@ -1178,17 +1174,17 @@ th.action-links {
 
 .show-filters .wp-filter .button.drawer-toggle {
 	border-radius: 2px;
-	background: #646970;
-	color: #fff;
+	background: var(--wp-admin--filter-button--background--active);
+	color: var(--wp-admin--filter-button--color--active);
 }
 
 .show-filters .wp-filter .drawer-toggle:hover,
 .show-filters .wp-filter .drawer-toggle:focus {
-	background: #2271b1;
+	background: var(--wp-admin--filter-button--background--active-hover);
 }
 
 .show-filters .wp-filter .drawer-toggle:before {
-	color: #fff;
+	color: var(--wp-admin--filter-button--color--active);
 }
 
 .filter-group {
@@ -1198,8 +1194,8 @@ th.action-links {
 	margin: 0 1% 0 0;
 	padding: 20px 10px 10px;
 	width: 24%;
-	background: #fff;
-	border: 1px solid #dcdcde;
+	background: var(--wp-admin--surface--background);
+	border: 1px solid var(--wp-admin--surface--border);
 	box-shadow: 0 1px 1px rgba(0, 0, 0, 0.04);
 }
 
@@ -1281,9 +1277,9 @@ th.action-links {
 .filtered-by .tag {
 	margin: 0 5px;
 	padding: 4px 8px;
-	border: 1px solid #dcdcde;
+	border: 1px solid var(--wp-admin--surface--border);
 	box-shadow: 0 1px 1px rgba(0, 0, 0, 0.04);
-	background: #fff;
+	background: var(--wp-admin--surface--background);
 	font-size: 11px;
 }
 
@@ -1320,10 +1316,6 @@ th.action-links {
 }
 
 @media only screen and (max-width: 1120px) {
-	.filter-drawer {
-		border-bottom: 1px solid #f0f0f1;
-	}
-
 	.filter-group {
 		margin-bottom: 0;
 		margin-top: 5px;
