@@ -1,0 +1,60 @@
+body {
+	--wp-admin--page--background: #f0f0f1;
+	--wp-admin--surface--background: #fff;
+	--wp-admin--surface--background-alternate: #f6f7f7;
+	--wp-admin--surface--border: #c3c4c7;
+
+	--wp-admin--heading--color: #1d2327;
+	--wp-admin--heading-secondary--color: #50575e;
+	--wp-admin--text--color: #3c434a;
+	--wp-admin--text-secondary--color: #646970;
+
+	--wp-admin--code--background: #dcdcde;
+
+	--wp-admin--admin-menu--background: #1d2327;
+
+	--wp-admin--link--color: #2271b1;
+	--wp-admin--link--color--hover: #135e96;
+	--wp-admin--link-delete--color: #b32d2e;
+	--wp-admin--link-delete--color--hover: #b32d2e;
+
+	--wp-admin--button: #f6f7f7;
+	--wp-admin--button--hover: #f0f0f1;
+	--wp-admin--button--shadow: #dcdcde;
+	--wp-admin--button--border--disabled: #dcdcde;
+	--wp-admin--button-primary: #2271b1;
+	--wp-admin--button-primary--hover: #135e96;
+
+	--wp-admin--button--text: var(--wp-admin--button-primary);
+	--wp-admin--button-primary--text: var(--wp-admin--button);
+
+	--wp-admin--input--color: #2c3338;
+	--wp-admin--input--color--placeholder: #646970;
+	--wp-admin--input--border: var(--wp-admin--surface--border);
+	--wp-admin--input--border--focus: var(--wp-admin--button-primary);
+	--wp-admin--input--background: var(--wp-admin--surface--background);
+	--wp-admin--input--background--readonly: #f0f0f1;
+	--wp-admin--checkbox--fill: var(--wp-admin--button-primary);
+
+	--wp-admin--help-tab--background: #f0f6fc;
+	--wp-admin--help-tab--border--active: #72aee6;
+
+	--wp-admin--nav-tab--border: var(--wp-admin--surface--border);
+	--wp-admin--nav-tab--color: #50575e;
+	--wp-admin--nav-tab--color--hover: #3c434a;
+	--wp-admin--nav-tab--color--active: var(--wp-admin--heading--color);
+	--wp-admin--nav-tab--background: #dcdcde;
+	--wp-admin--nav-tab--background--hover: var(--wp-admin--surface--background);
+	--wp-admin--nav-tab--background--active: var(--wp-admin--page--background);
+
+	/* Needs work */
+	--wp-admin--rating--fill: #dba617;
+	--wp-admin--rating--base: #dcdcde;
+
+	--wp-admin--bubble--color: #fff;
+	--wp-admin--bubble--background: #646970;
+
+	/* --wp-admin--notice-warning--background: #f6f7f7;
+	--wp-admin--notice-warning--border: #dcdcde;
+	--wp-admin--notice-warning--color: */
+}
