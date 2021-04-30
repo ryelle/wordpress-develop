@@ -75,3 +75,9 @@ body {
 	--wp-admin--icon-error--fill: var(--wp-admin--icon-destructive--fill);
 	--wp-admin--icon-success--fill: #68de7c;
 }
+
+body.admin-color-ectoplasm {
+	--wp-admin--button-primary: #a3b745;
+	--wp-admin--button-primary--hover: #99ac41;
+	--wp-admin--button--text: #68753e;
+}

@@ -23,6 +23,25 @@ body {
 	--wp-admin-menu--notification--color--current: var(--wp-admin-menu--notification--color);
 }
 
+body.admin-color-ectoplasm {
+	--wp-admin-menu--background: #523f6d;
+
+	--wp-admin-menu--icon--color: #ece6f6;
+	--wp-admin-menu--link--color: #fff;
+
+	--wp-admin-menu--submenu--background: #413256;
+	--wp-admin-menu--submenu-link--color: #cbc5d3;
+	--wp-admin-menu--submenu-header--color: #cbc5d3;
+
+	--wp-admin-menu--link--background--hover: #a3b745;
+	--wp-admin-menu--link--color--hover: #fff;
+
+	--wp-admin-menu--link--background--current: #a3b745;
+
+	--wp-admin-menu--notification--background: #d46f15;
+	--wp-admin-menu--notification--background--current: #413256;
+}
+
 #adminmenuback,
 #adminmenuwrap,
 #adminmenu,
