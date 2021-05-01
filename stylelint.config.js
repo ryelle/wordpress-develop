@@ -1,5 +1,5 @@
-const reHex = "/#[0-9a-f]{3}([0-9a-f]{3})?/i";
-const reRgba = "/rgba?\(([0-9]+.?[0-9]*,? ?){3,4}\)/i";
+const reHex = "/(?!, )#[0-9a-f]{3}([0-9a-f]{3})?$/i";
+const reRgba = "/rgba?\(([0-9]+(.[0-9]*)?,? ?){3,4}\)/i";
 
 module.exports = {
 	rules: {
