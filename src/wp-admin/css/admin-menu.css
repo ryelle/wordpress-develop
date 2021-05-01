@@ -9,6 +9,8 @@ body {
 	--wp-admin-menu--submenu-header--color: #fff;
 	--wp-admin-menu--submenu--box-shadow: rgba(0, 0, 0, 0.2);
 
+	--wp-admin-menu--tertiary--background: #3c434a;
+
 	--wp-admin-menu--link--background--hover: var(--wp-admin-menu--background);
 	--wp-admin-menu--link--color--hover: #72aee6;
 	--wp-admin-menu--icon--color--hover: var(--wp-admin-menu--link--color--hover);

@@ -152,8 +152,8 @@
 	font-size: 14px;
 	font-weight: 600;
 	padding: 15px 23px 14px;
-	background: var(--wp-admin--page--background);
-	color: var(--wp-admin--link--color);
+	background: var(--wp-admin--screen-reader-text--background);
+	color: var(--wp-admin--screen-reader-text--color);
 	z-index: 100000;
 	line-height: normal;
 	box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.6);
