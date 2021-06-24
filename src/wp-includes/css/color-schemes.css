@@ -1,0 +1,139 @@
+body {
+	--wp-admin--color--neutral-0: 0 0% 100%;
+	--wp-admin--color--neutral-1: 180 5.88% 96.66%;
+	--wp-admin--color--neutral-2: 240 3.44% 94.31%;
+	--wp-admin--color--neutral-5: 240 2.94% 86.66%;
+	--wp-admin--color--neutral-10: 224.99 3.44% 77.25%;
+	--wp-admin--color--neutral-20: 210 3.52% 66.66%;
+	--wp-admin--color--neutral-30: 217.5 3.6% 56.47%;
+	--wp-admin--color--neutral-40: 216 3.99% 49.01%;
+	--wp-admin--color--neutral-50: 215 5.66% 41.56%;
+	--wp-admin--color--neutral-60: 210 8.04% 34.11%;
+	--wp-admin--color--neutral-70: 210 10.44% 26.27%;
+	--wp-admin--color--neutral-80: 205 12% 19.6%;
+	--wp-admin--color--neutral-90: 204 14.7% 13.33%;
+	--wp-admin--color--neutral-95: 197.14 17.94% 7.64%;
+	--wp-admin--color--neutral-100: 0 0% 0%;
+
+	--wp-admin--color--accent-0: 210 66.66% 96.47%;
+	--wp-admin--color--accent-5: 210 52.63% 85.09%;
+	--wp-admin--color--accent-10: 210 59.01% 76.07%;
+	--wp-admin--color--accent-20: 208.96 69.87% 67.45%;
+	--wp-admin--color--accent-30: 208.87 60.73% 57.05%;
+	--wp-admin--color--accent-40: 207.69 57.42% 48.82%;
+	--wp-admin--color--accent-50: 206.85 67.77% 41.37%;
+	--wp-admin--color--accent-60: 205.64 77.51% 33.13%;
+	--wp-admin--color--accent-70: 204.54 84.61% 25.49%;
+	--wp-admin--color--accent-80: 202.58 91.39% 18.23%;
+	--wp-admin--color--accent-90: 201.05 96.61% 11.56%;
+	--wp-admin--color--accent-100: 199.28 100% 5.49%;
+
+	--wp-admin--color--alert-0: 355 66.66% 96.47%;
+	--wp-admin--color--alert-5: 355.81 81.13% 89.6%;
+	--wp-admin--color--alert-10: 357.14 100% 83.52%;
+	--wp-admin--color--alert-20: 357.63 100% 75.09%;
+	--wp-admin--color--alert-30: 357.98 91.41% 68.03%;
+	--wp-admin--color--alert-40: 358.4 74.99% 60.78%;
+	--wp-admin--color--alert-50: 359.25 66.11% 52.54%;
+	--wp-admin--color--alert-60: 359.55 59.82% 43.92%;
+	--wp-admin--color--alert-70: 0 58.62% 34.11%;
+	--wp-admin--color--alert-80: 0 57.89% 26.07%;
+	--wp-admin--color--alert-90: 0 56.81% 17.25%;
+	--wp-admin--color--alert-100: 0 56.52% 9.01%;
+
+	--wp-admin--color--warning-0: 50.99 76.92% 94.9%;
+	--wp-admin--color--warning-5: 47.83 78.72% 81.56%;
+	--wp-admin--color--warning-10: 46.56 82.78% 70.39%;
+	--wp-admin--color--warning-20: 44.99 85.71% 58.82%;
+	--wp-admin--color--warning-30: 43.77 80.99% 47.45%;
+	--wp-admin--color--warning-40: 42.53 100% 37.05%;
+	--wp-admin--color--warning-50: 40.78 100% 30%;
+	--wp-admin--color--warning-60: 41.53 100% 22.94%;
+	--wp-admin--color--warning-70: 40.82 100% 19.01%;
+	--wp-admin--color--warning-80: 40.54 100% 14.5%;
+	--wp-admin--color--warning-90: 40 100% 10.58%;
+	--wp-admin--color--warning-100: 40 100% 6.47%;
+
+	--wp-admin--color--success-0: 129.23 56.52% 95.49%;
+	--wp-admin--color--success-5: 129.13 47.91% 81.17%;
+	--wp-admin--color--success-10: 130.16 64.13% 63.92%;
+	--wp-admin--color--success-20: 135.08 74.89% 46.86%;
+	--wp-admin--color--success-30: 137.74 100% 36.47%;
+	--wp-admin--color--success-40: 135.46 100% 31.96%;
+	--wp-admin--color--success-50: 133.91 100% 27.05%;
+	--wp-admin--color--success-60: 132.32 100% 21.96%;
+	--wp-admin--color--success-70: 131.73 100% 18.03%;
+	--wp-admin--color--success-80: 130.43 100% 13.52%;
+	--wp-admin--color--success-90: 130 100% 9.41%;
+	--wp-admin--color--success-100: 130.71 100% 5.49%;
+}
+
+body.admin-color-midnight {
+	--wp-admin--color--neutral-100: 0 0% 100%;
+	--wp-admin--color--neutral-95: 180 5.88% 96.66%;
+	--wp-admin--color--neutral-90: 240 3.44% 94.31%;
+	--wp-admin--color--neutral-80: 240 2.94% 86.66%;
+	--wp-admin--color--neutral-70: 224.99 3.44% 77.25%;
+	--wp-admin--color--neutral-60: 210 3.52% 66.66%;
+	--wp-admin--color--neutral-50: 217.5 3.6% 56.47%;
+	--wp-admin--color--neutral-40: 216 3.99% 49.01%;
+	--wp-admin--color--neutral-30: 215 5.66% 41.56%;
+	--wp-admin--color--neutral-20: 210 8.04% 34.11%;
+	--wp-admin--color--neutral-10: 210 10.44% 26.27%;
+	--wp-admin--color--neutral-5: 205 12% 19.6%;
+	--wp-admin--color--neutral-2: 204 14.7% 13.33%;
+	--wp-admin--color--neutral-1: 197.14 17.94% 7.64%;
+	--wp-admin--color--neutral-0: 0 0% 0%;
+
+	--wp-admin--color--accent-100: 210 66.66% 96.47%;
+	--wp-admin--color--accent-90: 210 52.63% 85.09%;
+	--wp-admin--color--accent-80: 210 59.01% 76.07%;
+	--wp-admin--color--accent-70: 208.96 69.87% 67.45%;
+	--wp-admin--color--accent-60: 208.87 60.73% 57.05%;
+	--wp-admin--color--accent-50: 207.69 57.42% 48.82%;
+	--wp-admin--color--accent-40: 206.85 67.77% 41.37%;
+	--wp-admin--color--accent-30: 205.64 77.51% 33.13%;
+	--wp-admin--color--accent-20: 204.54 84.61% 25.49%;
+	--wp-admin--color--accent-10: 202.58 91.39% 18.23%;
+	--wp-admin--color--accent-5: 201.05 96.61% 11.56%;
+	--wp-admin--color--accent-0: 199.28 100% 5.49%;
+
+	--wp-admin--color--alert-100: 355 66.66% 96.47%;
+	--wp-admin--color--alert-90: 355.81 81.13% 89.6%;
+	--wp-admin--color--alert-80: 357.14 100% 83.52%;
+	--wp-admin--color--alert-70: 357.63 100% 75.09%;
+	--wp-admin--color--alert-60: 357.98 91.41% 68.03%;
+	--wp-admin--color--alert-50: 358.4 74.99% 60.78%;
+	--wp-admin--color--alert-40: 359.25 66.11% 52.54%;
+	--wp-admin--color--alert-30: 359.55 59.82% 43.92%;
+	--wp-admin--color--alert-20: 0 58.62% 34.11%;
+	--wp-admin--color--alert-10: 0 57.89% 26.07%;
+	--wp-admin--color--alert-5: 0 56.81% 17.25%;
+	--wp-admin--color--alert-0: 0 56.52% 9.01%;
+
+	--wp-admin--color--warning-100: 50.99 76.92% 94.9%;
+	--wp-admin--color--warning-90: 47.83 78.72% 81.56%;
+	--wp-admin--color--warning-80: 46.56 82.78% 70.39%;
+	--wp-admin--color--warning-70: 44.99 85.71% 58.82%;
+	--wp-admin--color--warning-60: 43.77 80.99% 47.45%;
+	--wp-admin--color--warning-50: 42.53 100% 37.05%;
+	--wp-admin--color--warning-40: 40.78 100% 30%;
+	--wp-admin--color--warning-30: 41.53 100% 22.94%;
+	--wp-admin--color--warning-20: 40.82 100% 19.01%;
+	--wp-admin--color--warning-10: 40.54 100% 14.5%;
+	--wp-admin--color--warning-5: 40 100% 10.58%;
+	--wp-admin--color--warning-0: 40 100% 6.47%;
+
+	--wp-admin--color--success-100: 129.23 56.52% 95.49%;
+	--wp-admin--color--success-90: 129.13 47.91% 81.17%;
+	--wp-admin--color--success-80: 130.16 64.13% 63.92%;
+	--wp-admin--color--success-70: 135.08 74.89% 46.86%;
+	--wp-admin--color--success-60: 137.74 100% 36.47%;
+	--wp-admin--color--success-50: 135.46 100% 31.96%;
+	--wp-admin--color--success-40: 133.91 100% 27.05%;
+	--wp-admin--color--success-30: 132.32 100% 21.96%;
+	--wp-admin--color--success-20: 131.73 100% 18.03%;
+	--wp-admin--color--success-10: 130.43 100% 13.52%;
+	--wp-admin--color--success-5: 130 100% 9.41%;
+	--wp-admin--color--success-0: 130.71 100% 5.49%;
+}
