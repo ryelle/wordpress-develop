@@ -12,7 +12,7 @@
 	bottom: 0;
 	left: 0;
 	right: 0;
-	background: #000;
+	background: hsl(var(--wp-admin--color--neutral-100));
 	opacity: 0.7;
 	filter: alpha(opacity=70);
 	z-index: 1000010; /* needs to appear above .notification-dialog */
@@ -28,9 +28,9 @@
 	width: 380px;
 	margin: 0 0 0 -190px;
 	padding: 30px 0 0;
-	background-color: #f0f0f1;
+	background-color: hsl(var(--wp-admin--color--neutral-2));
 	z-index: 1000011; /* needs to appear above #wp-auth-check-bg */
-	box-shadow: 0 3px 6px rgba(0, 0, 0, 0.3);
+	box-shadow: 0 3px 6px hsla(var(--wp-admin--color--neutral-100) / 0.3);
 }
 
 @media screen and (max-width: 380px) {
@@ -88,7 +88,7 @@
 	right: 5px;
 	height: 22px;
 	width: 22px;
-	color: #787c82;
+	color: hsl(var(--wp-admin--color--neutral-40));
 	text-decoration: none;
 	text-align: center;
 }
@@ -103,7 +103,7 @@
 
 #wp-auth-check-wrap .wp-auth-check-close:hover,
 #wp-auth-check-wrap .wp-auth-check-close:focus {
-	color: #2271b1;
+	color: hsl(var(--wp-admin--color--accent-50));
 }
 
 #wp-auth-check-wrap .wp-auth-fallback-expired {

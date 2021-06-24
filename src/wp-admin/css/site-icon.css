@@ -29,7 +29,7 @@
 }
 
 .site-icon-preview .app-icon-preview {
-	background-color: #000;
+	background-color: hsl(var(--wp-admin--color--neutral-100));
 	border-radius: 16px;
 	height: 64px;
 	overflow: hidden;

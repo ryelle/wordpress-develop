@@ -64,11 +64,11 @@
 	width: 100%;
 	outline: none;
 	margin: 0 0 3px;
-	background-color: #fff;
+	background-color: hsl(var(--wp-admin--color--neutral-0));
 }
 
 #titlediv #title-prompt-text {
-	color: #646970;
+	color: hsl(var(--wp-admin--color--neutral-50));
 	position: absolute;
 	font-size: 1.7em;
 	padding: 10px;
@@ -94,7 +94,7 @@ input#link_url {
 	min-height: 25px;
 	margin-top: 5px;
 	padding: 0 10px;
-	color: #646970;
+	color: hsl(var(--wp-admin--color--neutral-50));
 }
 
 #edit-slug-box .cancel {
@@ -150,7 +150,7 @@ body.post-new-php .submitbox .submitdelete {
 
 /* Only highlight drop zones when dragging and only in the 2 columns layout. */
 .is-dragging-metaboxes .metabox-holder .postbox-container .meta-box-sortables {
-	outline: 3px dashed #646970;
+	outline: 3px dashed hsl(var(--wp-admin--color--neutral-50));
 	/* Prevent margin on the child from collapsing with margin on the parent. */
 	display: flow-root;
 	/*
@@ -166,9 +166,9 @@ body.post-new-php .submitbox .submitdelete {
 .postbox {
 	position: relative;
 	min-width: 255px;
-	border: 1px solid #c3c4c7;
-	box-shadow: 0 1px 1px rgba(0, 0, 0, 0.04);
-	background: #fff;
+	border: 1px solid hsl(var(--wp-admin--color--neutral-10));
+	box-shadow: 0 1px 1px hsla(var(--wp-admin--color--neutral-100) / 0.04);
+	background: hsl(var(--wp-admin--color--neutral-0));
 }
 
 #trackback_url {
@@ -218,7 +218,7 @@ ul.category-tabs li,
 .wp-tab-bar .wp-tab-active a,
 #post-body ul.category-tabs li.tabs a,
 #post-body ul.add-menu-item-tabs li.tabs a {
-	color: #2c3338;
+	color: hsl(var(--wp-admin--color--neutral-80));
 }
 
 .category-tabs {
@@ -270,9 +270,9 @@ ul.add-menu-item-tabs li {
 ul.category-tabs li.tabs,
 ul.add-menu-item-tabs li.tabs,
 .wp-tab-active {
-	border: 1px solid #dcdcde;
-	border-bottom-color: #fff;
-	background-color: #fff;
+	border: 1px solid hsl(var(--wp-admin--color--neutral-5));
+	border-bottom-color: hsl(var(--wp-admin--color--neutral-0));
+	background-color: hsl(var(--wp-admin--color--neutral-0));
 }
 
 ul.category-tabs li,
@@ -291,7 +291,7 @@ ul.wp-tab-bar li {
 	height: auto;
 	width: auto;
 	vertical-align: top;
-	background-image: linear-gradient(45deg, #c3c4c7 25%, transparent 25%, transparent 75%, #c3c4c7 75%, #c3c4c7), linear-gradient(45deg, #c3c4c7 25%, transparent 25%, transparent 75%, #c3c4c7 75%, #c3c4c7);
+	background-image: linear-gradient(45deg, hsl(var(--wp-admin--color--neutral-10)) 25%, transparent 25%, transparent 75%, hsl(var(--wp-admin--color--neutral-10)) 75%, hsl(var(--wp-admin--color--neutral-10))), linear-gradient(45deg, hsl(var(--wp-admin--color--neutral-10)) 25%, transparent 25%, transparent 75%, hsl(var(--wp-admin--color--neutral-10)) 75%, hsl(var(--wp-admin--color--neutral-10)));
 	background-position: 0 0, 10px 10px;
 	background-size: 20px 20px;
 }
@@ -322,10 +322,10 @@ form#tags-filter {
 #post-status-info {
 	width: 100%;
 	border-spacing: 0;
-	border: 1px solid #c3c4c7;
+	border: 1px solid hsl(var(--wp-admin--color--neutral-10));
 	border-top: none;
-	background-color: #f6f7f7;
-	box-shadow: 0 1px 1px rgba(0, 0, 0, 0.04);
+	background-color: hsl(var(--wp-admin--color--neutral-1));
+	box-shadow: 0 1px 1px hsla(var(--wp-admin--color--neutral-100) / 0.04);
 	z-index: 999;
 }
 
@@ -372,7 +372,7 @@ form#tags-filter {
 
 .wp-editor-expand #wp-content-editor-tools {
 	z-index: 1000;
-	border-bottom: 1px solid #c3c4c7;
+	border-bottom: 1px solid hsl(var(--wp-admin--color--neutral-10));
 }
 
 .wp-editor-expand #wp-content-editor-container {
@@ -389,7 +389,7 @@ form#tags-filter {
 }
 
 .wp-editor-expand #post-status-info {
-	border-top: 1px solid #c3c4c7;
+	border-top: 1px solid hsl(var(--wp-admin--color--neutral-10));
 }
 
 .wp-editor-expand div.mce-toolbar-grp {
@@ -421,7 +421,7 @@ form#tags-filter {
 /* End TinyMCE native fullscreen mode override */
 
 #wp-content-editor-tools {
-	background-color: #f0f0f1;
+	background-color: hsl(var(--wp-admin--color--neutral-2));
 	padding-top: 20px;
 }
 
@@ -463,7 +463,7 @@ form#tags-filter {
 #post-body .misc-pub-revisions:before,
 #post-body .misc-pub-response-to:before,
 #post-body .misc-pub-comment-status:before {
-	color: #8c8f94;
+	color: hsl(var(--wp-admin--color--neutral-30));
 }
 
 #post-body .misc-pub-post-status:before,
@@ -539,8 +539,8 @@ form#tags-filter {
 	left: 50%;
 	width: 450px;
 	margin-left: -225px;
-	background: #fff;
-	box-shadow: 0 3px 6px rgba(0, 0, 0, 0.3);
+	background: hsl(var(--wp-admin--color--neutral-0));
+	box-shadow: 0 3px 6px hsla(var(--wp-admin--color--neutral-100) / 0.3);
 	line-height: 1.5;
 	z-index: 1000005;
 	overflow-y: auto;
@@ -552,7 +552,7 @@ form#tags-filter {
 	left: 0;
 	right: 0;
 	bottom: 0;
-	background: #000;
+	background: hsl(var(--wp-admin--color--neutral-100));
 	opacity: 0.7;
 	filter: alpha(opacity=70);
 	z-index: 1000000;
@@ -646,7 +646,7 @@ form#tags-filter {
 }
 
 #poststuff .stuffbox > h2 {
-	border-bottom: 1px solid #f0f0f1;
+	border-bottom: 1px solid hsl(var(--wp-admin--color--neutral-2));
 }
 
 #poststuff .inside {
@@ -730,8 +730,8 @@ form#tags-filter {
 .health-check-header {
 	text-align: center;
 	margin: 0 0 1rem;
-	background: #fff;
-	border-bottom: 1px solid #dcdcde;
+	background: hsl(var(--wp-admin--color--neutral-0));
+	border-bottom: 1px solid hsl(var(--wp-admin--color--neutral-5));
 }
 
 .privacy-settings-title-section,
@@ -774,14 +774,14 @@ form#tags-filter {
 
 .privacy-settings-tab:focus,
 .health-check-tab:focus {
-	color: #1d2327;
-	outline: 1px solid #787c82;
+	color: hsl(var(--wp-admin--color--neutral-90));
+	outline: 1px solid hsl(var(--wp-admin--color--neutral-40));
 	box-shadow: none;
 }
 
 .privacy-settings-tab.active,
 .health-check-tab.active {
-	box-shadow: inset 0 -3px #3582c4;
+	box-shadow: inset 0 -3px hsl(var(--wp-admin--color--accent-40));
 	font-weight: 600;
 }
 
@@ -804,13 +804,13 @@ form#tags-filter {
 /* Accordions */
 .privacy-settings-accordion,
 .health-check-accordion {
-	border: 1px solid #c3c4c7;
+	border: 1px solid hsl(var(--wp-admin--color--neutral-10));
 }
 
 .privacy-settings-accordion-heading,
 .health-check-accordion-heading {
 	margin: 0;
-	border-top: 1px solid #c3c4c7;
+	border-top: 1px solid hsl(var(--wp-admin--color--neutral-10));
 	font-size: inherit;
 	line-height: inherit;
 	font-weight: 600;
@@ -824,9 +824,9 @@ form#tags-filter {
 
 .privacy-settings-accordion-trigger,
 .health-check-accordion-trigger {
-	background: #fff;
+	background: hsl(var(--wp-admin--color--neutral-0));
 	border: 0;
-	color: #2c3338;
+	color: hsl(var(--wp-admin--color--neutral-80));
 	cursor: pointer;
 	display: flex;
 	font-weight: 400;
@@ -846,17 +846,17 @@ form#tags-filter {
 .privacy-settings-accordion-trigger:active,
 .health-check-accordion-trigger:hover,
 .health-check-accordion-trigger:active {
-	background: #f6f7f7;
+	background: hsl(var(--wp-admin--color--neutral-1));
 }
 
 .privacy-settings-accordion-trigger:focus,
 .health-check-accordion-trigger:focus {
-	color: #1d2327;
+	color: hsl(var(--wp-admin--color--neutral-90));
 	border: none;
 	box-shadow: none;
 	outline-offset: -1px;
-	outline: 2px solid #2271b1;
-	background-color: #f6f7f7;
+	outline: 2px solid hsl(var(--wp-admin--color--accent-50));
+	background-color: hsl(var(--wp-admin--color--neutral-1));
 }
 
 .privacy-settings-accordion-trigger .title,
@@ -870,7 +870,7 @@ form#tags-filter {
 .privacy-settings-view-read .icon,
 .health-check-accordion-trigger .icon,
 .site-health-view-passed .icon {
-	border: solid #50575e;
+	border: solid hsl(var(--wp-admin--color--neutral-60));
 	border-width: 0 2px 2px 0;
 	height: 0.5rem;
 	pointer-events: none;
@@ -884,7 +884,7 @@ form#tags-filter {
 .privacy-settings-accordion-trigger .badge,
 .health-check-accordion-trigger .badge {
 	padding: 0.1rem 0.5rem 0.15rem;
-	color: #2c3338;
+	color: hsl(var(--wp-admin--color--neutral-80));
 	font-weight: 600;
 }
 
@@ -894,32 +894,32 @@ form#tags-filter {
 
 .privacy-settings-accordion-trigger .badge.blue,
 .health-check-accordion-trigger .badge.blue {
-	border: 1px solid #72aee6;
+	border: 1px solid hsl(var(--wp-admin--color--accent-20));
 }
 
 .privacy-settings-accordion-trigger .badge.orange,
 .health-check-accordion-trigger .badge.orange {
-	border: 1px solid #dba617;
+	border: 1px solid hsl(var(--wp-admin--color--warning-30));
 }
 
 .privacy-settings-accordion-trigger .badge.red,
 .health-check-accordion-trigger .badge.red {
-	border: 1px solid #e65054;
+	border: 1px solid hsl(var(--wp-admin--color--alert-40));
 }
 
 .privacy-settings-accordion-trigger .badge.green,
 .health-check-accordion-trigger .badge.green {
-	border: 1px solid #00ba37;
+	border: 1px solid hsl(var(--wp-admin--color--success-30));
 }
 
 .privacy-settings-accordion-trigger .badge.purple,
 .health-check-accordion-trigger .badge.purple {
-	border: 1px solid #2271b1;
+	border: 1px solid hsl(var(--wp-admin--color--accent-50));
 }
 
 .privacy-settings-accordion-trigger .badge.gray,
 .health-check-accordion-trigger .badge.gray {
-	border: 1px solid #c3c4c7;
+	border: 1px solid hsl(var(--wp-admin--color--neutral-10));
 }
 
 .privacy-settings-accordion-trigger[aria-expanded="true"] .icon,
@@ -933,7 +933,7 @@ form#tags-filter {
 .health-check-accordion-panel {
 	margin: 0;
 	padding: 1em 1.5em;
-	background: #fff;
+	background: hsl(var(--wp-admin--color--neutral-0));
 }
 
 .privacy-settings-accordion-panel[hidden],
@@ -953,7 +953,7 @@ form#tags-filter {
 
 .privacy-settings-accordion-actions .success {
 	display: none;
-	color: #008a20;
+	color: hsl(var(--wp-admin--color--success-50));
 	padding-right: 1em;
 	padding-top: 6px;
 }
@@ -981,7 +981,7 @@ form#tags-filter {
 .privacy-settings-accordion-panel div > *:not(h1):not(h2):not(h3):not(h4):not(h5):not(h6):not(div):not(.privacy-policy-tutorial):not(.wp-policy-help):not(.privacy-text-copy):not(span.success):not(.notice p) {
 	margin: 0;
 	padding: 1em;
-	border-left: 2px solid #787c82;
+	border-left: 2px solid hsl(var(--wp-admin--color--neutral-40));
 }
 
 /* Media queries */
@@ -1033,7 +1033,7 @@ form#tags-filter {
 
 #postcustomstuff thead th {
 	padding: 5px 8px 8px;
-	background-color: #f0f0f1;
+	background-color: hsl(var(--wp-admin--color--neutral-2));
 }
 
 #postcustom #postcustomstuff .submit {
@@ -1060,9 +1060,9 @@ form#tags-filter {
 #postcustomstuff table {
 	margin: 0;
 	width: 100%;
-	border: 1px solid #dcdcde;
+	border: 1px solid hsl(var(--wp-admin--color--neutral-5));
 	border-spacing: 0;
-	background-color: #f6f7f7;
+	background-color: hsl(var(--wp-admin--color--neutral-1));
 }
 
 #postcustomstuff tr {
@@ -1155,7 +1155,7 @@ form#tags-filter {
 	width: 20px;
 	margin-top: -4px;
 	margin-right: 7px;
-	color: #dcdcde;
+	color: hsl(var(--wp-admin--color--neutral-5));
 	font: normal 20px/1 dashicons;
 	speak: never;
 	-webkit-font-smoothing: antialiased;
@@ -1163,7 +1163,7 @@ form#tags-filter {
 }
 
 a.post-format-icon:hover:before {
-	color: #135e96;
+	color: hsl(var(--wp-admin--color--accent-60));
 }
 
 #post-formats-select {
@@ -1249,8 +1249,8 @@ label.post-format-icon {
 	max-height: 200px;
 	overflow: auto;
 	padding: 0 0.9em;
-	border: solid 1px #dcdcde;
-	background-color: #fff;
+	border: solid 1px hsl(var(--wp-admin--color--neutral-5));
+	background-color: hsl(var(--wp-admin--color--neutral-0));
 }
 
 div.tabs-panel-active {
@@ -1262,7 +1262,7 @@ div.tabs-panel-inactive {
 }
 
 div.tabs-panel-active:focus {
-	box-shadow: inset 0 0 0 1px #4f94d4, inset 0 0 2px 1px rgba(79, 148, 212, 0.8);
+	box-shadow: inset 0 0 0 1px hsl(var(--wp-admin--color--accent-30)), inset 0 0 2px 1px hsla(var(--wp-admin--color--accent-30) / 0.8);
 	outline: 0 none;
 }
 
@@ -1318,7 +1318,7 @@ ul.categorychecklist li {
 p.description,
 .form-wrap p {
 	margin: 2px 0 5px;
-	color: #646970;
+	color: hsl(var(--wp-admin--color--neutral-50));
 }
 
 p.help,
@@ -1406,7 +1406,7 @@ p.popular-tags a {
 #poststuff .inside .the-tagcloud {
 	margin: 5px 0 10px;
 	padding: 8px;
-	border: 1px solid #dcdcde;
+	border: 1px solid hsl(var(--wp-admin--color--neutral-5));
 	line-height: 1.2;
 	word-spacing: 3px;
 }
@@ -1427,8 +1427,8 @@ p.popular-tags a {
 	list-style: none;
 	position: absolute;
 	z-index: 10000;
-	border: 1px solid #4f94d4;
-	background-color: #fff;
+	border: 1px solid hsl(var(--wp-admin--color--accent-30));
+	background-color: hsl(var(--wp-admin--color--neutral-0));
 }
 
 .wp-customizer .ac_results {
@@ -1444,8 +1444,8 @@ p.popular-tags a {
 
 .ac_results .ac_over,
 .ac_over .ac_match {
-	background-color: #2271b1;
-	color: #fff;
+	background-color: hsl(var(--wp-admin--color--accent-50));
+	color: hsl(var(--wp-admin--color--neutral-0));
 	cursor: pointer;
 }
 
@@ -1486,7 +1486,7 @@ p.popular-tags a {
 	content: "(" attr( href ) ")";
 	display: inline-block;
 	padding: 0 4px;
-	color: #646970;
+	color: hsl(var(--wp-admin--color--neutral-50));
 	font-size: 13px;
 	word-break: break-all;
 }
