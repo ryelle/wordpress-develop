@@ -3146,7 +3146,7 @@ img {
 #template textarea {
 	font-family: Consolas, Monaco, monospace;
 	font-size: 13px;
-	background: #f6f7f7;
+	background: var(--wp-admin--surface--background);
 	-moz-tab-size: 4;
 	tab-size: 4;
 }
@@ -3156,7 +3156,7 @@ img {
 	width: 100%;
 	min-height: 60vh;
 	height: calc( 100vh - 295px );
-	border: 1px solid #dcdcde;
+	border: 1px solid var(--wp-admin--surface--border);
 	box-sizing: border-box;
 }
 
@@ -3178,8 +3178,8 @@ img {
 	padding: 0;
 	min-height: 60vh;
 	height: calc(100vh - 295px);
-	background-color: #f6f7f7;
-	border: 1px solid #dcdcde;
+	background-color: var(--wp-admin--surface--background-alternate);
+	border: 1px solid var(--wp-admin--surface--border);
 	border-left: none;
 }
 #templateside ul ul {
@@ -3223,14 +3223,13 @@ img {
 	outline: 0;
 }
 [role="treeitem"] .folder-label.focus {
-	color: #043959;
 	box-shadow:
-		0 0 0 1px #4f94d4,
-		0 0 2px 1px rgba(79, 148, 212, 0.8);
+		0 0 0 1px var(--wp-admin--button-primary--hover),
+		0 0 2px 1px var(--wp-admin--button-primary);
 }
 [role="treeitem"].hover,
 [role="treeitem"] .folder-label.hover {
-	background-color: #f0f0f1;
+	background-color: var(--wp-admin--button--hover);
 }
 
 .tree-folder {
@@ -3387,7 +3386,7 @@ img {
 }
 
 .nonessential {
-	color: #646970;
+	color: var(--wp-admin--text-secondary--color);
 	font-size: 11px;
 	font-style: italic;
 	padding-left: 12px;
