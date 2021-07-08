@@ -5,6 +5,9 @@ body {
 	--wp-admin--theme--notification: #d63638;
 	--wp-admin--theme--notification--contrast: #fff;
 
+	--wp-admin--shadow: 0 0 0;
+	--wp-admin--highlight: 255 255 255;
+
 	--wp-admin--page--background: #f0f0f1;
 	--wp-admin--surface--background: #fff;
 	--wp-admin--surface--background-alternate: #f6f7f7;
@@ -75,14 +78,19 @@ body {
 	--wp-admin--notice-warning--border: #dba617;
 	--wp-admin--notice-error--background: #fcf0f1;
 	--wp-admin--notice-error--border: #d63638;
+	--wp-admin--notice-error--color: #d63638;
 
 	--wp-admin--icon--fill: #787c82;
+	--wp-admin--icon--fill--disabled: #a7aaad;
 	--wp-admin--icon-destructive--fill: #d63638;
 	--wp-admin--icon-error--fill: var(--wp-admin--icon-destructive--fill);
 	--wp-admin--icon-success--fill: #68de7c;
 
 	--wp-admin--screen-reader-text--background: var(--wp-admin--page--background);
 	--wp-admin--screen-reader-text--color: var(--wp-admin--link--color);
+
+	--wp-admin--plugin-modal-banner-title--color: #fff;
+	--wp-admin--plugin-modal-banner-title--background: rgba(29, 35, 39, 0.9);
 }
 
 body.admin-color-ectoplasm {
