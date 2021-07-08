@@ -34,7 +34,7 @@ html:lang(he-il) .rtl #wpadminbar * {
 #wpadminbar a.ab-item,
 #wpadminbar > #wp-toolbar span.ab-label,
 #wpadminbar > #wp-toolbar span.noticon {
-	color: var(--wp-admin-menu--link--color, #f0f0f1);
+	color: var(--wp-admin--admin-menu--link--color, #f0f0f1);
 }
 
 #wpadminbar #wp-admin-bar-site-name a.ab-item,
@@ -89,7 +89,7 @@ html:lang(he-il) .rtl #wpadminbar * {
 	width: 100%;
 	min-width: 600px; /* match the min-width of the body in wp-admin/css/common.css */
 	z-index: 99999;
-	background: var(--wp-admin-menu--background, #1d2327);
+	background: var(--wp-admin--admin-menu--background, #1d2327);
 }
 
 #wpadminbar .ab-sub-wrapper,
@@ -142,8 +142,8 @@ html:lang(he-il) .rtl #wpadminbar * {
 #wpadminbar .shortlink-input {
 	margin: 0;
 	padding: 0;
-	box-shadow: 0 3px 5px var(--wp-admin-menu--submenu--box-shadow, rgba(0, 0, 0, 0.2));
-	background: var(--wp-admin-menu--submenu--background, #2c3338);
+	box-shadow: 0 3px 5px var(--wp-admin--admin-menu--submenu--box-shadow, rgba(0, 0, 0, 0.2));
+	background: var(--wp-admin--admin-menu--submenu--background, #2c3338);
 	display: none;
 	position: absolute;
 	float: none;
@@ -211,14 +211,14 @@ html:lang(he-il) .rtl #wpadminbar * {
 #wpadminbar.nojq .quicklinks .ab-top-menu > li > .ab-item:focus,
 #wpadminbar:not(.mobile) .ab-top-menu > li:hover > .ab-item,
 #wpadminbar .ab-top-menu > li.hover > .ab-item {
-	background: var(--wp-admin-menu--submenu--background, #2c3338);
-	color: var(--wp-admin-menu--link--color--hover, #72aee6);
+	background: var(--wp-admin--admin-menu--submenu--background, #2c3338);
+	color: var(--wp-admin--admin-menu--link--color--hover, #72aee6);
 }
 
 #wpadminbar:not(.mobile) > #wp-toolbar li:hover span.ab-label,
 #wpadminbar > #wp-toolbar li.hover span.ab-label,
 #wpadminbar:not(.mobile) > #wp-toolbar a:focus span.ab-label {
-	color: var(--wp-admin-menu--link--color--hover, #72aee6);
+	color: var(--wp-admin--admin-menu--link--color--hover, #72aee6);
 }
 
 #wpadminbar > #wp-toolbar > #wp-admin-bar-root-default .ab-icon,
@@ -239,7 +239,7 @@ html:lang(he-il) .rtl #wpadminbar * {
 #wpadminbar .ab-icon:before,
 #wpadminbar .ab-item:before,
 #wpadminbar #adminbarsearch:before {
-	color: var(--wp-admin-menu--icon--color, #a7aaad);
+	color: var(--wp-admin--admin-menu--icon--color, #a7aaad);
 }
 
 #wpadminbar .ab-icon:before,
@@ -255,14 +255,14 @@ html:lang(he-il) .rtl #wpadminbar * {
 }
 
 #wpadminbar .ab-submenu .ab-item {
-	color: var(--wp-admin-menu--submenu-link--color, #c3c4c7);
+	color: var(--wp-admin--admin-menu--submenu-link--color, #c3c4c7);
 }
 
 #wpadminbar .quicklinks .menupop ul li a,
 #wpadminbar .quicklinks .menupop ul li a strong,
 #wpadminbar .quicklinks .menupop.hover ul li a,
 #wpadminbar.nojs .quicklinks .menupop:hover ul li a {
-	color: var(--wp-admin-menu--submenu-link--color, #c3c4c7);
+	color: var(--wp-admin--admin-menu--submenu-link--color, #c3c4c7);
 }
 
 #wpadminbar .quicklinks .menupop ul li a:hover,
@@ -285,17 +285,17 @@ html:lang(he-il) .rtl #wpadminbar * {
 #wpadminbar li.hover .ab-item:before,
 #wpadminbar li:hover #adminbarsearch:before,
 #wpadminbar li #adminbarsearch.adminbar-focused:before {
-	color: var(--wp-admin-menu--link--color--hover, #72aee6);
+	color: var(--wp-admin--admin-menu--link--color--hover, #72aee6);
 }
 
 #wpadminbar.mobile .quicklinks .ab-icon:before,
 #wpadminbar.mobile .quicklinks .ab-item:before {
-	color: var(--wp-admin-menu--submenu-link--color, #c3c4c7);
+	color: var(--wp-admin--admin-menu--submenu-link--color, #c3c4c7);
 }
 
 #wpadminbar.mobile .quicklinks .hover .ab-icon:before,
 #wpadminbar.mobile .quicklinks .hover .ab-item:before {
-	color: var(--wp-admin-menu--link--color--hover, #72aee6);
+	color: var(--wp-admin--admin-menu--link--color--hover, #72aee6);
 }
 
 #wpadminbar .menupop .menupop > .ab-item .wp-admin-bar-arrow:before,
@@ -341,12 +341,12 @@ html:lang(he-il) .rtl #wpadminbar * {
 
 #wpadminbar .quicklinks .menupop ul.ab-sub-secondary,
 #wpadminbar .quicklinks .menupop ul.ab-sub-secondary .ab-submenu {
-	background: var(--wp-admin-menu--tertiary--background, #3c434a);
+	background: var(--wp-admin--admin-menu--tertiary--background, #3c434a);
 }
 
 #wpadminbar .quicklinks .menupop .ab-sub-secondary > li > a:hover,
 #wpadminbar .quicklinks .menupop .ab-sub-secondary > li .ab-item:focus a {
-	color: var(--wp-admin-menu--link--color--hover, #72aee6);
+	color: var(--wp-admin--admin-menu--link--color--hover, #72aee6);
 }
 
 /* #ab-updates was removed in r19516 */
@@ -366,16 +366,16 @@ html:lang(he-il) .rtl #wpadminbar * {
  * Recovery Mode
  */
 #wpadminbar #wp-admin-bar-recovery-mode {
-	color: var(--wp-admin-menu--notification--color, #fff);
-	background-color: var(--wp-admin-menu--notification--background, #d63638);
+	color: var(--wp-admin--admin-menu--notification--color, #fff);
+	background-color: var(--wp-admin--admin-menu--notification--background, #d63638);
 }
 
 #wpadminbar .ab-top-menu > #wp-admin-bar-recovery-mode.hover >.ab-item,
 #wpadminbar.nojq .quicklinks .ab-top-menu > #wp-admin-bar-recovery-mode > .ab-item:focus,
 #wpadminbar:not(.mobile) .ab-top-menu > #wp-admin-bar-recovery-mode:hover > .ab-item,
 #wpadminbar:not(.mobile) .ab-top-menu > #wp-admin-bar-recovery-mode > .ab-item:focus {
-	color: var(--wp-admin-menu--notification--color--current, #fff);
-	background-color: var(--wp-admin-menu--notification--background--current, #d63638);
+	color: var(--wp-admin--admin-menu--notification--color--current, #fff);
+	background-color: var(--wp-admin--admin-menu--notification--background--current, #d63638);
 }
 
 /**
@@ -498,13 +498,13 @@ html:lang(he-il) .rtl #wpadminbar * {
 	speak: never;
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
-	color: var(--wp-admin-menu--link--color, #f0f0f1);
+	color: var(--wp-admin--admin-menu--link--color, #f0f0f1);
 }
 
 #wpadminbar .quicklinks li a:hover .blavatar,
 #wpadminbar .quicklinks li a:focus .blavatar,
 #wpadminbar .quicklinks .ab-sub-wrapper .menupop.hover > a .blavatar {
-	color: var(--wp-admin-menu--link--color--hover, #72aee6);
+	color: var(--wp-admin--admin-menu--link--color--hover, #72aee6);
 }
 
 #wpadminbar .quicklinks li img.blavatar,
@@ -931,7 +931,7 @@ html:lang(he-il) .rtl #wpadminbar * {
 		height: auto;
 		font-size: 16px;
 		line-height: 1.5;
-		color: var(--wp-admin-menu--link--color, #f0f0f1);
+		color: var(--wp-admin--admin-menu--link--color, #f0f0f1);
 	}
 
 	#wpadminbar #wp-admin-bar-user-info a {
