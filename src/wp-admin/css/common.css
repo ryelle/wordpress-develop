@@ -2101,7 +2101,7 @@ html.wp-toolbar {
 .edit-post-meta-boxes-area .postbox .handle-order-lower {
 	width: 44px;
 	height: 44px;
-	color: #1d2327
+	color: var(--wp-admin--editor--color);
 }
 
 .postbox .handle-order-higher[aria-disabled="true"],
