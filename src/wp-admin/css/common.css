@@ -701,32 +701,34 @@ ul.striped > :nth-child(odd),
 	color: #3c434a;
 }
 
+/* "Primary" uses the menu background variable for backwards compatibility. */
 .wp-ui-primary {
-	color: #fff;
-	background-color: #2c3338;
+	color: var(--wp-admin--admin-menu--link--color);
+	background-color: var(--wp-admin--admin-menu--background);
 }
 .wp-ui-text-primary {
-	color: #2c3338;
+	color: var(--wp-admin--admin-menu--background);
 }
 
+/* "Highlight" uses the primary variable for backwards compatibility. */
 .wp-ui-highlight {
-	color: #fff;
-	background-color: #2271b1;
+	color: var(--wp-admin--theme--primary--contrast);
+	background-color: var(--wp-admin--theme--primary);
 }
 .wp-ui-text-highlight {
-	color: #2271b1;
+	color: var(--wp-admin--theme--primary);
 }
 
 .wp-ui-notification {
-	color: #fff;
-	background-color: #d63638;
+	color: var(--wp-admin--theme--notification--contrast);
+	background-color: var(--wp-admin--theme--notification);
 }
 .wp-ui-text-notification {
-	color: #d63638;
+	color: var(--wp-admin--theme--notification);
 }
 
 .wp-ui-text-icon {
-	color: #8c8f94; /* same as new icons */
+	color: var(--wp-admin--admin-menu--icon--color);
 }
 
 /* For emoji replacement images */
