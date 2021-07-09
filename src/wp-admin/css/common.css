@@ -3434,7 +3434,7 @@ img {
 .item-edit,
 .toggle-indicator,
 .accordion-section-title:after {
-	color: #787c82;
+	color: var(--wp-admin--icon--fill);
 }
 
 .widget-action {
