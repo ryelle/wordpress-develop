@@ -5,8 +5,8 @@ div#media-upload-header {
 	padding: 5px 5px 0;
 	font-weight: 600;
 	position: relative;
-	border-bottom: 1px solid #dcdcde;
-	background: #f6f7f7;
+	border-bottom: 1px solid hsl(var(--wp-admin--color--neutral-5));
+	background: hsl(var(--wp-admin--color--neutral-1));
 }
 
 #sidemenu {
@@ -27,9 +27,9 @@ div#media-upload-header {
 	display: block;
 	float: left;
 	line-height: 28px;
-	border-top: 1px solid #f6f7f7;
-	border-bottom: 1px solid #dcdcde;
-	background-color: #f6f7f7;
+	border-top: 1px solid hsl(var(--wp-admin--color--neutral-1));
+	border-bottom: 1px solid hsl(var(--wp-admin--color--neutral-5));
+	background-color: hsl(var(--wp-admin--color--neutral-1));
 	text-decoration: none;
 	transition: none;
 }
@@ -48,10 +48,10 @@ div#media-upload-header {
 	font-weight: 400;
 	padding-left: 6px;
 	padding-right: 6px;
-	border: 1px solid #dcdcde;
-	border-bottom-color: #f0f0f1;
-	background-color: #f0f0f1;
-	color: #000;
+	border: 1px solid hsl(var(--wp-admin--color--neutral-5));
+	border-bottom-color: hsl(var(--wp-admin--color--neutral-2));
+	background-color: hsl(var(--wp-admin--color--neutral-2));
+	color: hsl(var(--wp-admin--color--neutral-100));
 }
 
 #media-upload:after { /* clearfix */
@@ -61,7 +61,7 @@ div#media-upload-header {
 }
 
 #media-upload .slidetoggle {
-	border-top-color: #dcdcde;
+	border-top-color: hsl(var(--wp-admin--color--neutral-5));
 }
 
 #media-upload input[type="radio"] {
@@ -70,7 +70,7 @@ div#media-upload-header {
 
 .media-upload-form label.form-help,
 td.help {
-	color: #646970;
+	color: hsl(var(--wp-admin--color--neutral-50));
 }
 
 form {
@@ -148,7 +148,7 @@ thead.media-item-info tr {
 }
 
 .form-table thead.media-item-info {
-	border: 8px solid #fff;
+	border: 8px solid hsl(var(--wp-admin--color--neutral-0));
 }
 
 abbr.required,
@@ -218,8 +218,8 @@ span.required {
 
 #media-upload .tablenav-pages a {
 	min-width: 17px;
-	border: 1px solid #c3c4c7;
-	background: #f6f7f7;
+	border: 1px solid hsl(var(--wp-admin--color--neutral-10));
+	background: hsl(var(--wp-admin--color--neutral-1));
 }
 
 #filter .tablenav select {
@@ -242,15 +242,15 @@ span.required {
 }
 
 .menu_order_input {
-	border: 1px solid #dcdcde;
+	border: 1px solid hsl(var(--wp-admin--color--neutral-5));
 	font-size: 10px;
 	padding: 1px;
 	width: 23px;
 }
 
 .ui-sortable-helper {
-	background-color: #fff;
-	border: 1px solid #a7aaad;
+	background-color: hsl(var(--wp-admin--color--neutral-0));
+	border: 1px solid hsl(var(--wp-admin--color--neutral-20));
 	opacity: 0.6;
 	filter: alpha(opacity=60);
 }
@@ -291,7 +291,7 @@ span.required {
 	clear: both;
 	padding: 0 0 3px;
 	font-size: 1.6em;
-	border-bottom: 1px solid #dcdcde;
+	border-bottom: 1px solid hsl(var(--wp-admin--color--neutral-5));
 }
 
 h3.media-title {
@@ -299,7 +299,7 @@ h3.media-title {
 }
 
 h4.media-sub-title {
-	border-bottom: 1px solid #dcdcde;
+	border-bottom: 1px solid hsl(var(--wp-admin--color--neutral-5));
 	font-size: 1.3em;
 	margin: 12px;
 	padding: 0 0 3px;
@@ -310,7 +310,7 @@ h3.media-title,
 h4.media-sub-title {
 	font-family: Georgia,"Times New Roman",Times,serif;
 	font-weight: 400;
-	color: #50575e;
+	color: hsl(var(--wp-admin--color--neutral-60));
 }
 
 #gallery-settings .describe td {
@@ -328,7 +328,7 @@ h4.media-sub-title {
 	width: 100%;
 	clear: both;
 	cursor: default;
-	background: #fff;
+	background: hsl(var(--wp-admin--color--neutral-0));
 }
 
 #gallery-settings .describe select {
@@ -343,7 +343,7 @@ h4.media-sub-title {
 #gallery-settings label,
 #gallery-settings legend {
 	font-size: 13px;
-	color: #3c434a;
+	color: hsl(var(--wp-admin--color--neutral-70));
 	margin-right: 15px;
 }
 
@@ -352,7 +352,7 @@ h4.media-sub-title {
 }
 
 #gallery-settings p.ml-submit {
-	border-top: 1px solid #dcdcde;
+	border-top: 1px solid hsl(var(--wp-admin--color--neutral-5));
 }
 
 #gallery-settings select#columns {
