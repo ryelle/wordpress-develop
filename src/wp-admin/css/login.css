@@ -6,16 +6,16 @@ body {
 }
 
 body {
-	background: #f0f0f1;
+	background: var(-wp-admin--page--background, #f0f0f1);
 	min-width: 0;
-	color: #3c434a;
+	color: var(--wp-admin--text--color, #3c434a);
 	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
 	font-size: 13px;
 	line-height: 1.4;
 }
 
 a {
-	color: #2271b1;
+	color: var(--wp-admin--theme--primary, #2271b1);
 	transition-property: border, background, color;
 	transition-duration: .05s;
 	transition-timing-function: ease-in-out;
@@ -27,14 +27,14 @@ a {
 
 a:hover,
 a:active {
-	color: #135e96;
+	color: var(--wp-admin--login-anchor--color--hover, #135e96);
 }
 
 a:focus {
-	color: #043959;
+	color: var(--wp-admin--login-anchor--color--focus, #043959);
 	box-shadow:
-		0 0 0 1px #4f94d4,
-		0 0 2px 1px rgba(79, 148, 212, 0.8);
+		0 0 0 1px var(--wp-admin--login-anchor--box-shadow-from--focus, #4f94d4),
+		0 0 2px 1px var(--wp-admin--login-anchor--box-shadow-to--focus, rgba(79, 148, 212, 0.8));
 }
 
 p {
@@ -44,20 +44,20 @@ p {
 .login .message,
 .login .success,
 .login #login_error {
-	border-left: 4px solid #72aee6;
+	border-left: 4px solid var(--wp-admin--notice-info--border, #72aee6);
 	padding: 12px;
 	margin-left: 0;
 	margin-bottom: 20px;
 	background-color: #fff;
-	box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.1);
+	box-shadow: 0 1px 1px 0 var(--wp-admin--login--box-shadow, rgba(0, 0, 0, 0.1));
 }
 
 .login .success {
-	border-left-color: #00a32a;
+	border-left-color: var(--wp-admin--notice-success--border, #00a32a);
 }
 
 .login #login_error {
-	border-left-color: #d63638;
+	border-left-color: var(--wp-admin--notice-error--border, #d63638);
 }
 
 #loginform p.submit,
@@ -102,8 +102,8 @@ p {
 
 .login .button.wp-hide-pw:focus {
 	background: transparent;
-	border-color: #3582c4;
-	box-shadow: 0 0 0 1px #3582c4;
+	border-color: var(--wp-admin--login-button--border-color, #3582c4);
+	box-shadow: 0 0 0 1px var(--wp-admin--login-form--box-shadow,#3582c4);
 	/* Only visible in Windows High Contrast mode */
 	outline: 2px solid transparent;
 }
@@ -134,9 +134,9 @@ p {
 	padding: 26px 24px 34px;
 	font-weight: 400;
 	overflow: hidden;
-	background: #fff;
-	border: 1px solid #c3c4c7;
-	box-shadow: 0 1px 3px rgba(0, 0, 0, 0.04);
+	background: var(--wp-admin--surface--background, #fff);
+	border: 1px solid var(--wp-admin--surface--border, #c3c4c7);
+	box-shadow: 0 1px 3px var(--wp-admin--login-form--box-shadow, rgba(0, 0, 0, 0.04));
 }
 
 .login form.shake {
@@ -215,8 +215,8 @@ p {
 }
 
 .login h1.admin-email__heading {
-	border-bottom: 1px #f0f0f1 solid;
-	color: #50575e;
+	border-bottom: 1px var(--wp-admin--surface--border-alternate, #f0f0f1) solid;
+	color: var(--wp-admin--heading-secondary--color, #50575e);
 	font-weight: normal;
 	padding-bottom: 0.5em;
 	text-align: left;
@@ -264,7 +264,7 @@ p {
 	background-size: 84px;
 	background-position: center top;
 	background-repeat: no-repeat;
-	color: #3c434a;
+	color: var(--wp-admin--text--color, #3c434a);
 	height: 84px;
 	font-size: 20px;
 	font-weight: 400;
@@ -303,19 +303,19 @@ p {
 .login #nav a,
 .login #backtoblog a {
 	text-decoration: none;
-	color: #50575e;
+	color: var(--wp-admin--heading-secondary--color, #50575e);
 }
 
 .login #nav a:hover,
 .login #backtoblog a:hover,
 .login h1 a:hover {
-	color: #135e96;
+	color: var(--wp-admin--login-anchor--color--hover, #135e96);
 }
 
 .login #nav a:focus,
 .login #backtoblog a:focus,
 .login h1 a:focus {
-	color: #043959;
+	color: var(--wp-admin--login-anchor--color--focus, #043959);
 }
 
 .login .privacy-policy-page-link {
@@ -350,7 +350,7 @@ p {
 .login form .input,
 .login input[type="text"],
 .login form input[type="checkbox"] {
-	background: #fff;
+	background: var(--wp-admin--surface--background, #fff);
 }
 
 .js.login-action-rp input[type="text"],
