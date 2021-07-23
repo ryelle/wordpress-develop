@@ -1,40 +1,49 @@
 html {
-	background: #f0f0f1;
+	background: var(--wp-admin--page--background, #f0f0f1);
 	margin: 0 20px;
 }
 
 body {
-	background: #fff;
-	border: 1px solid #c3c4c7;
-	color: #3c434a;
-	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+	background: var(--wp-admin--surface--background, #fff);
+	border: 1px solid var(--wp-admin--surface--border, #c3c4c7);
+	color: var(--wp-admin--text--color, #3c434a);
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+		Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+	height: auto;
 	margin: 140px auto 25px;
 	padding: 20px 20px 10px 20px;
 	max-width: 700px;
 	-webkit-font-smoothing: subpixel-antialiased;
-	box-shadow: 0 1px 1px rgba(0, 0, 0, 0.04);
+	box-shadow: 0 1px 1px
+		var(--wp-admin--install--body--box-shadow, rgba(0, 0, 0, 0.04));
 }
 
 a {
-	color: #2271b1;
+	color: var(--wp-admin--link--color, #2271b1);
 }
 
 a:hover,
 a:active {
-	color: #135e96;
+	color: var(--wp-admin--install--link--color--hover, #135e96);
 }
 
 a:focus {
-	color: #043959;
-	box-shadow:
-		0 0 0 1px #4f94d4,
-		0 0 2px 1px rgba(79, 148, 212, 0.8);
+	color: var(--wp-admin--install--link--color--focus, #043959);
+	box-shadow: 0 0 0 1px
+			var(--wp-admin--install--link--color--focus--box-shadow, #4f94d4),
+		0 0 2px 1px
+			var(
+				--wp-admin--install--link--color--focus--box-shadow-alt,
+				rgba(79, 148, 212, 0.8)
+			);
 }
 
-h1, h2 {
-	border-bottom: 1px solid #dcdcde;
+h1,
+h2 {
+	border-bottom: 1px solid
+		var(--wp-admin--install--heading--border-color, #dcdcde);
 	clear: both;
-	color: #646970;
+	color: var(--wp-admin--install--heading--color, #646970);
 	font-size: 24px;
 	padding: 0 0 7px;
 	font-weight: 400;
@@ -44,22 +53,28 @@ h3 {
 	font-size: 16px;
 }
 
-p, li, dd, dt {
+p,
+li,
+dd,
+dt {
 	padding-bottom: 2px;
 	font-size: 14px;
 	line-height: 1.5;
 }
 
-code, .code {
+code,
+.code {
 	font-family: Consolas, Monaco, monospace;
 }
 
-ul, ol, dl {
+ul,
+ol,
+dl {
 	padding: 5px 5px 5px 22px;
 }
 
 a img {
-	border: 0
+	border: 0;
 }
 abbr {
 	border: 0;
@@ -87,7 +102,7 @@ label {
 	background-size: 84px;
 	background-position: center top;
 	background-repeat: no-repeat;
-	color: #3c434a; /* same as login.css */
+	color: var(--wp-admin--text--color, #3c434a); /* same as login.css */
 	font-size: 20px;
 	font-weight: 400;
 	line-height: 1.3em;
@@ -100,7 +115,8 @@ label {
 .step {
 	margin: 20px 0 15px;
 }
-.step, th {
+.step,
+th {
 	text-align: left;
 	padding: 0;
 }
@@ -108,8 +124,9 @@ label {
 	font-size: 14px;
 }
 textarea {
-	border: 1px solid #dcdcde;
-	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+	border: 1px solid var(--wp-admin--install--textarea--border, #dcdcde);
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+		Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
 	width: 100%;
 	box-sizing: border-box;
 }
@@ -124,7 +141,7 @@ textarea {
 	margin-bottom: 9px;
 	padding: 10px 20px 10px 0;
 	font-size: 14px;
-	vertical-align: top
+	vertical-align: top;
 }
 
 .form-table th {
@@ -153,13 +170,14 @@ textarea {
 
 input,
 submit {
-	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+		Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
 }
 
-.form-table input[type=text],
-.form-table input[type=email],
-.form-table input[type=url],
-.form-table input[type=password],
+.form-table input[type="text"],
+.form-table input[type="email"],
+.form-table input[type="url"],
+.form-table input[type="password"],
 #pass-strength-result {
 	width: 218px;
 }
@@ -194,14 +212,15 @@ submit {
 	margin: 25px 0 20px;
 }
 
-#error-page code, .code {
+#error-page code,
+.code {
 	font-family: Consolas, Monaco, monospace;
 }
 
 .message {
-	border-left: 4px solid #d63638;
-	padding: .7em .6em;
-	background-color: #fcf0f1;
+	border-left: 4px solid var(--wp-admin--theme--notification, #d63638);
+	padding: 0.7em 0.6em;
+	background-color: var(--wp-admin--page--background, #fcf0f1);
 }
 
 /* rtl:ignore */
@@ -216,7 +235,6 @@ submit {
 #pass2 {
 	direction: ltr;
 }
-
 
 /* localization */
 body.rtl,
@@ -243,7 +261,6 @@ body.rtl,
 }
 
 @media screen and (max-width: 782px) {
-
 	.form-table {
 		margin-top: 0;
 	}
@@ -307,21 +324,21 @@ body.language-chooser {
 	padding: 8px;
 	width: 100%;
 	display: block;
-	border: 1px solid #dcdcde;
-	background: #fff;
-	color: #2c3338;
+	border: 1px solid var(--wp-admin--install--select--border, #dcdcde);
+	background: var(--wp-admin--surface--background, #fff);
+	color: var(--wp-admin--input--color, #2c3338);
 	font-size: 16px;
 	font-family: Arial, sans-serif;
 	font-weight: 400;
 }
 
 .language-chooser select:focus {
-	color: #2c3338;
+	color: var(--wp-admin--input--color, #2c3338);
 }
 
 .language-chooser select option:hover,
 .language-chooser select option:focus {
-	color: #0a4b78;
+	color: var(--wp-admin--install--select--color--focus, #0a4b78);
 }
 
 .language-chooser .step {
@@ -368,12 +385,8 @@ body.language-chooser {
 /**
  * HiDPI Displays
  */
-@media print,
-  (-webkit-min-device-pixel-ratio: 1.25),
-  (min-resolution: 120dpi) {
-
+@media print, (-webkit-min-device-pixel-ratio: 1.25), (min-resolution: 120dpi) {
 	.spinner {
 		background-image: url(../images/spinner-2x.gif);
 	}
-
 }

@@ -67,9 +67,15 @@ body {
 
 	--wp-admin--filter-button--color: var(--wp-admin--text-secondary--color);
 	--wp-admin--filter-button--color--hover: var(--wp-admin--link--color--hover);
-	--wp-admin--filter-button--color--active: var(--wp-admin--surface--background);
-	--wp-admin--filter-button--background--active: var(--wp-admin--text-secondary--color);
-	--wp-admin--filter-button--background--active-hover: var(--wp-admin--button-primary);
+	--wp-admin--filter-button--color--active: var(
+		--wp-admin--surface--background
+	);
+	--wp-admin--filter-button--background--active: var(
+		--wp-admin--text-secondary--color
+	);
+	--wp-admin--filter-button--background--active-hover: var(
+		--wp-admin--button-primary
+	);
 
 	--wp-admin--notice-success--background: #edfaef;
 	--wp-admin--notice-success--border: #00a32a;
@@ -92,6 +98,22 @@ body {
 
 	--wp-admin--plugin-modal-banner-title--color: #fff;
 	--wp-admin--plugin-modal-banner-title--background: rgba(29, 35, 39, 0.9);
+
+	--wp-admin--install--body--box-shadow: rgba(0, 0, 0, 0.04);
+	--wp-admin--install--link--color--hover: #135e96;
+	--wp-admin--install--link--color--focus: #043959;
+	--wp-admin--install--link--color--focus--box-shadow: #4f94d4;
+	--wp-admin--install--link--color--focus--box-shadow-alt: rgba(
+		79,
+		148,
+		212,
+		0.8
+	);
+	--wp-admin--install--heading--border-color: #dcdcde;
+	--wp-admin--install--heading--color: #646970;
+	--wp-admin--install--textarea--border: #dcdcde;
+	--wp-admin--install--select--border: #dcdcde;
+	--wp-admin--install--select--color--focus: #0a4b78;
 }
 
 body.admin-color-ectoplasm {
