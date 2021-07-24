@@ -682,15 +682,15 @@ ul.striped > :nth-child(odd),
 }
 
 .bar {
-	background-color: #f0f0f1;
-	border-right-color: #4f94d4;
+	background-color: var(--wp-admin--page--background);
+	border-right-color: var(--wp-admin--theme--primary);
 }
 
 /* Helper classes for plugins to leverage the active WordPress color scheme */
 
 .highlight {
-	background-color: #f0f6fc;
-	color: #3c434a;
+	background-color: var(--wp-admin--surface--background-alternate);
+	color: var(--wp-admin--text--color);
 }
 
 /* "Primary" uses the menu background variable for backwards compatibility. */
