@@ -3452,7 +3452,7 @@ img {
 .item-edit:focus,
 .sidebar-name:hover .toggle-indicator,
 .accordion-section-title:hover:after {
-	color: #1d2327;
+	color: var(--wp-admin--heading--color);
 	/* Only visible in Windows High Contrast mode */
 	outline: 1px solid transparent;
 }
@@ -3493,7 +3493,7 @@ img {
 
 /* Accordion */
 .accordion-section {
-	border-bottom: 1px solid #dcdcde;
+	border-bottom: 1px solid var(--wp-admin--surface--border-alternate-2);
 	margin: 0;
 }
 
@@ -3503,22 +3503,22 @@ img {
 }
 
 .accordion-section.open:hover {
-	border-bottom-color: #dcdcde;
+	border-bottom-color: var(--wp-admin--surface--border-alternate-2);
 }
 
 .accordion-section-content {
 	display: none;
 	padding: 10px 20px 15px;
 	overflow: hidden;
-	background: #fff;
+	background: var(--wp-admin--surface--background);
 }
 
 .accordion-section-title {
 	margin: 0;
 	padding: 12px 15px 15px;
 	position: relative;
-	border-left: 1px solid #dcdcde;
-	border-right: 1px solid #dcdcde;
+	border-left: 1px solid var(--wp-admin--surface--border-alternate-2);
+	border-right: 1px solid var(--wp-admin--surface--border-alternate-2);
 	-webkit-user-select: none;
 	user-select: none;
 }
@@ -3541,7 +3541,8 @@ img {
 
 .accordion-section-title:hover:after,
 .accordion-section-title:focus:after {
-	border-color: #a7aaad transparent;
+	/* @todo is this also only used on High Contrast mode? */
+	border-color: transparent;
 	/* Only visible in Windows High Contrast mode */
 	outline: 1px solid transparent;
 }
@@ -3560,7 +3561,7 @@ img {
 	border-right: none;
 	padding: 10px 10px 11px 14px;
 	line-height: 1.55;
-	background: #fff;
+	background: var(--wp-admin--surface--background);
 }
 
 .control-section .accordion-section-title:after,
@@ -3572,13 +3573,13 @@ img {
 .js .control-section .accordion-section-title:hover,
 .js .control-section.open .accordion-section-title,
 .js .control-section .accordion-section-title:focus {
-	color: #1d2327;
-	background: #f6f7f7;
+	color: var(--wp-admin--heading--color);
+	background: var(--wp-admin--surface--background-alternate);
 }
 
 .control-section.open .accordion-section-title {
 	/* When expanded */
-	border-bottom: 1px solid #dcdcde;
+	border-bottom: 1px solid var(--wp-admin--surface--border-alternate-2);
 }
 
 /* Edit Site */
@@ -3886,7 +3887,7 @@ img {
 	}
 
 	#templateside > ul {
-		border-left: 1px solid #dcdcde;
+		border-left: 1px solid var(--wp-admin--surface--border-alternate-2);
 	}
 
 	#templateside li {
