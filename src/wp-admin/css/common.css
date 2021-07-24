@@ -3431,7 +3431,7 @@ img {
 }
 
 .widget-action {
-	color: ; /* #fafafa background in the Widgets screen */
+	color: var(--wp-admin--icon--fill); /* #fafafa background in the Widgets screen */
 }
 
 .widget-top:hover .widget-action,
