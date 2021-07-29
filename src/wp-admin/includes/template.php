@@ -2028,7 +2028,7 @@ function iframe_header( $title = '', $deprecated = false ) {
 	?>
 <title><?php bloginfo( 'name' ); ?> &rsaquo; <?php echo $title; ?> &#8212; <?php _e( 'WordPress' ); ?></title>
 	<?php
-	wp_enqueue_style( 'colors' );
+	wp_enqueue_style( 'wp-admin' );
 	?>
 <script type="text/javascript">
 addLoadEvent = function(func){if(typeof jQuery!=='undefined')jQuery(document).ready(func);else if(typeof wpOnload!=='function'){wpOnload=func;}else{var oldonload=wpOnload;wpOnload=function(){oldonload();func();}}};
