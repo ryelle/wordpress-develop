@@ -1427,7 +1427,7 @@ function wp_default_styles( $styles ) {
 	}
 
 	// Register a stylesheet for the selected admin color scheme.
-	$styles->add( 'colors', '/wp-includes/css/custom-properties.css', array( 'wp-admin', 'buttons' ) );
+	$styles->add( 'colors', '/wp-includes/css/custom-properties.css' );
 
 	$suffix = SCRIPT_DEBUG ? '' : '.min';
 
