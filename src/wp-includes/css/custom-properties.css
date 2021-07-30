@@ -95,6 +95,8 @@ body {
 
 	--wp-admin--plugin-modal-banner-title--color: #fff;
 	--wp-admin--plugin-modal-banner-title--background: rgba(29, 35, 39, 0.9);
+
+	--wp-admin--site-icon--background-color: #000;
 }
 
 body.admin-color-ectoplasm {
