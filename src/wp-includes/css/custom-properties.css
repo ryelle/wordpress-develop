@@ -24,6 +24,7 @@ body {
 	--wp-admin--text-secondary--color: #646970;
 
 	--wp-admin--code--background: #dcdcde;
+	--wp-admin--code-highlight--background: rgba(219, 166, 23, 0.3);
 
 	--wp-admin--admin-menu--background: #1d2327;
 
