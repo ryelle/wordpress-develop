@@ -55,8 +55,8 @@
 	min-width: 24px;
 	height: 2em;
 	border-radius: 5px;
-	background-color: #646970;
-	color: #fff;
+	background-color: var(--wp-admin--surface--background-dark);
+	color: var(--wp-admin--text-on-dark--color);
 	font-size: 11px;
 	line-height: 1.90909090;
 	text-align: center;
@@ -71,7 +71,7 @@
 	margin-left: 8px;
 	width: 0;
 	height: 0;
-	border-top: 5px solid #646970;
+	border-top: 5px solid var(--wp-admin--surface--background-dark);
 	border-right: 5px solid transparent;
 }
 
@@ -79,14 +79,14 @@
 .column-response a.post-com-count-approved:focus .comment-count-approved,
 .column-comments a.post-com-count-approved:hover .comment-count-approved,
 .column-comments a.post-com-count-approved:focus .comment-count-approved {
-	background: #2271b1;
+	background: var(--wp-admin--theme--primary); /* Should we use a more specific property name here? */
 }
 
 .column-response a.post-com-count-approved:hover:after,
 .column-response a.post-com-count-approved:focus:after,
 .column-comments a.post-com-count-approved:hover:after,
 .column-comments a.post-com-count-approved:focus:after {
-	border-top-color: #2271b1;
+	border-top-color: var(--wp-admin--theme--primary);
 }
 
 /* @todo: consider to use a single rule for these counters and the admin menu counters. */
@@ -97,10 +97,10 @@
 	padding: 0 5px;
 	min-width: 7px;
 	height: 17px;
-	border: 2px solid #fff;
+	border: 2px solid var(--wp-admin--surface--background); /* Using the background property on a border because in this case the element's border needs to be the same color as the background it's on  */
 	border-radius: 11px;
-	background: #d63638;
-	color: #fff;
+	background: var(--wp-admin--theme--notification);
+	color: var(--wp-admin--theme--notification--contrast);
 	font-size: 9px;
 	line-height: 1.88888888;
 	text-align: center;
@@ -116,7 +116,7 @@
 .commentlist li {
 	padding: 1em 1em .2em;
 	margin: 0;
-	border-bottom: 1px solid #c3c4c7;
+	border-bottom: 1px solid var(--wp-admin--surface--border);
 }
 
 .commentlist li li {
@@ -131,7 +131,7 @@
 
 #submitted-on,
 .submitted-on {
-	color: #50575e;
+	color: var(--wp-admin--text-secondary--color); /* this isn't an exact match for #50575e but it's really close and doesn't seem worth another variable  */
 }
 
 /* reply to comments */
@@ -203,8 +203,8 @@
 }
 
 #replyerror {
-	border-color: #dcdcde;
-	background-color: #f6f7f7;
+	border-color: var(--wp-admin--surface--border-step-2);
+	background-color: var(--wp-admin--surface--background-alternate);
 }
 
 /* @todo: is this used? */
@@ -214,16 +214,16 @@
 
 #the-comment-list tr.undo,
 #the-comment-list div.undo {
-	background-color: #f6f7f7;
+	background-color: var(--wp-admin--surface--background-alternate);
 }
 
 #the-comment-list .unapproved th,
 #the-comment-list .unapproved td {
-	background-color: #fcf9e8;
+	background-color: var(--wp-admin--notice-warning--background);
 }
 
 #the-comment-list .unapproved th.check-column {
-	border-left: 4px solid #d63638;
+	border-left: 4px solid var(--wp-admin--notice-error--border);
 }
 
 #the-comment-list .unapproved th.check-column input {
@@ -231,11 +231,11 @@
 }
 
 #the-comment-list .approve a {
-	color: #007017;
+	color: var(--wp-admin--action-approve--color);
 }
 
 #the-comment-list .unapprove a {
-	color: #996800;
+	color: var(--wp-admin--action-unpprove--color:);
 }
 
 #the-comment-list th,
@@ -257,7 +257,7 @@
 .vim-current,
 .vim-current th,
 .vim-current td {
-	background-color: #f0f6fc !important;
+	background-color: var(--wp-admin--help-tab--background:) !important;
 }
 
 th .comment-grey-bubble {
@@ -278,7 +278,7 @@ th .comment-grey-bubble:before {
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
 	text-decoration: none !important;
-	color: #3c434a;
+	color: var(--wp-admin--text--color);
 }
 
 /*------------------------------------------------------------------------------
@@ -461,14 +461,13 @@ table.media .column-title .filename {
 	padding: 0;
 	top: -4px;
 	left: -8px;
-	color: #3c434a;
+	color: var(--wp-admin--ui-icon--color);
 	line-height: 0.5;
 	position: relative;
 	vertical-align: top;
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
 	text-decoration: none !important;
-	color: #3c434a;
 }
 
 .column-comments .sorting-indicator:before {
@@ -507,8 +506,8 @@ th.asc a:focus span.sorting-indicator:before {
 
 .wp-list-table .toggle-row:focus:before {
 	box-shadow:
-		0 0 0 1px #4f94d4,
-		0 0 2px 1px rgba(79, 148, 212, 0.8);
+		0 0 0 1px var(--wp-admin--theme--border),
+		0 0 2px 1px var(--wp-admin--shadow-color);
 }
 
 .wp-list-table .toggle-row:active {
@@ -522,7 +521,7 @@ th.asc a:focus span.sorting-indicator:before {
 	border-radius: 50%;
 	display: block;
 	padding: 1px 2px 1px 0;
-	color: #3c434a; /* same as table headers sort arrows */
+	color: var(--wp-admin--text--color); /* same as table headers sort arrows */
 	content: "\f140";
 	font: normal 20px/1 dashicons;
 	line-height: 1;
@@ -543,7 +542,7 @@ th.asc a:focus span.sorting-indicator:before {
 }
 
 .locked-indicator-icon:before {
-	color: #8c8f94;
+	color: var(--wp-admin--icon--fill);
 	content: "\f160";
 	display: inline-block;
 	font: normal 20px/1 dashicons;
