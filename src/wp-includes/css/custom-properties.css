@@ -14,7 +14,7 @@ body {
 	--wp-admin--page--background: #f0f0f1;
 	--wp-admin--surface--background: #fff;
 	--wp-admin--surface--background-alternate: #f6f7f7;
-	--wp-admin--surface--background-dark: #646970;
+	--wp-admin--surface--background-contrast: #646970;
 	--wp-admin--surface--border: #c3c4c7;
 	--wp-admin--surface--border-step-1: var(--wp-admin--surface--border); /* alias */
 	--wp-admin--surface--border-step-2: #dcdcde;
@@ -25,7 +25,8 @@ body {
 	--wp-admin--heading-secondary--color: #50575e;
 	--wp-admin--text--color: #3c434a;
 	--wp-admin--text-secondary--color: #646970;
-	--wp-admin--text-on-dark--color: #fff; /* This is for the text color on the --wp-admin--surface--background-dark color - might be a bad name for it */
+	--wp-admin--text-on-contrast--color: #fff; /* This is for the text color on the --wp-admin--surface--background-contrast color - might be a bad name for it */
+	--wp-admin--text-unstyled: #000;
 
 	--wp-admin--code--background: #dcdcde;
 
@@ -57,6 +58,12 @@ body {
 	--wp-admin--help-tab--background: #f0f6fc;
 	--wp-admin--help-tab--border--active: #72aee6;
 
+	--wp-admin--table--background: #f0f6fc;
+	--wp-admin--table-cell--shadow: #dcdcde;
+
+	--wp-admin--pending--color: #b32d2e;
+	--wp-admin--pending--color--hover: #b32d2e;
+
 	--wp-admin--nav-tab--border: var(--wp-admin--surface--border-step-1);
 	--wp-admin--nav-tab--color: #50575e;
 	--wp-admin--nav-tab--color--hover: #3c434a;
@@ -87,6 +94,8 @@ body {
 	--wp-admin--notice-error--background: #fcf0f1;
 	--wp-admin--notice-error--border: #d63638;
 	--wp-admin--notice-error--color: #d63638;
+	--wp-admin--notice-error--shadow: #dcdcde;
+	--wp-admin--notice-code--color: rgba(0, 0, 0, 0.7); /* There is probably no reason for this to be rgba instead of something like #474747, and we could probalby just reuse a color such as --wp-admin--text-secondary--color */
 
 	--wp-admin--action-approve--color: #007017;
 	--wp-admin--action-unpprove--color: #996800;
@@ -95,15 +104,18 @@ body {
 
 	--wp-admin--icon--fill: #787c82;
 	--wp-admin--icon--fill--disabled: #a7aaad;
+	--wp-admin--icon--fill--inactive: var(--wp-admin--surface--border);
 	--wp-admin--icon-destructive--fill: #d63638;
 	--wp-admin--icon-error--fill: var(--wp-admin--icon-destructive--fill);
 	--wp-admin--icon-success--fill: #68de7c;
+	--wp-admin--icon--shadow: rgba(167, 170, 173, 0.15);
 
 	--wp-admin--screen-reader-text--background: var(--wp-admin--page--background);
 	--wp-admin--screen-reader-text--color: var(--wp-admin--link--color);
 
 	--wp-admin--plugin-modal-banner-title--color: #fff;
 	--wp-admin--plugin-modal-banner-title--background: rgba(29, 35, 39, 0.9);
+	--wp-admin--plugin-list-active--border: var(--wp-admin--help-tab--border--active:)
 }
 
 body.admin-color-ectoplasm {
