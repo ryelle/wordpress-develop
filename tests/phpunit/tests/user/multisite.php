@@ -12,16 +12,16 @@ if ( is_multisite() ) :
 	class Tests_Multisite_User extends WP_UnitTestCase {
 		protected $suppress = false;
 
-		function setUp() {
+		function set_up() {
 			global $wpdb;
-			parent::setUp();
+			parent::set_up();
 			$this->suppress = $wpdb->suppress_errors();
 		}
 
-		function tearDown() {
+		function tear_down() {
 			global $wpdb;
 			$wpdb->suppress_errors( $this->suppress );
-			parent::tearDown();
+			parent::tear_down();
 		}
 
 		function test_remove_user_from_blog() {
@@ -72,15 +72,15 @@ if ( is_multisite() ) :
 			// Each site retrieved should match the expected structure.
 			foreach ( $blogs_of_user as $blog_id => $blog ) {
 				$this->assertSame( $blog_id, $blog->userblog_id );
-				$this->assertTrue( isset( $blog->userblog_id ) );
-				$this->assertTrue( isset( $blog->blogname ) );
-				$this->assertTrue( isset( $blog->domain ) );
-				$this->assertTrue( isset( $blog->path ) );
-				$this->assertTrue( isset( $blog->site_id ) );
-				$this->assertTrue( isset( $blog->siteurl ) );
-				$this->assertTrue( isset( $blog->archived ) );
-				$this->assertTrue( isset( $blog->spam ) );
-				$this->assertTrue( isset( $blog->deleted ) );
+				$this->assertObjectHasAttribute( 'userblog_id', $blog );
+				$this->assertObjectHasAttribute( 'blogname', $blog );
+				$this->assertObjectHasAttribute( 'domain', $blog );
+				$this->assertObjectHasAttribute( 'path', $blog );
+				$this->assertObjectHasAttribute( 'site_id', $blog );
+				$this->assertObjectHasAttribute( 'siteurl', $blog );
+				$this->assertObjectHasAttribute( 'archived', $blog );
+				$this->assertObjectHasAttribute( 'spam', $blog );
+				$this->assertObjectHasAttribute( 'deleted', $blog );
 			}
 
 			// Mark each remaining site as spam, archived, and deleted.

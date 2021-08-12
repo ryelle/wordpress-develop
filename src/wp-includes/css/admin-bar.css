@@ -451,7 +451,7 @@ html:lang(he-il) .rtl #wpadminbar * {
 }
 
 #wpadminbar #wp-admin-bar-user-info .username {
-	color: #a7aaad;
+	color: var(--wp-admin--admin-menu--submenu-link--color, #c3c4c7);
 	font-size: 11px;
 }
 
@@ -460,8 +460,8 @@ html:lang(he-il) .rtl #wpadminbar * {
 	width: auto;
 	height: 16px;
 	padding: 0;
-	border: 1px solid #8c8f94;
-	background: #f0f0f1;
+	border: 1px solid var(--wp-admin--surface--border-step-1, #c3c4c7);
+	background: var(--wp-admin--page--background, #f0f0f1);
 	line-height: 1.84615384;
 	vertical-align: middle;
 	margin: -4px 0 0 6px;
@@ -636,8 +636,8 @@ html:lang(he-il) .rtl #wpadminbar * {
 	max-width: none;
 	padding: 0 3px 0 24px;
 	margin: 0;
-	color: #000;
-	background-color: rgba(255, 255, 255, 0);
+	color: var(--wp-admin--heading--color, #1d2327);
+	background-color: rgb(var(--wp-admin--highlight, 255 255 255) / 0);
 	border: none;
 	outline: none;
 	cursor: pointer;
@@ -651,7 +651,7 @@ html:lang(he-il) .rtl #wpadminbar * {
 #wpadminbar > #wp-toolbar > #wp-admin-bar-top-secondary > #wp-admin-bar-search #adminbarsearch input.adminbar-input:focus {
 	z-index: 10;
 	width: 200px;
-	background-color: rgba(255, 255, 255, 0.9);
+	background-color: rgb(var(--wp-admin--highlight, 255 255 255) / 0.9);
 	cursor: text;
 	border: 0;
 }
@@ -709,7 +709,7 @@ html:lang(he-il) .rtl #wpadminbar * {
 	z-index: 100000;
 	line-height: normal;
 	text-decoration: none;
-	box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.6);
+	box-shadow: 0 0 2px 2px rgb(var(--wp-admin--shadow, 0 0 0) / 0.6);
 }
 
 @media screen and (max-width: 782px) {
@@ -971,7 +971,6 @@ html:lang(he-il) .rtl #wpadminbar * {
 	/* Override default min-width so dropdown lists aren't stretched
 		to 100% viewport width at responsive sizes. */
 	#wpadminbar .ab-top-menu > .menupop > .ab-sub-wrapper {
-		min-width: -webkit-fit-content;
 		min-width: -moz-fit-content;
 		min-width: fit-content;
 	}

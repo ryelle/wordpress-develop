@@ -12,8 +12,8 @@
 class Tests_REST_Request extends WP_UnitTestCase {
 	public $request;
 
-	public function setUp() {
-		parent::setUp();
+	public function set_up() {
+		parent::set_up();
 
 		$this->request = new WP_REST_Request();
 	}
@@ -616,8 +616,8 @@ class Tests_REST_Request extends WP_UnitTestCase {
 
 		$data = $valid->get_error_data( 'rest_missing_callback_param' );
 
-		$this->assertTrue( in_array( 'someinteger', $data['params'], true ) );
-		$this->assertTrue( in_array( 'someotherinteger', $data['params'], true ) );
+		$this->assertContains( 'someinteger', $data['params'] );
+		$this->assertContains( 'someotherinteger', $data['params'] );
 	}
 
 	public function test_has_valid_params_validate_callback() {
@@ -1008,7 +1008,6 @@ class Tests_REST_Request extends WP_UnitTestCase {
 
 	/**
 	 * @ticket 51255
-	 * @requires PHPUnit >= 5.5
 	 */
 	public function test_route_level_validate_callback() {
 		$request = new WP_REST_Request();
@@ -1033,7 +1032,6 @@ class Tests_REST_Request extends WP_UnitTestCase {
 
 	/**
 	 * @ticket 51255
-	 * @requires PHPUnit >= 5.5
 	 */
 	public function test_route_level_validate_callback_no_parameter_callbacks() {
 		$request = new WP_REST_Request();
@@ -1053,7 +1051,6 @@ class Tests_REST_Request extends WP_UnitTestCase {
 
 	/**
 	 * @ticket 51255
-	 * @requires PHPUnit >= 5.5
 	 */
 	public function test_route_level_validate_callback_is_not_executed_if_parameter_validation_fails() {
 		$request = new WP_REST_Request();
