@@ -93,10 +93,10 @@ body {
 	--wp-admin--plugin-modal-banner-title--color: #fff;
 	--wp-admin--plugin-modal-banner-title--background: rgba(29, 35, 39, 0.9);
 
-	--wp-admin--login-anchor--color--hover: #135e96;
-	--wp-admin--login-anchor--color--focus: #043959;
-	--wp-admin--login-anchor--box-shadow-from--focus: #4f94d4;
-	--wp-admin--login-anchor--box-shadow-to--focus: rgba(79, 148, 212, 0.8);
+	--wp-admin--login-link--color--hover: #135e96;
+	--wp-admin--login-link--color--focus: #043959;
+	--wp-admin--login-link--box-shadow-from--focus: #4f94d4;
+	--wp-admin--login-link--box-shadow-to--focus: rgba(79, 148, 212, 0.8);
 	--wp-admin--login--box-shadow: rgba(0, 0, 0, 0.1);
 	--wp-admin--login-button--border-color: #3582c4;
 	--wp-admin--login-button--box-shadow: var(--wp-admin--login-button--border-color);
