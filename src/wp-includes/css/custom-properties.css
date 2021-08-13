@@ -45,6 +45,7 @@ body {
 
 	--wp-admin--button: #f6f7f7;
 	--wp-admin--button--hover: #f0f0f1;
+	--wp-admin--button--focus: var(--wp-admin--theme--primary);
 	--wp-admin--button--shadow: #dcdcde;
 	--wp-admin--button--border--disabled: #dcdcde;
 	--wp-admin--button-primary: var(--wp-admin--theme--primary);
