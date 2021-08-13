@@ -173,7 +173,7 @@ class Tests_Functions extends WP_UnitTestCase {
 		// Check number is appended for file already exists.
 		$this->assertFileExists( $testdir . 'test-image.png', 'Test image does not exist' );
 		$this->assertSame( 'test-image-1.png', wp_unique_filename( $testdir, 'test-image.png' ), 'Number not appended correctly' );
-		$this->assertFileNotExists( $testdir . 'test-image-1.png' );
+		$this->assertFileDoesNotExist( $testdir . 'test-image-1.png' );
 
 		// Check special chars.
 		$this->assertSame( 'testtest-image.png', wp_unique_filename( $testdir, 'testtést-imagé.png' ), 'Filename with special chars failed' );
@@ -1038,6 +1038,31 @@ class Tests_Functions extends WP_UnitTestCase {
 	}
 
 	/**
+	 * @ticket 53238
+	 */
+	function test_wp_json_file_decode() {
+		$result = wp_json_file_decode(
+			DIR_TESTDATA . '/blocks/notice/block.json'
+		);
+
+		$this->assertIsObject( $result );
+		$this->assertSame( 'tests/notice', $result->name );
+	}
+
+	/**
+	 * @ticket 53238
+	 */
+	function test_wp_json_file_decode_associative_array() {
+		$result = wp_json_file_decode(
+			DIR_TESTDATA . '/blocks/notice/block.json',
+			array( 'associative' => true )
+		);
+
+		$this->assertIsArray( $result );
+		$this->assertSame( 'tests/notice', $result['name'] );
+	}
+
+	/**
 	 * @ticket 36054
 	 * @dataProvider datetime_provider
 	 */
@@ -1207,7 +1232,7 @@ class Tests_Functions extends WP_UnitTestCase {
 		$ids = array();
 		for ( $i = 0; $i < 20; $i += 1 ) {
 			$id = wp_unique_id( 'foo-' );
-			$this->assertRegExp( '/^foo-\d+$/', $id );
+			$this->assertMatchesRegularExpression( '/^foo-\d+$/', $id );
 			$ids[] = $id;
 		}
 		$this->assertSame( $ids, array_unique( $ids ) );
