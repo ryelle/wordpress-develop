@@ -63,8 +63,8 @@ class Tests_Feeds_RSS2 extends WP_UnitTestCase {
 	/**
 	 * Setup.
 	 */
-	public function setUp() {
-		parent::setUp();
+	public function set_up() {
+		parent::set_up();
 
 		$this->post_count   = (int) get_option( 'posts_per_rss' );
 		$this->excerpt_only = get_option( 'rss_use_excerpt' );
@@ -131,7 +131,7 @@ class Tests_Feeds_RSS2 extends WP_UnitTestCase {
 		$channel = xml_find( $xml, 'rss', 'channel' );
 
 		// The channel should be free of attributes.
-		$this->assertTrue( empty( $channel[0]['attributes'] ) );
+		$this->assertArrayNotHasKey( 'attributes', $channel[0] );
 
 		// Verify the channel is present and contains a title child element.
 		$title = xml_find( $xml, 'rss', 'channel', 'title' );
@@ -172,7 +172,7 @@ class Tests_Feeds_RSS2 extends WP_UnitTestCase {
 
 		// Verify the date is untranslated.
 		$pubdate = xml_find( $xml, 'rss', 'channel', 'lastBuildDate' );
-		$this->assertNotContains( 'Tue_Translated', $pubdate[0]['content'] );
+		$this->assertStringNotContainsString( 'Tue_Translated', $pubdate[0]['content'] );
 	}
 
 	function test_item_elements() {
