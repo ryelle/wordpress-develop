@@ -30,8 +30,7 @@ a:focus {
 	box-shadow: 0 0 0 1px var(--wp-admin--install--link--color--focus--box-shadow, #4f94d4), 0 0 2px 1px var(--wp-admin--install--link--color--focus--box-shadow-alt, rgba(79, 148, 212, 0.8));
 }
 
-h1,
-h2 {
+h1, h2 {
 	border-bottom: 1px solid var(--wp-admin--install--heading--border-color, #dcdcde);
 	clear: both;
 	color: var(--wp-admin--install--heading--color, #646970);
@@ -44,10 +43,7 @@ h3 {
 	font-size: 16px;
 }
 
-p,
-li,
-dd,
-dt {
+p, li, dd, dt {
 	padding-bottom: 2px;
 	font-size: 14px;
 	line-height: 1.5;
@@ -369,8 +365,8 @@ body.language-chooser {
 /**
  * HiDPI Displays
  */
-@media print, 
-  (-webkit-min-device-pixel-ratio: 1.25), 
+@media print,
+  (-webkit-min-device-pixel-ratio: 1.25),
   (min-resolution: 120dpi) {
 	.spinner {
 		background-image: url(../images/spinner-2x.gif);
