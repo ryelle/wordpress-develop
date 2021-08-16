@@ -27,7 +27,9 @@ a:active {
 
 a:focus {
 	color: var(--wp-admin--install--link--color--focus, #043959);
-	box-shadow: 0 0 0 1px var(--wp-admin--install--link--color--focus--box-shadow, #4f94d4), 0 0 2px 1px var(--wp-admin--install--link--color--focus--box-shadow-alt, rgba(79, 148, 212, 0.8));
+	box-shadow: 
+		0 0 0 1px var(--wp-admin--install--link--color--focus--box-shadow, #4f94d4), 
+		0 0 2px 1px var(--wp-admin--install--link--color--focus--box-shadow-alt, rgba(79, 148, 212, 0.8));
 }
 
 h1, h2 {
@@ -368,7 +370,9 @@ body.language-chooser {
 @media print,
   (-webkit-min-device-pixel-ratio: 1.25),
   (min-resolution: 120dpi) {
+
 	.spinner {
 		background-image: url(../images/spinner-2x.gif);
 	}
+
 }
