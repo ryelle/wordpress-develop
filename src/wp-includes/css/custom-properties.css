@@ -4,6 +4,10 @@ body {
 	--wp-admin--theme--primary--step-10: #1a5686;
 	--wp-admin--theme--notification: #d63638;
 	--wp-admin--theme--notification--contrast: #fff;
+	--wp-admin--theme--success: #00a32a;
+	--wp-admin--theme--info: #72aee6;
+	--wp-admin--theme--warning: #dba617;
+	--wp-admin--theme--error: var(--wp-admin--theme--notification);
 
 	--wp-admin--shadow: 0 0 0;
 	--wp-admin--highlight: 255 255 255;
@@ -52,7 +56,7 @@ body {
 	--wp-admin--checkbox--fill: var(--wp-admin--button-primary);
 
 	--wp-admin--help-tab--background: #f0f6fc;
-	--wp-admin--help-tab--border--active: #72aee6;
+	--wp-admin--help-tab--border--active: var(--wp-admin--theme--info);
 
 	--wp-admin--nav-tab--border: var(--wp-admin--surface--border-step-1);
 	--wp-admin--nav-tab--color: #50575e;
@@ -76,18 +80,18 @@ body {
 	--wp-admin--filter-button--background--active-hover: var(--wp-admin--button-primary);
 
 	--wp-admin--notice-success--background: #edfaef;
-	--wp-admin--notice-success--border: #00a32a;
+	--wp-admin--notice-success--border: var(--wp-admin--theme--success);
 	--wp-admin--notice-info--background: #f0f6fc;
-	--wp-admin--notice-info--border: #72aee6;
+	--wp-admin--notice-info--border: var(--wp-admin--theme--info);
 	--wp-admin--notice-warning--background: #fcf9e8;
-	--wp-admin--notice-warning--border: #dba617;
+	--wp-admin--notice-warning--border: var(--wp-admin--theme--warning);
 	--wp-admin--notice-error--background: #fcf0f1;
-	--wp-admin--notice-error--border: #d63638;
-	--wp-admin--notice-error--color: #d63638;
+	--wp-admin--notice-error--border: var(--wp-admin--theme--error);
+	--wp-admin--notice-error--color: var(--wp-admin--theme--error);
 
 	--wp-admin--icon--fill: #787c82;
 	--wp-admin--icon--fill--disabled: #a7aaad;
-	--wp-admin--icon-destructive--fill: #d63638;
+	--wp-admin--icon-destructive--fill: var(--wp-admin--theme--error);
 	--wp-admin--icon-error--fill: var(--wp-admin--icon-destructive--fill);
 	--wp-admin--icon-success--fill: #68de7c;
 
@@ -109,6 +113,8 @@ body {
 	--wp-admin--slider--handle--color: #50575e;
 	--wp-admin--slider--handle--color--hover: #1d2327;
 	--wp-admin--slider--range--background: transparent;
+
+	--wp-admin--site-icon--background-color: #000;
 }
 
 body.admin-color-ectoplasm {
