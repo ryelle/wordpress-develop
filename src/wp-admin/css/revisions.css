@@ -246,7 +246,7 @@ table.diff .diff-deletedline {
 }
 
 table.diff .diff-deletedline del {
-	background-color: var(--wp-admin--diff--deletedline--del--background);
+	background-color: var(--wp-admin--diff--deletedline-del--background);
 }
 
 table.diff .diff-addedline {
@@ -271,7 +271,7 @@ table.diff .diff-addedline .dashicons {
 }
 
 table.diff .diff-addedline ins {
-	background-color: var(--wp-admin--diff--addedline--ins--background);
+	background-color: var(--wp-admin--diff--addedline-ins--background);
 }
 
 .diff-meta {
@@ -464,22 +464,22 @@ div.revisions-controls > .wp-slider > .ui-slider-handle {
 
 .wp-slider .ui-slider-handle,
 .wp-slider .ui-slider-handle.focus {
-	background: var(--wp-admin--surface--background-alternate);
-	border: 1px solid var(--wp-admin--surface--border);
-	box-shadow: 0 1px 0 var(---wp-admin--surface--border);
+	background: var(--wp-admin--slider-handle--background);
+	border: 1px solid var(--wp-admin--slider-handle--border);
+	box-shadow: 0 1px 0 var(--wp-admin--slider-handle--border);
 }
 
 .wp-slider .ui-slider-handle:hover,
 .wp-slider .ui-slider-handle.ui-state-hover {
-	background: var(--wp-admin--surface--background-alternate);
-	border-color: var(--wp-admin--slider--handle--border--hover);
+	background: var(--wp-admin--slider-handle--background);
+	border-color: var(--wp-admin--slider-handle--border--hover);
 }
 
 .wp-slider .ui-slider-handle:active,
 .wp-slider .ui-slider-handle.ui-state-active {
-	background: var(--wp-admin--slider--handle--background--active);
-	border-color: var(--wp-admin--slider--handle--border--active);
-	box-shadow: inset 0 2px 5px -3px var(--wp-admin--slider--handle--box-shadow--active);
+	background: var(--wp-admin--slider-handle--background--active);
+	border-color: var(--wp-admin--slider-handle--border--hover);
+	box-shadow: inset 0 2px 5px -3px rgb(var(--wp-admin--shadow) / 0.5);
 	transform: translateY(1px);
 }
 
@@ -488,7 +488,7 @@ div.revisions-controls > .wp-slider > .ui-slider-handle {
 	position: absolute;
 	top: 2px;
 	left: 2px;
-	color: var(--wp-admin--slider--handle--color);
+	color: var(--wp-admin--slider-handle--color);
 	content: "\f229";
 	font: normal 18px/1 dashicons;
 	speak: never;
@@ -498,7 +498,7 @@ div.revisions-controls > .wp-slider > .ui-slider-handle {
 
 .wp-slider .ui-slider-handle:hover:before,
 .wp-slider .ui-slider-handle.ui-state-hover:before {
-	color: var(--wp-admin--slider--handle--color--hover);
+	color: var(--wp-admin--slider-handle--color--hover);
 }
 
 .wp-slider .ui-slider-handle.from-handle:before,
@@ -529,7 +529,7 @@ div.revisions-controls > .wp-slider > .ui-slider-handle {
 	font-size: 0.7em;
 	display: block;
 	border: 0;
-	background-color: var(--wp-admin--slider--range--background);
+	background-color: transparent;
 	background-image: none;
 }
 
