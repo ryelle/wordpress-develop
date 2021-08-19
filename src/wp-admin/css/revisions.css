@@ -26,7 +26,7 @@
 	top: 0;
 	height: 82px;
 	background-color: var(--wp-admin--surface--background);
-	box-shadow: 0 1px 3px rgb(var(--wp-admin--shadow) / 0.1);
+	box-shadow: 0 1px 3px var(--wp-admin--surface--box-shadow);
 }
 
 .revisions-tickmarks {
