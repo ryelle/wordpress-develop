@@ -25,8 +25,8 @@
 	position: fixed;
 	top: 0;
 	height: 82px;
-	background: #fff;
-	box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+	background-color: var(--wp-admin--surface--background);
+	box-shadow: 0 1px 3px var(--wp-admin--surface--box-shadow);
 }
 
 .revisions-tickmarks {
@@ -36,13 +36,13 @@
 	top: 7px;
 	max-width: 70%;
 	box-sizing: border-box;
-	background-color: #fff;
+	background-color: var(--wp-admin--surface--background);
 }
 
 .revisions-tickmarks > div {
 	position: absolute;
 	height: 100%;
-	border-left: 1px solid #a7aaad;
+	border-left: 1px solid var(--wp-admin--icon--fill--disabled);
 	box-sizing: border-box;
 }
 
@@ -109,8 +109,8 @@ body.folded .revisions .loading-indicator {
 
 .revisions-meta {
 	margin-top: 20px;
-	background-color: #fff;
-	box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+	background-color: var(--wp-admin--surface--background);
+	box-shadow: 0 1px 3px var(--wp-admin--surface--box-shadow);
 	overflow: hidden;
 }
 
@@ -131,11 +131,11 @@ body.folded .revisions .loading-indicator {
 }
 
 .revisions-controls .author-card .date {
-	color: #646970;
+	color: var(--wp-admin--text-secondary--color);
 }
 
 .revisions-controls .author-card.autosave {
-	color: #d63638;
+	color: var(--wp-admin--notice-error--color);
 }
 
 .revisions-controls .author-card .author-name {
@@ -172,8 +172,8 @@ body.folded .revisions .loading-indicator {
 
 .revisions-diff {
 	padding: 15px;
-	background-color: #fff;
-	box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+	background-color: var(--wp-admin--surface--background);
+	box-shadow: 0 1px 3px var(--wp-admin--surface--box-shadow);
 }
 
 .revisions-diff h3:first-child {
@@ -242,16 +242,16 @@ table.diff .diff-addedline ins {
 
 table.diff .diff-deletedline {
 	position: relative;
-	background-color: #fcf0f1;
+	background-color: var(--wp-admin--diff--deletedline--background);
 }
 
 table.diff .diff-deletedline del {
-	background-color: #ffabaf;
+	background-color: var(--wp-admin--diff--deletedline-del--background);
 }
 
 table.diff .diff-addedline {
 	position: relative;
-	background-color: #edfaef;
+	background-color: var(--wp-admin--diff--addedline--background);
 }
 
 table.diff .diff-deletedline .dashicons,
@@ -271,7 +271,7 @@ table.diff .diff-addedline .dashicons {
 }
 
 table.diff .diff-addedline ins {
-	background-color: #68de7c;
+	background-color: var(--wp-admin--diff--addedline-ins--background);
 }
 
 .diff-meta {
@@ -384,8 +384,8 @@ table.diff .diff-addedline ins {
 
 .revisions-tooltip,
 .revisions-tooltip-arrow > span {
-	border: 1px solid #dcdcde;
-	background-color: #fff;
+	border: 1px solid var(--wp-admin--surface--border-step-2);
+	background-color: var(--wp-admin--surface--background);
 }
 
 .revisions-tooltip {
@@ -405,8 +405,8 @@ table.diff .diff-addedline ins {
 
 .arrow:after {
 	z-index: 9999;
-	background-color: #fff;
-	box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+	background-color: var(--wp-admin--surface--background);
+	box-shadow: 0 1px 3px var(--wp-admin--surface--box-shadow);
 }
 
 .arrow.top {
@@ -445,7 +445,7 @@ div.revisions-controls > .wp-slider > .ui-slider-handle {
 /* jQuery UI Slider */
 .wp-slider.ui-slider {
 	position: relative;
-	border: 1px solid #dcdcde;
+	border: 1px solid var(--wp-admin--surface--border-step-2);
 	text-align: left;
 	cursor: pointer;
 }
@@ -464,22 +464,22 @@ div.revisions-controls > .wp-slider > .ui-slider-handle {
 
 .wp-slider .ui-slider-handle,
 .wp-slider .ui-slider-handle.focus {
-	background: #f6f7f7;
-	border: 1px solid #c3c4c7;
-	box-shadow: 0 1px 0 #c3c4c7;
+	background: var(--wp-admin--slider-handle--background);
+	border: 1px solid var(--wp-admin--slider-handle--border);
+	box-shadow: 0 1px 0 var(--wp-admin--slider-handle--border);
 }
 
 .wp-slider .ui-slider-handle:hover,
 .wp-slider .ui-slider-handle.ui-state-hover {
-	background: #f6f7f7;
-	border-color: #8c8f94;
+	background: var(--wp-admin--slider-handle--background);
+	border-color: var(--wp-admin--slider-handle--border--hover);
 }
 
 .wp-slider .ui-slider-handle:active,
 .wp-slider .ui-slider-handle.ui-state-active {
-	background: #f0f0f1;
-	border-color: #8c8f94;
-	box-shadow: inset 0 2px 5px -3px rgba(0, 0, 0, 0.5);
+	background: var(--wp-admin--slider-handle--background--active);
+	border-color: var(--wp-admin--slider-handle--border--hover);
+	box-shadow: inset 0 2px 5px -3px rgb(var(--wp-admin--shadow) / 0.5);
 	transform: translateY(1px);
 }
 
@@ -488,7 +488,7 @@ div.revisions-controls > .wp-slider > .ui-slider-handle {
 	position: absolute;
 	top: 2px;
 	left: 2px;
-	color: #50575e;
+	color: var(--wp-admin--slider-handle--color);
 	content: "\f229";
 	font: normal 18px/1 dashicons;
 	speak: never;
@@ -498,7 +498,7 @@ div.revisions-controls > .wp-slider > .ui-slider-handle {
 
 .wp-slider .ui-slider-handle:hover:before,
 .wp-slider .ui-slider-handle.ui-state-hover:before {
-	color: #1d2327;
+	color: var(--wp-admin--slider-handle--color--hover);
 }
 
 .wp-slider .ui-slider-handle.from-handle:before,
