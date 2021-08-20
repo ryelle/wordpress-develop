@@ -51,7 +51,6 @@ body {
 	--wp-admin--input--color--placeholder: #646970;
 	--wp-admin--input--border: var(--wp-admin--surface--border-step-1);
 	--wp-admin--input--border--focus: var(--wp-admin--button-primary);
-	--wp-admin--input--border--focus-secondary: var(--wp-admin--surface--background);
 	--wp-admin--input--background: var(--wp-admin--surface--background);
 	--wp-admin--input--background--readonly: #f0f0f1;
 	--wp-admin--checkbox--fill: var(--wp-admin--button-primary);
@@ -143,6 +142,7 @@ body {
 	--wp-admin--themes--input--border-color-step-1: #4f94d4;
 	--wp-admin--themes--input--border-color-step-2: #1d2327;
 	--wp-admin--themes--input--border-color-step-3: var(--wp-admin--theme--primary);
+	--wp-admin--themes--input--border--focus: var(--wp-admin--surface--background);
 	--wp-admin--themes--input--box-shadow: rgba(0, 0, 0, 0.5);
 	--wp-admin--themes--input--box-shadow-step-1: rgba(79, 148, 212, 0.8);
 	--wp-admin--themes--input--box-shadow-step-2: rgba(34, 113, 177, 0.8);
@@ -156,7 +156,7 @@ body {
 	--wp-admin--themes--page-backdrop--background: rgba(240, 240, 241, 0.9);
 	--wp-admin--themes--screenshot--box-shadow: rgba(0, 0, 0, 0.2);
 	--wp-admin--themes--text--color: #f0f0f1;
-	--wp-admin--themes--text-secondary--color: 646970;
+	--wp-admin--themes--text-secondary--color: #646970;
 	--wp-admin--themes--text-tertiary--color: #50575e;
 	--wp-admin--themes--text--color--hover: #fff;
 	--wp-admin--themes--text-shadow--color: rgba(0, 0, 0, 0.6);

@@ -172,12 +172,12 @@ body.js .theme-browser.search-loading {
 
 .theme-browser .theme .more-details:focus {
 	box-shadow:
-			0 0 0 1px var(--wp-admin--input--border--focus-secondary, #fff),
+			0 0 0 1px var(--wp-admin--themes--input--border--focus, #fff),
 			0 0 0 3px var(--wp-admin--input--border--focus, #2271b1);
 }
 
 .theme-browser .theme.focus {
-	border-color: var(--wp-admin--input--border--focus-secondary, #fff);
+	border-color: var(--wp-admin--themes--input--border--focus, #fff);
 	box-shadow: 0 0 2px var(--wp-admin--themes--input--box-shadow-step-1, rgba(79, 148, 212, 0.8));
 }
 
