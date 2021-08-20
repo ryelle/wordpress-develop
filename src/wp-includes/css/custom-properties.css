@@ -114,6 +114,8 @@ body {
 	--wp-admin--slider-handle--color--hover: #1d2327;
 
 	--wp-admin--site-icon--background-color: #000;
+
+	--wp-admin--auth-check--box-shadow: rgba(0, 0, 0, 0.3);
 }
 
 body.admin-color-ectoplasm {
