@@ -36,7 +36,7 @@
 	position: absolute;
 	left: -30px;
 	top: 2px;
-	color: #fff;
+	color: var(--wp-admin--button--text-white, #fff);
 	width: 30px;
 	height: 30px;
 	min-width: 30px;
@@ -44,10 +44,10 @@
 	line-height: 1 !important;
 	font-size: 18px;
 	z-index: 5;
-	background: #3582c4 !important;
+	background: var(--wp-admin--button--background, #3582c4) !important;
 	border-radius: 50%;
-	border: 2px solid #fff;
-	box-shadow: 0 2px 1px rgba(60, 67, 74, 0.15);
+	border: 2px solid var(--wp-admin--button--border-white, #fff);
+	box-shadow: 0 2px 1px var(--wp-admin--button--box-shadow, rgba(60, 67, 74, 0.15));
 	text-align: center;
 	cursor: pointer;
 	box-sizing: border-box;
@@ -57,17 +57,17 @@
 	opacity: 0;
 	pointer-events: none;
 	text-shadow:
-		0 -1px 1px #135e96,
-		1px 0 1px #135e96,
-		0 1px 1px #135e96,
-		-1px 0 1px #135e96;
+		0 -1px 1px var(--wp-admin--button--text-shadow, #135e96),
+		1px 0 1px var(--wp-admin--button--text-shadow, #135e96),
+		0 1px 1px var(--wp-admin--button--text-shadow, #135e96),
+		-1px 0 1px var(--wp-admin--button--text-shadow, #135e96);
 }
 .wp-custom-header .customize-partial-edit-shortcut button {
 	left: 2px
 }
 
 .customize-partial-edit-shortcut button svg {
-	fill: #fff;
+	fill: var(--wp-admin--icon--fill-white, #fff);
 	min-width: 20px;
 	min-height: 20px;
 	width: 20px;
@@ -76,11 +76,11 @@
 }
 
 .customize-partial-edit-shortcut button:hover {
-	background: #4f94d4 !important; /* matches primary buttons */
+	background: var(--wp-admin--button--background-blue-30, #4f94d4) !important; /* matches primary buttons */
 }
 
 .customize-partial-edit-shortcut button:focus {
-	box-shadow: 0 0 0 2px #4f94d4;
+	box-shadow: 0 0 0 2px var(--wp-admin--button--shadow-focus, #4f94d4);
 }
 
 body.customize-partial-edit-shortcuts-shown .customize-partial-edit-shortcut button {

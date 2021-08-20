@@ -5,6 +5,8 @@ body {
 	--wp-admin--theme--white: #fff;
 	--wp-admin--theme--gray-5: #dcdcde;
 	--wp-admin--theme--blue-30: #4f94d4;
+	--wp-admin--theme--blue-40: #3582c4;
+	--wp-admin--theme--blue-50: #135e96;
 	--wp-admin--theme--notification: #d63638;
 	--wp-admin--theme--notification--contrast: #fff;
 	--wp-admin--theme--success: #00a32a;
@@ -45,13 +47,20 @@ body {
 	--wp-admin--button: #f6f7f7;
 	--wp-admin--button--hover: #f0f0f1;
 	--wp-admin--button--shadow: #dcdcde;
+	--wp-admin--button--shadow-focus: var(--wp-admin--theme--blue-30);
+	--wp-admin--button--box-shadow: rgba(60, 67, 74, 0.15);
 	--wp-admin--button--border--disabled: #dcdcde;
+	--wp-admin--button--border-white: var(--wp-admin--theme--white);
+	--wp-admin--button--background: var(--wp-admin--theme--blue-40);
+	--wp-admin--button--background-blue-30: var(--wp-admin--theme--blue-30);
 	--wp-admin--button-primary: var(--wp-admin--theme--primary);
 	--wp-admin--button-primary--hover: var(--wp-admin--theme--primary--step-10);
 	--wp-admin--button-primary--shadow: var(--wp-admin--theme--blue-30);
 	--wp-admin--button-primary--shadow-step-1: rgba(79, 148, 212, 0.8);
 
 	--wp-admin--button--text: var(--wp-admin--button-primary);
+	--wp-admin--button--text-white: var(--wp-admin--theme--white);
+	--wp-admin--button--text-shadow: var(--wp-admin--theme--blue-50);
 	--wp-admin--button-primary--text: var(--wp-admin--button);
 	--wp-admin--button-delete--text: var(--wp-admin--theme--notification);
 
@@ -98,6 +107,7 @@ body {
 	--wp-admin--notice-error--color: var(--wp-admin--theme--error);
 
 	--wp-admin--icon--fill: #787c82;
+	--wp-admin--icon--fill-white: var(--wp-admin--theme--white);
 	--wp-admin--icon--color: #8c8f94;
 	--wp-admin--icon-secondary--color: #50575e;
 	--wp-admin--icon--color--hover: var(--wp-admin--theme--primary);
