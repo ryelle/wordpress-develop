@@ -114,6 +114,11 @@ body {
 	--wp-admin--slider-handle--color--hover: #1d2327;
 
 	--wp-admin--site-icon--background-color: #000;
+
+	--wp-admin--embed--color: #8c8f94;
+	--wp-admin--embed--box-shadow: rgba(0, 0, 0, 0.05);
+	--wp-admin--embed-heading--color: var(--wp-admin--input--color);
+	--wp-admin--embed-more--color: #c3c4c7;
 }
 
 body.admin-color-ectoplasm {
