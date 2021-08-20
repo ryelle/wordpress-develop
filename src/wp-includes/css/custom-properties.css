@@ -16,6 +16,7 @@ body {
 	--wp-admin--page--background: #f0f0f1;
 	--wp-admin--surface--background: #fff;
 	--wp-admin--surface--background-alternate: #f6f7f7;
+	--wp-admin--surface--background-contrast: #000;
 	--wp-admin--surface--border: #c3c4c7;
 	--wp-admin--surface--border-step-1: var(--wp-admin--surface--border); /* alias */
 	--wp-admin--surface--border-step-2: #dcdcde;
@@ -31,6 +32,7 @@ body {
 	--wp-admin--heading-secondary--color: #50575e;
 	--wp-admin--text--color: #3c434a;
 	--wp-admin--text-secondary--color: #646970;
+	--wp-admin--text-contrast--color: #fff;
 
 	--wp-admin--code--background: #dcdcde;
 	--wp-admin--code-highlight--background: rgba(219, 166, 23, 0.3);
@@ -93,6 +95,7 @@ body {
 	--wp-admin--notice-success--border: var(--wp-admin--theme--success);
 	--wp-admin--notice-info--background: #f0f6fc;
 	--wp-admin--notice-info--border: var(--wp-admin--theme--info);
+	--wp-admin--notice-info--color: var(--wp-admin--theme--primary);
 	--wp-admin--notice-warning--background: #fcf9e8;
 	--wp-admin--notice-warning--border: var(--wp-admin--theme--warning);
 	--wp-admin--notice-error--background: #fcf0f1;
@@ -110,6 +113,7 @@ body {
 	--wp-admin--icon-error--fill: var(--wp-admin--icon-destructive--fill);
 	--wp-admin--icon-success--fill: #68de7c;
 	--wp-admin--icon--shadow: rgba(167, 170, 173, 0.15);
+	--wp-admin--icon-contrast--fill: #fff; /* Icon on a dark background. */
 
 	--wp-admin--screen-reader-text--background: var(--wp-admin--page--background);
 	--wp-admin--screen-reader-text--color: var(--wp-admin--link--color);
@@ -129,13 +133,21 @@ body {
 	--wp-admin--slider-handle--color: #50575e;
 	--wp-admin--slider-handle--color--hover: #1d2327;
 
-	--wp-admin--site-icon--background-color: #000;
+	--wp-admin--site-icon--background-color: var(--wp-admin--surface--background-contrast);
 
 	--wp-admin--login--link--color: #50575e;
 	--wp-admin--login--link--color--hover: #135e96;
 	--wp-admin--login--link--color--focus: #043959;
 
 	--wp-admin--pointer-content--box-shadow: rgba(0, 0, 0, 0.08);
+
+	--wp-admin--tranparent-checkerboard--gradient:
+		linear-gradient(45deg, var(--wp-admin--surface--border) 25%, transparent 25%, transparent 75%, var(--wp-admin--surface--border) 75%, var(--wp-admin--surface--border)),
+		linear-gradient(45deg, #c3c4c7 25%, transparent 25%, transparent 75%, var(--wp-admin--surface--border) 75%, var(--wp-admin--surface--border));
+
+	/* Darker borders */
+	--wp-admin--widgets-holder--border--hover: #787c82;
+	--wp-admin--widget-chooser--border: #8c8f94;
 }
 
 body.admin-color-ectoplasm {
