@@ -7,6 +7,55 @@
   16.1 - Manage Themes
 ------------------------------------------------------------------------------*/
 
+body {
+	--wp-admin--themes--border-color: var(--wp-admin--theme--info);
+	--wp-admin--themes--border-color-step-1: var(--wp-admin--surface--background);
+	--wp-admin--themes--border-color-activate: rgba(0, 0, 0, 0.05);
+	--wp-admin--themes--button--background: var(--wp-admin--admin-menu--background);
+	--wp-admin--themes--button--background-step-1: rgba(0, 0, 0, 0.7);
+	--wp-admin--themes--button--background-step-2: rgba(44, 51, 56, 0.7);
+	--wp-admin--themes--button--text--color: #fff;
+	--wp-admin--themes--button--text--color-secondary: #1d2327;
+	--wp-admin--themes--button--text--color-tertiary: var(--wp-admin--theme--primary);
+	--wp-admin--themes--button-delete--text--color: var(--wp-admin--theme--notification);
+	--wp-admin--themes--button-delete--color--hover: var(--wp-admin--themes--button-delete--text--color);
+	--wp-admin--themes--button--shadow: #c3c4c7;
+	--wp-admin--themes--control--background: #50575e;
+	--wp-admin--themes--icon--fill: #dcdcde;
+	--wp-admin--themes--icon--fill-step-1: rgba(140, 143, 148, 0.1);
+	--wp-admin--themes--icon--fill--hover: var(--wp-admin--theme--primary);
+	--wp-admin--themes--icon--fill--hover-step-2: #dcdcde;
+	--wp-admin--themes--icon--color: #8c8f94;
+	--wp-admin--themes--icon--color--hover: var(--wp-admin--surface--background);
+	--wp-admin--themes--icon--color--hover-secondary: #000;
+	--wp-admin--themes--icon--shadow--hover: #4f94d4;
+	--wp-admin--themes--icon--fill--disabled: #c3c4c7;
+	--wp-admin--themes--img--background: #c3c4c7;
+	--wp-admin--themes--input--border-color: #8c8f94;
+	--wp-admin--themes--input--border-color-step-1: #4f94d4;
+	--wp-admin--themes--input--border-color-step-2: #1d2327;
+	--wp-admin--themes--input--border-color-step-3: var(--wp-admin--theme--primary);
+	--wp-admin--themes--input--border--focus: var(--wp-admin--surface--background);
+	--wp-admin--themes--input--box-shadow: rgba(0, 0, 0, 0.5);
+	--wp-admin--themes--input--box-shadow-step-1: rgba(79, 148, 212, 0.8);
+	--wp-admin--themes--input--box-shadow-step-2: rgba(34, 113, 177, 0.8);
+	--wp-admin--themes--radio--color--focus: #1d2327;
+	--wp-admin--themes--label--background: #2c3338;
+	--wp-admin--themes--link--background: rgba(0, 0, 0, 0);
+	--wp-admin--themes--notice--background: var(--wp-admin--theme--primary);
+	--wp-admin--themes--notice--background-step-2: #f0f0f1;
+	--wp-admin--themes--page--background: rgba(255, 255, 255, 0.65);
+	--wp-admin--themes--page-activate--background: rgba(246, 247, 247, 0.7);
+	--wp-admin--themes--page-backdrop--background: rgba(240, 240, 241, 0.9);
+	--wp-admin--themes--screenshot--box-shadow: rgba(0, 0, 0, 0.2);
+	--wp-admin--themes--text--color: #f0f0f1;
+	--wp-admin--themes--text-secondary--color: #646970;
+	--wp-admin--themes--text-tertiary--color: #50575e;
+	--wp-admin--themes--text--color--hover: #fff;
+	--wp-admin--themes--text-shadow--color: rgba(0, 0, 0, 0.6);
+}
+
+
 body.js .theme-browser.search-loading {
 	display: none;
 }
