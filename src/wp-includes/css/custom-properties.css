@@ -2,6 +2,7 @@ body {
 	--wp-admin--theme--primary: #2271b1;
 	--wp-admin--theme--primary--contrast: #f6f7f7;
 	--wp-admin--theme--primary--step-10: #1a5686;
+	--wp-admin--theme--black: #000;
 	--wp-admin--theme--notification: #d63638;
 	--wp-admin--theme--notification--contrast: #fff;
 	--wp-admin--theme--success: #00a32a;
@@ -40,12 +41,18 @@ body {
 	--wp-admin--button: #f6f7f7;
 	--wp-admin--button--hover: #f0f0f1;
 	--wp-admin--button--shadow: #dcdcde;
+	--wp-admin--button--border: #1d2327; /* color seems like it's an alternate profile to other button types. */
+	--wp-admin--button--border--hover: var(--wp-admin--theme--primary);
 	--wp-admin--button--border--disabled: #dcdcde;
 	--wp-admin--button-primary: var(--wp-admin--theme--primary);
 	--wp-admin--button-primary--hover: var(--wp-admin--theme--primary--step-10);
+	--wp-admin--button-delete--background--hover: var(--wp-admin--theme--error);
+	--wp-admin--button-delete--border--hover: var(--wp-admin--theme--error);
 
 	--wp-admin--button--text: var(--wp-admin--button-primary);
 	--wp-admin--button-primary--text: var(--wp-admin--button);
+	--wp-admin--button-delete--text: var(--wp-admin--theme--error);
+	--wp-admin--button-delete--text--hover: var(--wp-admin--theme--notification--contrast);
 
 	--wp-admin--input--color: #2c3338;
 	--wp-admin--input--color--placeholder: #646970;
@@ -54,6 +61,11 @@ body {
 	--wp-admin--input--background: var(--wp-admin--surface--background);
 	--wp-admin--input--background--readonly: #f0f0f1;
 	--wp-admin--checkbox--fill: var(--wp-admin--button-primary);
+
+	--wp-admin--radio--color--focus: #1d2327;
+	--wp-admin--radio--border--checked: #8c8f94;
+	--wp-admin--radio--border--focus: #4f94d4;
+	--wp-admin--radio--box-shadow: var(--wp-admin--themes--blue);
 
 	--wp-admin--help-tab--background: #f0f6fc;
 	--wp-admin--help-tab--border--active: var(--wp-admin--theme--info);
