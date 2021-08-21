@@ -89,4 +89,4 @@ wp-tests-config.php
 !/src/js/_enqueues/vendor
 
 # Files for local environment config
-/docker-compose.override.yml
+
