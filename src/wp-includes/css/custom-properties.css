@@ -23,7 +23,7 @@ body {
 	--wp-admin--surface--background-alternate: #f6f7f7;
 	--wp-admin--surface--border: #c3c4c7;
 	--wp-admin--surface--border-step-1: var(--wp-admin--surface--border); /* alias */
-	--wp-admin--surface--border-step-2: var(--wp-admin--theme--gray-5);
+	--wp-admin--surface--border-step-2: #dcdcde;
 	--wp-admin--surface--border-step-3: #f0f0f1;
 	--wp-admin--surface--border-step-4: #8c8f94;
 	--wp-admin--surface--border-step-5: #a7aaad;
