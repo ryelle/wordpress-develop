@@ -34,25 +34,25 @@
 }
 
 .wp-core-ui .CodeMirror-lint-message-warning {
-	background-color: #fcf9e8;
-	border-left: 4px solid #dba617;
+	background-color: var(--wp-admin--notice-warning--background);
+	border-left: var(--wp-admin--notice-warning--border);
 }
 
 .wrap .CodeMirror-lint-marker-warning:before,
 .wp-core-ui .CodeMirror-lint-message-warning:before {
 	content: "\f534";
-	color: #dba617;
+	color: var(--wp-admin--notice-warning--border);
 }
 
 .wp-core-ui .CodeMirror-lint-message-error {
-	background-color: #fcf0f1;
-	border-left: 4px solid #d63638;
+	background-color: var(--wp-admin--notice-error--background);
+	border-left: 4px solid var(--wp-admin--notice-error--border);
 }
 
 .wrap .CodeMirror-lint-marker-error:before,
 .wp-core-ui .CodeMirror-lint-message-error:before {
 	content: "\f153";
-	color: #d63638;
+	color: var(--wp-admin--notice-error--color);
 }
 
 .wp-core-ui .CodeMirror-lint-tooltip {
@@ -63,7 +63,7 @@
 }
 
 .wrap .CodeMirror .CodeMirror-matchingbracket {
-	background: rgba(219, 166, 23, 0.3);
+	background: var(--wp-admin--code-highlight--background);
 	color: inherit;
 }
 
@@ -72,5 +72,5 @@
 }
 
 .wrap .CodeMirror .CodeMirror-linenumber {
-	color: #646970;
+	color: var(--wp-admin--text-secondary--color);
 }

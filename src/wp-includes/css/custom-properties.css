@@ -20,7 +20,7 @@ body {
 	--wp-admin--surface--border-step-1: var(--wp-admin--surface--border); /* alias */
 	--wp-admin--surface--border-step-2: #dcdcde;
 	--wp-admin--surface--border-step-3: #f0f0f1;
-
+	--wp-admin--surface--box-shadow: rgba(0, 0, 0, 0.1);
 
 	--wp-admin--heading--color: #1d2327;
 	--wp-admin--heading-secondary--color: #50575e;
@@ -28,6 +28,7 @@ body {
 	--wp-admin--text-secondary--color: #646970;
 
 	--wp-admin--code--background: #dcdcde;
+	--wp-admin--code-highlight--background: rgba(219, 166, 23, 0.3);
 
 	--wp-admin--admin-menu--background: #1d2327;
 
@@ -110,6 +111,18 @@ body {
 	--wp-admin--install--textarea--border: #dcdcde;
 	--wp-admin--install--select--border: #dcdcde;
 	--wp-admin--install--select--color--focus: #0a4b78;
+
+	--wp-admin--diff--deletedline--background: var(--wp-admin--notice-error--background);
+	--wp-admin--diff--deletedline-del--background: #ffabaf;
+	--wp-admin--diff--addedline--background: var(--wp-admin--notice-success--background);
+	--wp-admin--diff--addedline-ins--background: var(--wp-admin--icon-success--fill);
+
+	--wp-admin--slider-handle--background: var(--wp-admin--surface--background-alternate);
+	--wp-admin--slider-handle--background--active: var(--wp-admin--page--background);
+	--wp-admin--slider-handle--border: var(--wp-admin--surface--border);
+	--wp-admin--slider-handle--border--hover: #8c8f94;
+	--wp-admin--slider-handle--color: #50575e;
+	--wp-admin--slider-handle--color--hover: #1d2327;
 
 	--wp-admin--site-icon--background-color: #000;
 
