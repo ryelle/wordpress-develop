@@ -9,6 +9,8 @@ body {
 	--wp-admin--theme--warning: #dba617;
 	--wp-admin--theme--error: var(--wp-admin--theme--notification);
 
+	--wp-admin--theme--border: #4f94d4; /* We might want a more specific name for this color, but it gets used for a lot of borders and shadows throughout the admin */
+
 	--wp-admin--shadow: 0 0 0;
 	--wp-admin--highlight: 255 255 255;
 	--wp-admin--editor--color: #1d2327;
@@ -21,6 +23,10 @@ body {
 	--wp-admin--surface--border-step-2: #dcdcde;
 	--wp-admin--surface--border-step-3: #f0f0f1;
 	--wp-admin--surface--box-shadow: rgba(0, 0, 0, 0.1);
+
+	--wp-admin--box-shadow--focus:
+		0 0 0 1px var(--wp-admin--button-primary--hover),
+		0 0 2px 1px var(--wp-admin--button-primary);
 
 	--wp-admin--heading--color: #1d2327;
 	--wp-admin--heading-secondary--color: #50575e;
@@ -58,6 +64,9 @@ body {
 	--wp-admin--help-tab--background: #f0f6fc;
 	--wp-admin--help-tab--border--active: var(--wp-admin--theme--info);
 
+	--wp-admin--pending--color: #b32d2e;
+	--wp-admin--pending--color--hover: #b32d2e;
+
 	--wp-admin--nav-tab--border: var(--wp-admin--surface--border-step-1);
 	--wp-admin--nav-tab--color: #50575e;
 	--wp-admin--nav-tab--color--hover: #3c434a;
@@ -88,29 +97,24 @@ body {
 	--wp-admin--notice-error--background: #fcf0f1;
 	--wp-admin--notice-error--border: var(--wp-admin--theme--error);
 	--wp-admin--notice-error--color: var(--wp-admin--theme--error);
+	--wp-admin--notice-error--shadow: #dcdcde;
+
+	--wp-admin--action-approve--color: #007017;
+	--wp-admin--action-unpprove--color: #996800;
 
 	--wp-admin--icon--fill: #787c82;
 	--wp-admin--icon--fill--disabled: #a7aaad;
+	--wp-admin--icon--fill--inactive: var(--wp-admin--surface--border);
 	--wp-admin--icon-destructive--fill: var(--wp-admin--theme--error);
 	--wp-admin--icon-error--fill: var(--wp-admin--icon-destructive--fill);
 	--wp-admin--icon-success--fill: #68de7c;
+	--wp-admin--icon--shadow: rgba(167, 170, 173, 0.15);
 
 	--wp-admin--screen-reader-text--background: var(--wp-admin--page--background);
 	--wp-admin--screen-reader-text--color: var(--wp-admin--link--color);
 
 	--wp-admin--plugin-modal-banner-title--color: #fff;
 	--wp-admin--plugin-modal-banner-title--background: rgba(29, 35, 39, 0.9);
-
-	--wp-admin--install--body--box-shadow: rgba(0, 0, 0, 0.04);
-	--wp-admin--install--link--color--hover: #135e96;
-	--wp-admin--install--link--color--focus: #043959;
-	--wp-admin--install--link--color--focus--box-shadow: #4f94d4;
-	--wp-admin--install--link--color--focus--box-shadow-alt: rgba(79, 148, 212, 0.8);
-	--wp-admin--install--heading--border-color: #dcdcde;
-	--wp-admin--install--heading--color: #646970;
-	--wp-admin--install--textarea--border: #dcdcde;
-	--wp-admin--install--select--border: #dcdcde;
-	--wp-admin--install--select--color--focus: #0a4b78;
 
 	--wp-admin--diff--deletedline--background: var(--wp-admin--notice-error--background);
 	--wp-admin--diff--deletedline-del--background: #ffabaf;
@@ -126,6 +130,25 @@ body {
 
 	--wp-admin--site-icon--background-color: #000;
 
+	--wp-admin--install--body--box-shadow: rgba(0, 0, 0, 0.04);
+	--wp-admin--install--link--color--hover: #135e96;
+	--wp-admin--install--link--color--focus: #043959;
+	--wp-admin--install--link--color--focus--box-shadow: #4f94d4;
+	--wp-admin--install--link--color--focus--box-shadow-alt: rgba(79, 148, 212, 0.8);
+	--wp-admin--install--heading--border-color: #dcdcde;
+	--wp-admin--install--heading--color: #646970;
+	--wp-admin--install--textarea--border: #dcdcde;
+	--wp-admin--install--select--border: #dcdcde;
+	--wp-admin--install--select--color--focus: #0a4b78;
+
+	--wp-admin--login--link--color--hover: #135e96;
+	--wp-admin--login--link--color--focus: #043959;
+	--wp-admin--login--link--box-shadow-from--focus: #4f94d4;
+	--wp-admin--login--link--box-shadow-to--focus: rgba(79, 148, 212, 0.8);
+	--wp-admin--login--box-shadow: rgba(0, 0, 0, 0.1);
+	--wp-admin--login--button--border-color: #3582c4;
+	--wp-admin--login--button--box-shadow: var(--wp-admin--login-button--border-color);
+	--wp-admin--login--form--box-shadow: rgba(0, 0, 0, 0.04);
 }
 
 body.admin-color-ectoplasm {
