@@ -80,7 +80,7 @@
 }
 
 .wp-pointer-buttons a.close:hover:before {
-	color: var(--wp-admin--theme--notification);
+	color: var(--wp-admin--icon-destructive--fill);
 }
 
 /* The arrow base class must take up no space, even with transparent borders. */
