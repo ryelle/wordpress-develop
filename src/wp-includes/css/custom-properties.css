@@ -149,6 +149,8 @@ body {
 	--wp-admin--login--button--border-color: #3582c4;
 	--wp-admin--login--button--box-shadow: var(--wp-admin--login-button--border-color);
 	--wp-admin--login--form--box-shadow: rgba(0, 0, 0, 0.04);
+
+	--wp-admin--pointer-content--box-shadow: rgba(0, 0, 0, 0.08);
 }
 
 body.admin-color-ectoplasm {
