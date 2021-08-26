@@ -130,6 +130,17 @@ body {
 
 	--wp-admin--site-icon--background-color: #000;
 
+	--wp-admin--install--body--box-shadow: rgba(0, 0, 0, 0.04);
+	--wp-admin--install--link--color--hover: #135e96;
+	--wp-admin--install--link--color--focus: #043959;
+	--wp-admin--install--link--color--focus--box-shadow: #4f94d4;
+	--wp-admin--install--link--color--focus--box-shadow-alt: rgba(79, 148, 212, 0.8);
+	--wp-admin--install--heading--border-color: #dcdcde;
+	--wp-admin--install--heading--color: #646970;
+	--wp-admin--install--textarea--border: #dcdcde;
+	--wp-admin--install--select--border: #dcdcde;
+	--wp-admin--install--select--color--focus: #0a4b78;
+
 	--wp-admin--login--link--color--hover: #135e96;
 	--wp-admin--login--link--color--focus: #043959;
 	--wp-admin--login--link--box-shadow-from--focus: #4f94d4;
