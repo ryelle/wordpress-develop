@@ -141,24 +141,24 @@ body {
 	--wp-admin--customize-control-theme-name--background: #fff;
 
 	--wp-admin--customize-controls-accordian-section-title--background: #fff;
+	--wp-admin--customize-controls-accordion-section-title--background--hover: #fff;
 	--wp-admin--customize-controls-accordion-section-title--color: #50575e;
 	--wp-admin--customize-controls-accordion-section-title--color--after: #2c3338;
-	--wp-admin--customize-controls-accordion-section-title--background--hover: #fff;
 	--wp-admin--customize-controls-accordion-section-title--color--hover: #50575e;
 
 	--wp-admin--customize-controls-close--background: #f0f0f1;
-	--wp-admin--customize-controls-close--color: #3c434a;
 	--wp-admin--customize-controls-close--background--focus: #fff;
+	--wp-admin--customize-controls-close--color: #3c434a;
 	--wp-admin--customize-controls-close--color--focus: #2271b1;
 
-	--wp-admin--customize-controls-control-section-title--color: #2271b1;
 	--wp-admin--customize-controls-control-section-title--background: #f6f7f7;
+	--wp-admin--customize-controls-control-section-title--color: #2271b1;
 
 	--wp-admin--customize-controls-customize-help-toggle--background: transparent;
 	--wp-admin--customize-controls-customize-help-toggle--color: #50575e;
 	--wp-admin--customize-controls-customize-info-open-help-toggle--color: #2271b1;
-	--wp-admin--customize-controls-customize-panel-description--color: #50575e;
 	--wp-admin--customize-controls-customize-panel-description--background: #fff;
+	--wp-admin--customize-controls-customize-panel-description--color: #50575e;
 
 	--wp-admin--customize-controls-date-input--border-color--invalid: #d63638;
 	--wp-admin--customize-controls-description--color: #50575e;
@@ -196,8 +196,8 @@ body {
 	--wp-admin--customize-notification-message--color: #1d2327;
 
 	--wp-admin--customize-panel-back--background: #fff;
-	--wp-admin--customize-panel-back--color--hover: #2271b1;
 	--wp-admin--customize-panel-back--background--hover: #f6f7f7;
+	--wp-admin--customize-panel-back--color--hover: #2271b1;
 
 	--wp-admin--customize-preview-header-themes-filter-bar--background: #f0f0f1;
 
@@ -211,15 +211,15 @@ body {
 
 	--wp-admin--customize-theme-backdrop--background: rgba(240, 240, 241, 0.75);
 
-	--wp-admin--customize-theme-controls-accordion-section-content--color: #50575e;
 	--wp-admin--customize-theme-controls-accordion-section-content--background: transparent;
-	--wp-admin--customize-theme-controls-accordion-section-title--color: #50575e;
+	--wp-admin--customize-theme-controls-accordion-section-content--color: #50575e;
 	--wp-admin--customize-theme-controls-accordion-section-title--background-color: #fff;
+	--wp-admin--customize-theme-controls-accordion-section-title--color: #50575e;
 	--wp-admin--customize-theme-controls-accordion-section-title--color--after: #a7aaad;
 	--wp-admin--customize-theme-controls-control-panel-themes-title--background--hover: #fff;
 	--wp-admin--customize-theme-controls-control-panel-themes-title--color--hover: #50575e;
-	--wp-admin--customize-theme-controls-move-widget-up--color: #dcdcde;
 	--wp-admin--customize-theme-controls-move-widget-up--background-color: #fff;
+	--wp-admin--customize-theme-controls-move-widget-up--color: #dcdcde;
 	--wp-admin--customize-theme-controls-section-title--color--after: #2271b1;
 
 	--wp-admin--customize-theme-header--background: #f0f0f1;
@@ -243,12 +243,12 @@ body {
 	--wp-admin--customize-themes-section-title-selected--background--after: #2271b1;
 	--wp-admin--customize-themes-section-title-selected--color--after: #fff;
 
-	--wp-admin--customize-uploaded-button--background: none;
-	--wp-admin--customize-uploaded-button--color: inherit;
+	--wp-admin--customize-uploaded-button--background--not-random: none;
+	--wp-admin--customize-uploaded-button--color--not-random: inherit;
 
+	--wp-admin--customize-widget-reorder-nav--background--hover: #f0f0f1;
 	--wp-admin--customize-widget-reorder-nav--color: #8c8f94;
 	--wp-admin--customize-widget-reorder-nav--color--hover: #1d2327;
-	--wp-admin--customize-widget-reorder-nav--background--hover: #f0f0f1;
 }
 
 body.admin-color-ectoplasm {
