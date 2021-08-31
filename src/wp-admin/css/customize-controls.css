@@ -1343,9 +1343,9 @@ p.customize-section-description {
 	width: 100%;
 	padding: 0;
 	margin: 0;
-	background: var(--wp-admin--customize-uploaded-button--background);
+	background: var(--wp-admin--customize-uploaded-button--background--not-random);
 	border: none;
-	color: var(--wp-admin--customize-uploaded-button--color);
+	color: var(--wp-admin--customize-uploaded-button--color--not-random);
 	cursor: pointer;
 }
 
