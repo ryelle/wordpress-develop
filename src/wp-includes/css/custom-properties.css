@@ -9,8 +9,6 @@ body {
 	--wp-admin--theme--warning: #dba617;
 	--wp-admin--theme--error: var(--wp-admin--theme--notification);
 
-	--wp-admin--theme--border: #4f94d4; /* We might want a more specific name for this color, but it gets used for a lot of borders and shadows throughout the admin */
-
 	--wp-admin--shadow: 0 0 0;
 	--wp-admin--highlight: 255 255 255;
 	--wp-admin--editor--color: #1d2327;
@@ -133,25 +131,9 @@ body {
 
 	--wp-admin--site-icon--background-color: #000;
 
-	--wp-admin--install--body--box-shadow: rgba(0, 0, 0, 0.04);
-	--wp-admin--install--link--color--hover: #135e96;
-	--wp-admin--install--link--color--focus: #043959;
-	--wp-admin--install--link--color--focus--box-shadow: #4f94d4;
-	--wp-admin--install--link--color--focus--box-shadow-alt: rgba(79, 148, 212, 0.8);
-	--wp-admin--install--heading--border-color: #dcdcde;
-	--wp-admin--install--heading--color: #646970;
-	--wp-admin--install--textarea--border: #dcdcde;
-	--wp-admin--install--select--border: #dcdcde;
-	--wp-admin--install--select--color--focus: #0a4b78;
-
+	--wp-admin--login--link--color: #50575e;
 	--wp-admin--login--link--color--hover: #135e96;
 	--wp-admin--login--link--color--focus: #043959;
-	--wp-admin--login--link--box-shadow-from--focus: #4f94d4;
-	--wp-admin--login--link--box-shadow-to--focus: rgba(79, 148, 212, 0.8);
-	--wp-admin--login--box-shadow: rgba(0, 0, 0, 0.1);
-	--wp-admin--login--button--border-color: #3582c4;
-	--wp-admin--login--button--box-shadow: var(--wp-admin--login-button--border-color);
-	--wp-admin--login--form--box-shadow: rgba(0, 0, 0, 0.04);
 
 	--wp-admin--pointer-content--box-shadow: rgba(0, 0, 0, 0.08);
 }
