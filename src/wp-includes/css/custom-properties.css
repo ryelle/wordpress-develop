@@ -104,53 +104,93 @@ body {
 
 	--wp-admin--customize-add-new-widget--background: #f0f0f1;
 	--wp-admin--customize-add-new-widget--border-color: #8c8f94;
+	--wp-admin--customize-add-new-widget--box-shadow-color_inset: rgb(0, 0, 0);
 	--wp-admin--customize-add-new-widget--color: #2c3338;
 
-	--wp-admin--customize-available-widgets--background: #f0f0f1;
-	--wp-admin--customize-available-widgets-filter--background: #f0f0f1;
+	--wp-admin--customize-accordion-section-dropdown-content--border-color: #f0f0f1;
+	--wp-admin--customize-accordion-section-installed_themes--border-top-color: #dcdcde;
+	--wp-admin--customize-accordion-section-themes-control-section--border-top-color: #dcdcde;
+
 	--wp-admin--customize-available-menu-items-search-icon--color: #646970;
+	--wp-admin--customize-available-widgets--background: #f0f0f1;
+	--wp-admin--customize-available-widgets--border-right-color: #dcdcde;
+	--wp-admin--customize-available-widgets--border-top-color: #dcdcde;
+	--wp-admin--customize-available-widgets-filter--background: #f0f0f1;
 	--wp-admin--customize-available-widgets-filter-clear-results--background: none;
+	--wp-admin--customize-available-widgets-filter-clear-results--box-shadow-color_first-outer-box--focus: #4f94d4;
+	--wp-admin--customize-available-widgets-filter-clear-results--box-shadow-color_second-outer-box--focus: rgba(79, 148, 212, 0.8);
 	--wp-admin--customize-available-widgets-filter-clear-results--color: #d63638;
 	--wp-admin--customize-available-widgets-filter-clear-results--color--hover: #d63638;
 	--wp-admin--customize-available-widgets-template--background: #fff;
+	--wp-admin--customize-available-widgets-template--border-bottom-color: #dcdcde;
+	--wp-admin--customize-available-widgets-template--border-left-color: #fff;
 	--wp-admin--customize-available-widgets-top--background: transparent;
 	--wp-admin--customize-available-widgets-section-title-small-screen--color: #50575e;
 
 	--wp-admin--customize-button-add-media--background-color: #f0f0f1;
-	--wp-admin--customize-button-add-media--color: #2c3338;
 	--wp-admin--customize-button-add-media--background-color--hover: #fff;
 	--wp-admin--customize-button-add-media--background-color--focus: #fff;
+	--wp-admin--customize-button-add-media--border-color--focus: #3582c4;
+	--wp-admin--customize-button-add-media--box-shadow-color--focus: #3582c4;
+	--wp-admin--customize-button-add-media--color: #2c3338;
 
 	--wp-admin--customize-control-changeset-inside-control-row--background-color: #fff;
+	--wp-admin--customize-control-changeset-inside-control-row--border-bottom-color: #dcdcde;
+	--wp-admin--customize-control-changeset-inside-control-row--border-top-color--first-of-type: #dcdcde;
+	--wp-admin--customize-control-changeset_preview_link-input--border-top-color: #dcdcde;
 	--wp-admin--customize-control-changeset_preview_link-input--color: #fff;
 	--wp-admin--customize-control-changeset_preview_link-disabled--color: #000;
 	--wp-admin--customize-control-changeset_scheduled_date--background: #fff;
+	--wp-admin--customize-control-changeset_scheduled_date--border-bottom-color: #dcdcde;
 
+	--wp-admin-customize-control-color-dropdown-content--border-color--hover: rgb(0, 0, 0);
+	--wp-admin--customize-control-create-page-item-input_invalid--border-color: #d63638;
+
+	--wp-admin--customize-control-header-choice--box-shadow-color_first-outer-box--focus: #4f94d4;
+	--wp-admin--customize-control-header-choice--box-shadow-color_second-outer-box--focus: rgba(79, 148, 212, 0.8);
 	--wp-admin--customize-control-header-close--background: #50575e;
 	--wp-admin--customize-control-header-close--color: #fff;
 	--wp-admin--customize-control-header-inner--color: #50575e;
+	--wp-admin--customize-control-header-view-close--outline--focus: #4f94d4;
+	--wp-admin--customize-control-header-view-selected--border-color--after: #72aee6;
+
 	--wp-admin--customize-control-panel-themes-displayed--color: #50575e;
 	--wp-admin--customize-control-panel-themes-full-container--background: #f0f0f1;
 	--wp-admin--customize-control-panel-themes-section-title--background: #fff;
 	--wp-admin--customize-control-panel-themes-section-title--background--focus: #f6f7f7;
+	--wp-admin--customize-control-panel-themes-section-title--border-bottom-color: #dcdcde;
+	--wp-admin--customize-control-panel-themes-section-title--border-left-color: #fff;
+	--wp-admin--customize-control-panel-themes-section-title--border-left-color--focus: #2271b1;
 	--wp-admin--customize-control-panel-themes-section-title--color: #50575e;
 	--wp-admin--customize-control-panel-themes-section-title--color--focus: #2271b1;
 	--wp-admin--customize-control-panel-themes-section-title-selected--color: #2271b1;
+
+	--wp-admin--customize-control-placeholder--border-color: #c3c4c7;
+
+	--wp-admin--customize-control-section-text-before--border-bottom-color: #dcdcde;
 	--wp-admin--customize-control-section-text-before--color: #50575e;
+
+	--wp-admin--customize-control-text-has-error-input--outline: #d63638;
 	--wp-admin--customize-control-theme--background: #fff;
+	--wp-admin--customize-control-theme--border-color: #dcdcde;
 	--wp-admin--customize-control-theme-name--background: #fff;
 
 	--wp-admin--customize-controls-accordian-section-title--background: #fff;
 	--wp-admin--customize-controls-accordion-section-title--background--hover: #fff;
+	--wp-admin--customize-controls-accordion-section-title--border-left-color--hover: #fff;
 	--wp-admin--customize-controls-accordion-section-title--color: #50575e;
 	--wp-admin--customize-controls-accordion-section-title--color--after: #2c3338;
 	--wp-admin--customize-controls-accordion-section-title--color--hover: #50575e;
 
 	--wp-admin--customize-controls-close--background: #f0f0f1;
 	--wp-admin--customize-controls-close--background--focus: #fff;
+	--wp-admin--customize-controls-close--border-top-color: #f0f0f1;
+	--wp-admin--customize-controls-close--border-top-color--focus: #2271b1;
+	--wp-admin--customize-controls-close--border-right-color: #dcdcde;
 	--wp-admin--customize-controls-close--color: #3c434a;
 	--wp-admin--customize-controls-close--color--focus: #2271b1;
 
+	--wp-admin--customize-controls-control-section-accordion-title--border-left-color: #2271b1;
 	--wp-admin--customize-controls-control-section-title--background: #f6f7f7;
 	--wp-admin--customize-controls-control-section-title--color: #2271b1;
 
@@ -158,22 +198,38 @@ body {
 	--wp-admin--customize-controls-customize-help-toggle--color: #50575e;
 	--wp-admin--customize-controls-customize-info-open-help-toggle--color: #2271b1;
 	--wp-admin--customize-controls-customize-panel-description--background: #fff;
+	--wp-admin--customize-controls-customize-panel-description--border-top-color: #dcdcde;
 	--wp-admin--customize-controls-customize-panel-description--color: #50575e;
 
 	--wp-admin--customize-controls-date-input--border-color--invalid: #d63638;
 	--wp-admin--customize-controls-description--color: #50575e;
 
+	--wp-admin--customize-controls-info--border-bottom-color: #dcdcde;
+	--wp-admin--customize-controls-info-is-in-view--box-shadow-color: rgb(0, 0, 0);
+
 	--wp-admin--customize-controls-full-overlay-sidebar-content--background: #f0f0f1;
 
+	--wp-admin-customize-controls-notification-area--border-bottom-color: #dcdcde;
+	--wp-admin-customize-controls-notification-container--border-top-color: #dcdcde;
+
+	--wp-admin--customize-controls-panel-description-open--border-top-color: none;
 	--wp-admin--customize-controls-preview-toggle-small-screen--background: #f0f0f1;
+	--wp-admin--customize-controls-preview-toggle-small-screen--border-right-color: #dcdcde;
+	--wp-admin--customize-controls-preview-toggle-small-screen--border-top-color: #f0f0f1;
 	--wp-admin--customize-controls-preview-toggle-small-screen--color: #50575e;
+
+	--wp-admin--customize-controls-widget-form-has-error--box-shadow-color_inset: #d63638;
 
 	--wp-admin--customize-copy-preview-link--background--before: #fff;
 
 	--wp-admin--customize-cheatin--background: #fff;
+	--wp-admin--customize-cheatin--border-color: #c3c4c7;
+	--wp-admin--customize-cheatin--box-shadow-color: rgb(0, 0, 0);
+	--wp-admin--customize-cheatin-h1--border-bottom-color: #dcdcde;
 	--wp-admin--customize-cheatin-h1--color: #50575e;
 
 	--wp-admin--customize-dropdown-content--background-color: #50575e;
+	--wp-admin--customize-dropdown-content--border-color: rgb(0, 0, 0);
 
 	--wp-admin--customize-dropdown-arrow--background: #f0f0f1;
 	--wp-admin--customize-dropdown-arrow--color--after: #2c3338;
@@ -182,10 +238,14 @@ body {
 	--wp-admin--customize-dropdown-status--color: #2c3338;
 
 	--wp-admin--customize-filter-drawer--background: #f0f0f1;
+	--wp-admin--customize-filter-drawer--border-bottom-color: #dcdcde;
 
 	--wp-admin--customize-full-overlay-header--background-color: #f0f0f1;
 	--wp-admin--customize-full-overlay-in-themes-panel--background: #f0f0f1;
 	--wp-admin--customize-full-overlay-sidebar--background: #f0f0f1;
+	--wp-admin--customize-full-overlay-sidebar--border-right-color: #dcdcde;
+
+	--wp-admin-customize-header-actions--border-bottom-color: #dcdcde;
 
 	--wp-admin--customize-js-control-section-title--background: #f6f7f7;
 
@@ -193,33 +253,55 @@ body {
 
 	--wp-admin--customize-notification-changeset-locked--background-color: rgba(0, 0, 0, 0.7);
 	--wp-admin--customize-notification-changeset-locked-message--background: #fff;
+	--wp-admin--customize-notification-changeset-locked-message--box-shadow-color: rgb(0, 0, 0);
 	--wp-admin--customize-notification-message--color: #1d2327;
 
 	--wp-admin--customize-panel-back--background: #fff;
 	--wp-admin--customize-panel-back--background--hover: #f6f7f7;
+	--wp-admin--customize-panel-back--border-right-color: #dcdcde;
+	--wp-admin--customize-panel-back--border-left-color: #fff;
+	--wp-admin--customize-panel-back--border-left-color--hover: #2271b1;
+
 	--wp-admin--customize-panel-back--color--hover: #2271b1;
 
 	--wp-admin--customize-preview-header-themes-filter-bar--background: #f0f0f1;
+	--wp-admin--customize-preview-header-themes-filter-bar--border-bottom-color: #dcdcde;
 
+	--wp-admin--customize-save-button--box-shadow-color_bottom--focus: #2271b1;
+	--wp-admin--customize-save-button--box-shadow-color_top-and-sides--focus: #72aee6;
 	--wp-admin--customize-section-title--background: #fff;
+	--wp-admin--customize-section-title--border-bottom-color: #dcdcde;
 	--wp-admin--customize-section-title-h3--color: #50575e;
 	--wp-admin--customize-section-content-new-content-item--background: #f0f0f1;
 
 	--wp-admin--customize-sidebar-outer-content--background: #f0f0f1;
+	--wp-admin--customize-sidebar-outer-content--border-right-color: #dcdcde;
+	--wp-admin--customize-sidebar-outer-content--border-left-color: #dcdcde;
 
 	--wp-admin--customize-theme-actions--background: #f0f0f1;
+	--wp-admin--customize-theme-actions--border-top-color: #dcdcde;
+	--wp-admin--customize-theme-actions--box-shadow-color: rgb(0, 0, 0);
 
 	--wp-admin--customize-theme-backdrop--background: rgba(240, 240, 241, 0.75);
 
 	--wp-admin--customize-theme-controls-accordion-section-content--background: transparent;
 	--wp-admin--customize-theme-controls-accordion-section-content--color: #50575e;
 	--wp-admin--customize-theme-controls-accordion-section-title--background-color: #fff;
+	--wp-admin--customize-theme-controls-accordion-section-title--border-bottom-color: #dcdcde;
+	--wp-admin--customize-theme-controls-accordion-section-title--border-left-color: #fff;
 	--wp-admin--customize-theme-controls-accordion-section-title--color: #50575e;
 	--wp-admin--customize-theme-controls-accordion-section-title--color--after: #a7aaad;
 	--wp-admin--customize-theme-controls-control-panel-themes-title--background--hover: #fff;
+	--wp-admin--customize-theme-controls-control-panel-themes-title--border-top-color--hover: #dcdcde;
+	--wp-admin--customize-theme-controls-control-panel-themes-title--border-bottom-color--hover: #dcdcde;
 	--wp-admin--customize-theme-controls-control-panel-themes-title--color--hover: #50575e;
 	--wp-admin--customize-theme-controls-move-widget-up--background-color: #fff;
 	--wp-admin--customize-theme-controls-move-widget-up--color: #dcdcde;
+	--wp-admin--customize-theme-controls-section--border-bottom-color--last-of-type-open: #dcdcde;
+	--wp-admin--customize-theme-controls-section--border-top-color--nth-child-2: #dcdcde;
+	--wp-admin--customize-theme-controls-section-nav_menu--border-top-color: none;
+	--wp-admin--customize-theme-controls-section-open--border-bottom-color: #f0f0f1;
+	--wp-admin--customize-theme-controls-section-title--border-bottom-color--first-child: #dcdcde;
 	--wp-admin--customize-theme-controls-section-title--color--after: #2271b1;
 
 	--wp-admin--customize-theme-header--background: #f0f0f1;
@@ -227,19 +309,26 @@ body {
 	--wp-admin--customize-theme-header-button-disabled--background: transparent;
 	--wp-admin--customize-theme-header-button-disabled--color: #c3c4c7;
 	--wp-admin--customize-theme-header-close--background--focus: #fff;
+	--wp-admin--customize-theme-header-close--border-bottom-color--focus: #2271b1;
 	--wp-admin--customize-theme-header-close--color--focus: #2271b1;
 	--wp-admin--customize-theme-header-close--color--focus--before: #2271b1;
 
 	--wp-admin--customize-themes-feature-filter-toggle-open--background: #f0f0f1;
 	--wp-admin--customize-themes-feature-filter-toggle-open--border-color: #8c8f94;
+	--wp-admin--customize-themes-feature-filter-toggle-open--box-shadow-color_inset: rgb(0, 0, 0);
 	--wp-admin--customize-themes-filter-bar-search-icon--color: #646970;
 
 	--wp-admin--customize-themes-mobile-back--background: #f0f0f1;
 	--wp-admin--customize-themes-mobile-back--background--hover: #f6f7f7;
+	--wp-admin--customize-themes-mobile-back--border-bottom-color: #dcdcde;
+	--wp-admin--customize-themes-mobile-back--border-left-color: transparent;
+	--wp-admin--customize-themes-mobile-back--border-left-color--hover: #2271b1;
+	--wp-admin--customize-themes-mobile-back--border-right-color--before: #dcdcde;
 	--wp-admin--customize-themes-mobile-back--color: #3c434a;
 	--wp-admin--customize-themes-mobile-back--color--hover: #2271b1;
 
 	--wp-admin--customize-themes-section-title-not-selected--background--after: #fff;
+	--wp-admin--customize-themes-section-title-not-selected--border-color--after: #c3c4c7;
 	--wp-admin--customize-themes-section-title-selected--background--after: #2271b1;
 	--wp-admin--customize-themes-section-title-selected--color--after: #fff;
 
