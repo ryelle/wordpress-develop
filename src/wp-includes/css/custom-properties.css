@@ -135,6 +135,8 @@ body {
 
 	--wp-admin--site-icon--background-color: var(--wp-admin--surface--background-contrast);
 
+	--wp-admin--auth-check--box-shadow: rgba(0, 0, 0, 0.3);
+  
 	--wp-admin--login--link--color: #50575e;
 	--wp-admin--login--link--color--hover: #135e96;
 	--wp-admin--login--link--color--focus: #043959;
