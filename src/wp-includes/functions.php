@@ -2628,7 +2628,7 @@ function wp_unique_filename( $dir, $filename, $unique_filename_callback = null )
 				$alt_mime_type = $output_formats[ $mime_type ];
 
 				// Other types of images whose names may conflict if their sub-sizes are regenerated.
-				$alt_types = array_keys( array_intersect( $output_formats, array( $mime_type, $alt_mime_type ) ) );
+				$alt_types   = array_keys( array_intersect( $output_formats, array( $mime_type, $alt_mime_type ) ) );
 				$alt_types[] = $alt_mime_type;
 			} elseif ( ! empty( $output_formats ) ) {
 				$alt_types = array_keys( array_intersect( $output_formats, array( $mime_type ) ) );
@@ -3557,9 +3557,9 @@ function wp_die( $message = '', $title = '', $args = array() ) {
 		 * @param callable $function Callback function name.
 		 */
 		$function = apply_filters( 'wp_die_json_handler', '_json_wp_die_handler' );
-	} elseif ( wp_is_jsonp_request() ) {
+	} elseif ( defined( 'REST_REQUEST' ) && REST_REQUEST && wp_is_jsonp_request() ) {
 		/**
-		 * Filters the callback for killing WordPress execution for JSONP requests.
+		 * Filters the callback for killing WordPress execution for JSONP REST requests.
 		 *
 		 * @since 5.2.0
 		 *
