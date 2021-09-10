@@ -136,6 +136,25 @@ body {
 	--wp-admin--login--link--color--focus: #043959;
 
 	--wp-admin--pointer-content--box-shadow: rgba(0, 0, 0, 0.08);
+
+   --wp-admin--form-fields--border: #8c8f94;
+   --wp-admin--input--color--disabled: #a7aaad;
+   --wp-admin--form-fields--border--focus: var(--wp-admin--theme--primary);
+   --wp-admin--input--color--invalid: var(--wp-admin--theme--notification);
+   --wp-admin--form-fields--border--invalid: var(--wp-admin--input--color--invalid);
+   --wp-admin--form-fields--radio-checked-pseudo-element--background: #3582c4;
+   --wp-admin--form-fields--reset--color--hover: var(--wp-admin--login--link--color--hover);
+   --wp-admin--form-fields--select--background--disabled: var(--wp-admin--surface--background-alternate);
+   --wp-admin--form-fields--pass-strength--background: #ffabaf;
+   --wp-admin--form-fields--pass-strength--border:  #e65054;
+   --wp-admin--form-fields--pass-strength--background--bad: #facfd2;
+   --wp-admin--form-fields--pass-strength--border--bad: #f86368;
+   --wp-admin--form-fields--pass-strength--strong--background: #b8e6bf;
+   --wp-admin--form-fields--pass-strength--background--good: #f5e6ab;
+   --wp-admin--form-fields--pass-strength--border--good: #f0c33c;
+   --wp-admin--form-fields--pass-strength--strong--border: #68de7c;
+   --wp-admin--form-fields--ui-autocomplete--border: #4f94d4;
+
 }
 
 body.admin-color-ectoplasm {
