@@ -46,34 +46,34 @@ are styled in the Privacy section of edit.css */
 
 .loading .site-health-progress svg #bar {
 	stroke-dashoffset: 0;
-	stroke: #c3c4c7;
+	stroke: var(--wp-admin--surface--border);
 	animation: loadingPulse 3s infinite ease-in-out;
 }
 
 .site-health-progress svg circle {
 	stroke-dashoffset: 0;
 	transition: stroke-dashoffset 1s linear;
-	stroke: #c3c4c7;
+	stroke: var(--wp-admin--surface--border);
 	stroke-width: 2em;
 }
 
 .site-health-progress svg #bar {
 	stroke-dashoffset: 565;
-	stroke: #d63638;
+	stroke: var(--wp-admin--theme--error);
 }
 
 .green .site-health-progress #bar {
-	stroke: #00a32a;
+	stroke: var(--wp-admin--theme--success);
 }
 .green .site-health-progress .site-health-progress-label {
-	color: #00a32a;
+	color: var(--wp-admin--theme--success);
 }
 
 .orange .site-health-progress #bar {
-	stroke: #dba617;
+	stroke: var(--wp-admin--theme--warning);
 }
 .orange .site-health-progress .site-health-progress-label {
-	color: #dba617;
+	color: var(--wp-admin--theme--warning);
 }
 
 .site-health-progress-label {
@@ -84,13 +84,13 @@ are styled in the Privacy section of edit.css */
 
 @keyframes loadingPulse {
 	0% {
-		stroke: #c3c4c7;
+		stroke: var(--wp-admin--surface--border);
 	}
 	50% {
-		stroke: #72aee6;
+		stroke: var(--wp-admin--theme--info);
 	}
 	100% {
-		stroke: #c3c4c7;
+		stroke: var(--wp-admin--surface--border);
 	}
 }
 
@@ -150,18 +150,18 @@ are styled in the Privacy section of edit.css */
 	height: 0;
 	border-style: solid;
 	border-width: 0 10px 5px;
-	border-color: transparent transparent #ffffff;
+	border-color: transparent transparent var(--wp-admin--surface--background);
 	right: 20px;
 	top: 5px;
 }
 
 .health-check-offscreen-nav .health-check-tab {
-	background: #fff;
-	box-shadow: 0 2px 5px 0 rgba( 0, 0, 0, 0.75 );
+	background: var(--wp-admin--surface--background);
+	box-shadow: 0 2px 5px 0 rgb(var(--wp-admin--shadow) / 0.75 );
 }
 
 .health-check-offscreen-nav .health-check-tab.active {
-	box-shadow: inset 3px 0 #3582c4;
+	box-shadow: inset 3px 0 var(--wp-admin--health-tab-active--box-shadow);
 	font-weight: 600;
 }
 
@@ -190,23 +190,23 @@ are styled in the Privacy section of edit.css */
 .health-check-body .pass::before,
 .health-check-body .good::before {
 	content: "\f147";
-	color: #00a32a;
+	color: var(--wp-admin--theme--success);
 }
 
 .health-check-body .warning::before {
 	content: "\f460";
-	color: #dba617;
+	color: var(--wp-admin--theme--warning);
 }
 
 .health-check-body .info::before {
 	content: "\f348";
-	color: #72aee6;
+	color: var(--wp-admin--theme--info);
 }
 
 .health-check-body .fail::before,
 .health-check-body .error::before {
 	content: "\f335";
-	color: #d63638;
+	color: var(--wp-admin--theme--error);
 }
 
 .site-health-copy-buttons {
@@ -220,7 +220,7 @@ are styled in the Privacy section of edit.css */
 }
 
 .site-health-copy-buttons .success {
-	color: #008a20;
+	color: var(--wp-admin--theme--success);
 	margin-left: 0.5rem;
 }
 

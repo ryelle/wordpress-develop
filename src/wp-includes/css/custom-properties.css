@@ -153,6 +153,8 @@ body {
 	--wp-admin--widgets-holder--border--hover: #787c82;
 	--wp-admin--widget-chooser--border: #8c8f94;
 
+	--wp-admin--health-tab-active--box-shadow: #3582c4;
+
 	--wp-admin--post-submit-meta-box--icon--color: #8c8f94;
 
 	--wp-admin--modern-tabbed-page--accent: #3582c4;
