@@ -1,25 +1,3 @@
-body {
-   /**
-    * Custom properties added for /wp-admin/css/forms.css
-    *
-    * Colour values not already present in `custom-properties.css` are marked `/* Unique */`
-    */
-   --wp-admin--form-fields--border: #8c8f94;/* Unique */
-   --wp-admin--input--color--disabled: #a7aaad;
-   --wp-admin--form-fields--border--focus: var(--wp-admin--theme--primary);
-   --wp-admin--input--color--invalid: var(--wp-admin--theme--notification);
-   --wp-admin--form-fields--border--invalid: var(--wp-admin--input--color--invalid);
-   --wp-admin--form-fields--checkbox-radio--color: #50575e;
-   --wp-admin--form-fields--select--ms-value--color: var(--wp-admin--form-fields--checkbox-radio--color);
-   --wp-admin--form-fields--radio-checked-pseudo-element--background: #3582c4;/* Unique */
-   --wp-admin--form-fields--reset--color--hover: var(--wp-admin--login--link--color--hover);
-   --wp-admin--form-fields--select--background--disabled: var(--wp-admin--surface--background-alternate);
-   --wp-admin--form-fields--pass-strength--background: #ffabaf;
-   --wp-admin--form-fields--pass-strength--border:  #e65054;
-   --wp-admin--form-fields--pass-strength--background--bad: #facfd2;/* Unique */
-   --wp-admin--form-fields--pass-strength--border--bad: #f86368;/* Unique */
-}
-
 /* Include margin and padding in the width calculation of input and textarea. */
 input,
 select,
@@ -123,7 +101,7 @@ input[type="checkbox"]:focus,
 input[type="radio"]:focus,
 select:focus,
 textarea:focus {
-	border-color: var(--wp-admin--form-fields--border--focus);
+	border-color: var(--wp-admin--theme--primary);
 	box-shadow: 0 0 0 1px var(--wp-admin--theme--primary);
 	/* Only visible in Windows High Contrast mode */
 	outline: 2px solid transparent;
@@ -286,7 +264,7 @@ textarea[readonly] {
 .form-table .form-required.user-pass1-wrap.form-invalid .password-input-wrapper:after {
 	content: "\f534";
 	font: normal 20px/1 dashicons;
-   color: var(--wp-admin--input--color--invalid);
+	color: var(--wp-admin--input--color--invalid);
 	margin: 0 6px 0 -29px;
 	vertical-align: middle;
 }
@@ -355,9 +333,9 @@ input[type="radio"].disabled:checked:before {
 }
 
 .wp-core-ui select:focus {
-	border-color: var(--wp-admin--form-fields--border--focus);
+	border-color: var(--wp-admin--theme--primary);
 	color: var(--wp-admin--theme--primary--step-10);
-	box-shadow: 0 0 0 1px var(--wp-admin--form-fields--border--focus);
+	box-shadow: 0 0 0 1px var(--wp-admin--theme--primary);
 }
 
 .wp-core-ui select:active {
@@ -1130,7 +1108,7 @@ table.form-table td .updated p {
 }
 
 /*------------------------------------------------------------------------------
-   Credentials check dialog for Install and Updates
+	Credentials check dialog for Install and Updates
 ------------------------------------------------------------------------------*/
 
 .request-filesystem-credentials-dialog {
@@ -1252,7 +1230,7 @@ table.form-table td .updated p {
 }
 
 /*------------------------------------------------------------------------------
-   Privacy Policy settings screen
+	Privacy Policy settings screen
 ------------------------------------------------------------------------------*/
 .tools-privacy-policy-page form {
 	margin-bottom: 1.3em;

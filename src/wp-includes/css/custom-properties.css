@@ -150,6 +150,21 @@ body {
 	/* Darker borders */
 	--wp-admin--widgets-holder--border--hover: #787c82;
 	--wp-admin--widget-chooser--border: #8c8f94;
+
+	--wp-admin--form-fields--border: #8c8f94;
+	--wp-admin--input--color--disabled: #a7aaad;
+	--wp-admin--input--color--invalid: var(--wp-admin--theme--notification);
+	--wp-admin--form-fields--border--invalid: var(--wp-admin--input--color--invalid);
+	--wp-admin--form-fields--checkbox-radio--color: #50575e;
+	--wp-admin--form-fields--select--ms-value--color: var(--wp-admin--form-fields--checkbox-radio--color);
+	--wp-admin--form-fields--radio-checked-pseudo-element--background: #3582c4;
+	--wp-admin--form-fields--reset--color--hover: var(--wp-admin--login--link--color--hover);
+	--wp-admin--form-fields--select--background--disabled: var(--wp-admin--surface--background-alternate);
+	--wp-admin--form-fields--pass-strength--background: #ffabaf;
+	--wp-admin--form-fields--pass-strength--border:  #e65054;
+	--wp-admin--form-fields--pass-strength--background--bad: #facfd2;
+	--wp-admin--form-fields--pass-strength--border--bad: #f86368;
+
 }
 
 body.admin-color-ectoplasm {
