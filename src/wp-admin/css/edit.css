@@ -291,7 +291,7 @@ ul.wp-tab-bar li {
 	height: auto;
 	width: auto;
 	vertical-align: top;
-	background-image: linear-gradient(45deg, var(--wp-admin--surface--border) 25%, transparent 25%, transparent 75%, var(--wp-admin--surface--border) 75%, var(--wp-admin--surface--border)), linear-gradient(45deg, var(--wp-admin--surface--border) 25%, transparent 25%, transparent 75%, var(--wp-admin--surface--border) 75%, var(--wp-admin--surface--border));
+	background-image: var(--wp-admin--tranparent-checkerboard--gradient);
 	background-position: 0 0, 10px 10px;
 	background-size: 20px 20px;
 }
