@@ -324,7 +324,7 @@ form#tags-filter {
 	border-spacing: 0;
 	border: 1px solid var(--wp-admin--surface--border);
 	border-top: none;
-	background-color: var(--wp-admin--theme--primary--contrast);
+	background-color: var(--wp-admin--surface--background-alternate);
 	box-shadow: 0 1px 1px rgb(var(--wp-admin--shadow) / 0.04);
 	z-index: 999;
 }
