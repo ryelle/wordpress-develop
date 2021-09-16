@@ -101,7 +101,7 @@ function wp_default_packages_vendor( $scripts ) {
 		'regenerator-runtime'         => '0.13.7',
 		'moment'                      => '2.29.1',
 		'lodash'                      => '4.17.19',
-		'wp-polyfill-fetch'           => '3.0.0',
+		'wp-polyfill-fetch'           => '3.6.2',
 		'wp-polyfill-formdata'        => '4.0.0',
 		'wp-polyfill-node-contains'   => '3.105.0',
 		'wp-polyfill-url'             => '3.6.4',
@@ -1430,7 +1430,7 @@ function wp_default_styles( $styles ) {
 	}
 
 	// Register a stylesheet for the selected admin color scheme.
-	$styles->add( 'colors', '/wp-includes/css/custom-properties.css', array( 'wp-admin', 'buttons' ) );
+	$styles->add( 'colors', true );
 
 	$suffix = SCRIPT_DEBUG ? '' : '.min';
 
@@ -1452,10 +1452,10 @@ function wp_default_styles( $styles ) {
 	$styles->add( 'code-editor', "/wp-admin/css/code-editor$suffix.css", array( 'wp-codemirror' ) );
 	$styles->add( 'site-health', "/wp-admin/css/site-health$suffix.css" );
 
-	$styles->add( 'wp-admin', false, array( 'dashicons', 'common', 'forms', 'admin-menu', 'dashboard', 'list-tables', 'edit', 'revisions', 'media', 'themes', 'about', 'nav-menus', 'widgets', 'site-icon', 'l10n' ) );
+	$styles->add( 'wp-admin', false, array( 'dashicons', 'buttons', 'custom-properties', 'common', 'forms', 'admin-menu', 'dashboard', 'list-tables', 'edit', 'revisions', 'media', 'themes', 'about', 'nav-menus', 'widgets', 'site-icon', 'l10n' ) );
 
-	$styles->add( 'login', "/wp-admin/css/login$suffix.css", array( 'dashicons', 'buttons', 'forms', 'l10n' ) );
-	$styles->add( 'install', "/wp-admin/css/install$suffix.css", array( 'dashicons', 'buttons', 'forms', 'l10n' ) );
+	$styles->add( 'login', "/wp-admin/css/login$suffix.css", array( 'dashicons', 'buttons', 'forms', 'l10n', 'custom-properties' ) );
+	$styles->add( 'install', "/wp-admin/css/install$suffix.css", array( 'dashicons', 'buttons', 'forms', 'l10n', 'custom-properties' ) );
 	$styles->add( 'wp-color-picker', "/wp-admin/css/color-picker$suffix.css" );
 	$styles->add( 'customize-controls', "/wp-admin/css/customize-controls$suffix.css", array( 'wp-admin', 'colors', 'imgareaselect' ) );
 	$styles->add( 'customize-widgets', "/wp-admin/css/customize-widgets$suffix.css", array( 'wp-admin', 'colors' ) );
@@ -1463,6 +1463,7 @@ function wp_default_styles( $styles ) {
 
 	// Common dependencies.
 	$styles->add( 'buttons', "/wp-includes/css/buttons$suffix.css" );
+	$styles->add( 'custom-properties', "/wp-includes/css/custom-properties$suffix.css" );
 	$styles->add( 'dashicons', "/wp-includes/css/dashicons$suffix.css" );
 
 	// Includes CSS.
@@ -1865,8 +1866,33 @@ function wp_localize_community_events() {
  * @return string|false URL path to CSS stylesheet for Administration Screens.
  */
 function wp_style_loader_src( $src, $handle ) {
+	global $_wp_admin_css_colors;
+
 	if ( wp_installing() ) {
 		return preg_replace( '#^wp-admin/#', './', $src );
+	}
+
+	if ( 'colors' === $handle ) {
+		$color = get_user_option( 'admin_color' );
+
+		if ( empty( $color ) || ! isset( $_wp_admin_css_colors[ $color ] ) ) {
+			$color = 'fresh';
+		}
+
+		$color = $_wp_admin_css_colors[ $color ];
+		$url   = $color->url;
+
+		if ( ! $url ) {
+			return false;
+		}
+
+		$parsed = parse_url( $src );
+		if ( isset( $parsed['query'] ) && $parsed['query'] ) {
+			wp_parse_str( $parsed['query'], $qv );
+			$url = add_query_arg( $qv, $url );
+		}
+
+		return $url;
 	}
 
 	return $src;
@@ -2667,7 +2693,7 @@ function wp_maybe_inline_styles() {
 		// Reorder styles array based on size.
 		usort(
 			$styles,
-			function( $a, $b ) {
+			static function( $a, $b ) {
 				return ( $a['size'] <= $b['size'] ) ? -1 : 1;
 			}
 		);
