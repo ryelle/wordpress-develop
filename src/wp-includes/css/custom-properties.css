@@ -115,19 +115,13 @@ body {
 
 	--wp-admin--site-icon--background-color: #000;
 
-	--wp-admin--ui-button--background: #f6f7f7;
-	--wp-admin--ui-button--background--active: #f0f0f1;
-	--wp-admin--ui-button--border: #c3c4c7;
 	--wp-admin--ui-button--border--active: #8c8f94;
-	--wp-admin--ui-button--border--disabled: #dcdcde;
 	--wp-admin--ui-button--border--focus: #4f94d4;
-	--wp-admin--ui-button--border--hover: #8c8f94;
 	--wp-admin--ui-button--box-shadow--active: rgba(0, 0, 0, 0.5);
 	--wp-admin--ui-button--box-shadow--focus: rgba(34, 113, 177, 0.8);
 	--wp-admin--ui-button--color: #50575e;
 	--wp-admin--ui-button--color--disabled: #a7aaad;
 	--wp-admin--ui-button--color--hover: #1d2327;
-	--wp-admin--ui-button--text-shadow--disabled: #fff;
 
 	--wp-admin--ui-dialog--box-shadow: rgba(0, 0, 0, 0.3);
 	--wp-admin--ui-dialog-titlebar-close--color--hover: #135e96;
