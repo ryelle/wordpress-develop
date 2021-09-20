@@ -522,6 +522,7 @@ function wp_iframe( $content_func, ...$args ) {
 	<title><?php bloginfo( 'name' ); ?> &rsaquo; <?php _e( 'Uploads' ); ?> &#8212; <?php _e( 'WordPress' ); ?></title>
 	<?php
 
+	wp_enqueue_style( 'wp-admin' );
 	wp_enqueue_style( 'colors' );
 	// Check callback name for 'media'.
 	if (
