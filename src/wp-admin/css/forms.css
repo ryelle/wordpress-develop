@@ -118,7 +118,7 @@ input[type="radio"] {
 	border: 1px solid var(--wp-admin--form-fields--border);
 	border-radius: 4px;
 	background: var(--wp-admin--surface--background);
-	color: var(--wp-admin--form-fields--checkbox-radio--color);
+	color: var(--wp-admin--checkbox--color);
 	clear: none;
 	cursor: pointer;
 	display: inline-block;
@@ -138,11 +138,6 @@ input[type="radio"] {
 
 input[type="radio"]:checked + label:before {
 	color: var(--wp-admin--form-fields--border);
-}
-
-.wp-core-ui input[type="reset"]:hover,
-.wp-core-ui input[type="reset"]:active {
-	color: var(--wp-admin--form-fields--reset--color--hover);
 }
 
 td > input[type="checkbox"],
@@ -178,9 +173,9 @@ input[type="radio"]:checked::before {
 }
 
 input[type="checkbox"]:checked::before {
-	/* Use the "Yes" SVG Dashicon */
-	content: url("data:image/svg+xml;utf8,%3Csvg%20xmlns%3D%27http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%27%20viewBox%3D%270%200%2020%2020%27%3E%3Cpath%20d%3D%27M14.83%204.89l1.34.94-5.81%208.38H9.02L5.78%209.67l1.34-1.25%202.57%202.4z%27%20fill%3D%27%233582c4%27%2F%3E%3C%2Fsvg%3E");
-	margin: -0.1875rem 0 0 -0.25rem;
+	content: "\f147";
+	font: normal 20px/1 dashicons;
+	margin: -0.125rem 0 0 -0.25rem;
 	height: 1.3125rem;
 	width: 1.3125rem;
 }
@@ -191,7 +186,7 @@ input[type="radio"]:checked::before {
 	width: 0.5rem; /* 8px */
 	height: 0.5rem; /* 8px */
 	margin: 0.1875rem; /* 3px */
-	background-color: var(--wp-admin--form-fields--radio-checked-pseudo-element--background);
+	background-color: currentColor;
 	/* 16px not sure if still necessary, comes from the MP6 redesign in r26072 */
 	line-height: 1.14285714;
 }
@@ -334,7 +329,7 @@ input[type="radio"].disabled:checked:before {
 
 .wp-core-ui select:focus {
 	border-color: var(--wp-admin--theme--primary);
-	color: var(--wp-admin--theme--primary--step-10);
+	color: var(--wp-admin--input--color--focus);
 	box-shadow: 0 0 0 1px var(--wp-admin--theme--primary);
 }
 
@@ -346,8 +341,8 @@ input[type="radio"].disabled:checked:before {
 .wp-core-ui select.disabled,
 .wp-core-ui select:disabled {
 	color: var(--wp-admin--input--color--disabled);
-	border-color: var(--wp-admin--surface--border-step-2);
-	background-color: var(--wp-admin--form-fields--select--background--disabled);
+	border-color: var(--wp-admin--form-fields--border--disabled);
+	background-color: var(--wp-admin--form-fields--background--disabled);
 	/* The SVG is arrow-down-alt2 from Dashicons. */
 	background-image: url('data:image/svg+xml;charset=US-ASCII,%3Csvg%20width%3D%2220%22%20height%3D%2220%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3Cpath%20d%3D%22M5%206l5%205%205-5%202%201-7%207-7-7%202-1z%22%20fill%3D%22%23a0a5aa%22%2F%3E%3C%2Fsvg%3E');
 	box-shadow: none;
@@ -360,13 +355,13 @@ input[type="radio"].disabled:checked:before {
 /* This ruleset overrides the color change on :focus thus needs to be after select:focus. */
 .wp-core-ui select:-moz-focusring {
 	color: transparent;
-	text-shadow: 0 0 0 var(--wp-admin--theme--primary--step-10);
+	text-shadow: 0 0 0 var(--wp-admin--form-fields--border--focus);
 }
 
 /* Remove background focus style from IE11 while keeping focus style available on option elements. */
 .wp-core-ui select::-ms-value {
 	background: transparent;
-	color: var(--wp-admin--form-fields--select--ms-value--color);
+	color: var(--wp-admin--input--color);
 }
 
 .wp-core-ui select:hover::-ms-value {
@@ -374,7 +369,7 @@ input[type="radio"].disabled:checked:before {
 }
 
 .wp-core-ui select:focus::-ms-value {
-	color: var(--wp-admin--theme--primary--step-10);
+	color: var(--wp-admin--input--color--focus);
 }
 
 .wp-core-ui select.disabled::-ms-value,
@@ -570,26 +565,26 @@ fieldset label,
 }
 
 #pass-strength-result.short {
-	background-color: var(--wp-admin--form-fields--pass-strength--background);
-	border-color: var(--wp-admin--form-fields--pass-strength--border);
+	background-color: var(--wp-admin--pass-strength--background--short);
+	border-color: var(--wp-admin--pass-strength--border--short);
 	opacity: 1;
 }
 
 #pass-strength-result.bad {
-	background-color: var(--wp-admin--form-fields--pass-strength--background--bad);
-	border-color: var(--wp-admin--form-fields--pass-strength--border--bad);
+	background-color: var(--wp-admin--pass-strength--background--bad);
+	border-color: var(--wp-admin--pass-strength--border--bad);
 	opacity: 1;
 }
 
 #pass-strength-result.good {
-	background-color: #f5e6ab;
-	border-color: #f0c33c;
+	background-color: var(--wp-admin--pass-strength--background--good);
+	border-color: var(--wp-admin--pass-strength--border--good);
 	opacity: 1;
 }
 
 #pass-strength-result.strong {
-	background-color: #b8e6bf;
-	border-color: #68de7c;
+	background-color: var(--wp-admin--pass-strength--background--strong);
+	border-color: var(--wp-admin--pass-strength--border--strong);
 	opacity: 1;
 }
 
@@ -598,19 +593,19 @@ fieldset label,
 }
 
 #pass1.short, #pass1-text.short {
-	border-color: var(--wp-admin--form-fields--pass-strength--border);
+	border-color: var(--wp-admin--pass-strength--border--short);
 }
 
 #pass1.bad, #pass1-text.bad {
-	border-color: var(--wp-admin--form-fields--pass-strength--border--bad);
+	border-color: var(--wp-admin--pass-strength--border--bad);
 }
 
 #pass1.good, #pass1-text.good {
-	border-color: #f0c33c;
+	border-color: var(--wp-admin--pass-strength--border--good);
 }
 
 #pass1.strong, #pass1-text.strong {
-	border-color: #68de7c;
+	border-color: var(--wp-admin--pass-strength--border--strong);
 }
 
 .pw-weak {
@@ -689,9 +684,9 @@ ul#add-to-blog-users {
 	list-style: none;
 	position: absolute;
 	z-index: 10000;
-	border: 1px solid #4f94d4;
-	box-shadow: 0 1px 2px rgba(79, 148, 212, 0.8);
-	background-color: #fff;
+	border: 1px solid var(--wp-admin--ui-autocomplete--border);
+	box-shadow: 0 1px 2px var(--wp-admin--ui-autocomplete--box-shadow);
+	background-color: var(--wp-admin--surface--background);
 }
 
 .ui-autocomplete li {
@@ -704,14 +699,14 @@ ul#add-to-blog-users {
 
 /* Colors for the wplink toolbar autocomplete. */
 .ui-autocomplete .ui-state-focus {
-	background-color: #dcdcde;
+	background-color: var(--wp-admin--surface--border-step-2);
 }
 
 /* Colors for the tags autocomplete. */
 .wp-tags-autocomplete .ui-state-focus,
 .wp-tags-autocomplete [aria-selected="true"] {
-	background-color: #2271b1;
-	color: #fff;
+	background-color: var(--wp-admin--theme--primary);
+	background-color: var(--wp-admin--surface--background);
 	/* Only visible in Windows High Contrast mode */
 	outline: 2px solid transparent;
 }

@@ -109,6 +109,12 @@ TABLE OF CONTENTS:
 	width: auto;
 }
 
+.wp-core-ui input[type="reset"]:hover,
+.wp-core-ui input[type="reset"]:active {
+	color: var(--wp-admin--button-reset--text--hover);
+}
+
+
 /* ----------------------------------------------------------------------------
   2.0 - Default Button Style
 ---------------------------------------------------------------------------- */
