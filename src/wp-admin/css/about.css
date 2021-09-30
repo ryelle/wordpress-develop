@@ -53,7 +53,7 @@
 .credits-php #wpcontent,
 .freedoms-php #wpcontent,
 .privacy-php #wpcontent {
-	background: linear-gradient(180deg, var(--about-page--background) 50%, var(--wp-admin--surface--background) 100%);
+	background: linear-gradient(180deg, var(--wp-admin--surface--background) 50%, var(--about-page--background) 100%);
 	padding: 0 24px;
 }
 
