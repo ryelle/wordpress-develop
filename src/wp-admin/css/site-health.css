@@ -161,7 +161,7 @@ are styled in the Privacy section of edit.css */
 }
 
 .health-check-offscreen-nav .health-check-tab.active {
-	box-shadow: inset 3px 0 var(--wp-admin--health-tab-active--box-shadow);
+	box-shadow: var(--wp-admin--health-tab-active--box-shadow);
 	font-weight: 600;
 }
 
