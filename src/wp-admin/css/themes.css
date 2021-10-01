@@ -275,7 +275,6 @@ body.js .theme-browser.search-loading {
 	display: block;
 	content: "";
 	background: transparent;
-	background: rgba(0, 0, 0, 0);
 	position: absolute;
 	top: 0;
 	left: 0;
