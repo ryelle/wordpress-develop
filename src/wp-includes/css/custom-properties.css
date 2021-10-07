@@ -74,8 +74,17 @@ body {
 	--wp-admin--form-fields--border: #8c8f94;
 	--wp-admin--form-fields--border--focus: var(--wp-admin--input--color--focus);
 	--wp-admin--form-fields--border--invalid: var(--wp-admin--input--color--invalid);
+	--wp-admin--form-fields--shadow--invalid: rgba(214, 54, 56, 0.8);
 	--wp-admin--form-fields--border--disabled: var(--wp-admin--surface--border-step-2);
 	--wp-admin--form-fields--background--disabled: var(--wp-admin--surface--background-alternate);
+	--wp-admin--form-fields--background--disabled--rgba: rgba(255, 255, 255, 0.5);
+	--wp-admin--form-fields--border--disabled--rgba:  rgba(220, 220, 222, 0.75);
+	--wp-admin--form-fields--shadow--disabled--rgba:  rgba(0, 0, 0, 0.04);
+	--wp-admin--form-fields--color--disabled--rgba:  rgba(44, 51, 56, 0.5);
+
+	--wp-admin--pressthis-bookmarklet--after--shadow: rgba(0, 0, 0, 0.6);
+	--wp-admin--pressthis-bookmarklet--after--shadow--hover: rgba(0, 0, 0, 0.7);
+	--wp-admin--card--shadow: rgba(0, 0, 0, 0.04);
 
 	--wp-admin--pass-strength--background--short: #ffabaf;
 	--wp-admin--pass-strength--border--short:  #e65054;
