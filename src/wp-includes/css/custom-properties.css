@@ -95,6 +95,7 @@ body {
 
 	--wp-admin--notice-success--background: #edfaef;
 	--wp-admin--notice-success--border: var(--wp-admin--theme--success);
+	--wp-admin--notice-success--color: #008a20;
 	--wp-admin--notice-info--background: #f0f6fc;
 	--wp-admin--notice-info--border: var(--wp-admin--theme--info);
 	--wp-admin--notice-info--color: var(--wp-admin--theme--primary);
@@ -180,8 +181,6 @@ body {
 	--wp-admin--imgedit-help--border--focus: #4f94d4;
 	--wp-admin--imgedit-help--box-shadow--focus: #4f94d4;
 
-	--wp-admin--admin-menu--background: #1d2327;
-
 	--wp-admin--admin-menu--icon--color: #a7aaad;
 	--wp-admin--admin-menu--link--color: #f0f0f1;
 
@@ -204,4 +203,79 @@ body {
 	--wp-admin--admin-menu--notification--color: var(--wp-admin--theme--notification--contrast);
 	--wp-admin--admin-menu--notification--background--current: var(--wp-admin--admin-menu--notification--background);
 	--wp-admin--admin-menu--notification--color--current: var(--wp-admin--admin-menu--notification--color);
+
+	--wp-admin--media-views--box-shadow: 0 0 0 1px #fff, 0 0 0 2px rgba(0, 0, 0, 0.15);
+	--wp-admin--media-views--box-shadow--focus: 0 0 0 1px #4f94d4, 0 0 2px 1px rgba(79, 148, 212, 0.8);
+	--wp-admin--media-views--box-shadow-secondary: 0 0 0 1px #fff, 0 0 0 2px #2271b1;
+
+	--wp-admin--media-views--link--color--hover: #135e96;
+	--wp-admin--media-views--link--color--focus: #043959;
+
+	--wp-admin--media-views--input--border: #8c8f94;
+	--wp-admin--media-views--input--focus: #3582c4;
+	--wp-admin--media-views--input--box-shadow: 0 0 0 transparent;
+	--wp-admin--media-views--input--box-shadow--focus: 0 0 0 1px #3582c4;
+
+	--wp-admin--media-views--notification--color: var(--wp-admin--text--color);
+	--wp-admin--media-views--delete--color: var(--wp-admin--theme--notification);
+
+	--wp-admin--media-views--menu--color: var(--wp-admin--editor--color);
+	--wp-admin--media-views--menu-item--background: transparent;
+	--wp-admin--media-views--menu-item--background--hover: rgba(0, 0, 0, 0.04);
+
+	--wp-admin--media-views--close--color: #50575e;
+	--wp-admin--media-views--modal--border: #fff;
+	--wp-admin--media-views--modal--box-shadow: 0 5px 15px rgba(0, 0, 0, 0.7);
+	--wp-admin--media-views--modal-link--color: var(--wp-admin--text-secondary--color);
+	--wp-admin--media-views--modal-close-border--hover: #4f94d4;
+
+	--wp-admin--media-views--close--background: transparent;
+	--wp-admin--media-views--close-icon--background: none;
+	--wp-admin--media-views--close--box-shadow--focus: 0 0 3px rgba(34, 113, 177, 0.8);
+
+	--wp-admin--media-views--error--background: var(--wp-admin--theme--notification--contrast);
+	--wp-admin--media-views--error--box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.1);
+
+	--wp-admin--media-views--toggle--background: transparent;
+	--wp-admin--media-views--toggle--hover: var(--wp-admin--text-secondary--color);
+	--wp-admin--media-views--setting--color: var(--wp-admin--text-secondary--color);
+	--wp-admin--media-views--icon--background: var(--wp-admin--page--background);
+	--wp-admin--media-views--icon--border: transparent;
+
+	--wp-admin--media-views--attachment--background: rgba(255, 255, 255, 0.8);
+	--wp-admin--media-views--attachment-close--background: var(--wp-admin--surface--background);
+	--wp-admin--media-views--attachment--box-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.1);
+	--wp-admin--media-views--attachment--box-shadow-secondary: inset 0 0 0 1px rgba(0, 0, 0, 0.15); /* missing? */
+	--wp-admin--media-views--attachment--box-shadow--focus: inset 0 0 2px 3px #fff, inset 0 0 0 7px #4f94d4;
+	--wp-admin--media-views--attachment-preview--background: none;
+	--wp-admin--media-views--attachment-preview--box-shadow: inset 0 0 15px rgba(0, 0, 0, 0.1), inset 0 0 0 1px rgba(0, 0, 0, 0.05);
+	--wp-admin--media-views--attachment-close--box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.3);
+	--wp-admin--media-views--attachment-selected--box-shadow: inset 0 0 0 5px #fff, inset 0 0 0 7px #c3c4c7;
+	--wp-admin--media-views--attachment-details--box-shadow: inset 0 0 0 3px #fff, inset 0 0 0 7px #2271b1;
+
+	--wp-admin--media-views--progress-bar--background: #dcdcde;
+	--wp-admin--media-views--progress-bar-action--background: var(--wp-admin--theme--primary);
+
+	--wp-admin--media-views--media-selection-background--after: linear-gradient(to left,#fff,rgba(255, 255, 255, 0));
+	--wp-admin--media-views--media-selection-background-secondary--after: none;
+	--wp-admin--media-views--media-selection--box-shadow: 0 0 0 1px #fff, 0 0 2px 3px #4f94d4;
+	--wp-admin--media-views--media-attachment-preview--box-shadow: none;
+	--wp-admin--media-views--media-attachment-details--box-shadow: 0 0 0 1px #fff, 0 0 0 3px #2271b1;
+
+	--wp-admin--media-views--uploader--border: #fff;
+	--wp-admin--media-views--uploader-progress-bar--background: transparent;
+	--wp-admin--media-views--uploader-editor--background: rgba(140, 143, 148, 0.9);
+	--wp-admin--media-views--uploader-drop--background: rgba(10, 75, 120, 0.9);
+
+	--wp-admin--media-views--image-editor--background: transparent;
+	--wp-admin--media-views--image-editor-group--background: none;
+
+	--wp-admin--media-views--attachment-info-uploading--box-shadow: inset 0 0 15px rgba(0, 0, 0, 0.1);
+
+	--wp-admin--media-views--embed-url--box-shadow: inset 2px 2px 4px -2px rgba(0, 0, 0, 0.1);
+
+	--wp-admin--media-views--mejs-container--box-shadow--focus: 0 0 2px 1px rgba(79, 148, 212, 0.8);
+
+
+
 }
