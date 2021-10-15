@@ -5,6 +5,8 @@ wp-config.php
 wp-tests-config.php
 .htaccess
 
+.idea
+
 # Files and folders related to build/test tools
 .phpunit.result.cache
 /phpunit.xml
