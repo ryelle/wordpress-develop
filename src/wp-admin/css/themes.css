@@ -8,12 +8,15 @@
 ------------------------------------------------------------------------------*/
 
 body {
-	/* Seems like Themes.css has slightly different colors than other panels
-		out of precaution, and due to depth of custom props, listing assumed unique props
-		here with --wp-admin--themes-- prefix. Using admin-menu css as precedent.
+	/**
+	 *  Seems like Themes.css has slightly different colors than other panels
+	 *	out of precaution, and due to depth of custom props, listing assumed unique props
+	 *	here with --wp-admin--themes-- prefix. Using admin-menu css as precedent.
 	 */
-	/* RGBA color values explicitly declared independently
-	for easy identification when we refactor. Only used to define values for other custom props. */
+	/**
+	 *  RGBA color values explicitly declared independently for easy identification when we refactor.
+	 *  Only used to define values for other custom props.
+	 */
 
 	/* black grayscale rgba # = 0, 0, 0, # */
 	--wp-admin--themes--black-0: rgba(0, 0, 0, 0);
@@ -1220,13 +1223,13 @@ p.no-themes-local {
 
 .update-from-upload-comparison tr:last-child td {
 	height: 1.4rem;
-    vertical-align: top;
+	vertical-align: top;
 }
 
 .update-from-upload-comparison tr:first-child th {
 	font-weight: bold;
 	height: 1.4rem;
-    vertical-align: bottom;
+	vertical-align: bottom;
 }
 
 .update-from-upload-comparison td.name-label {
@@ -1305,8 +1308,8 @@ div#custom-background-image img {
 .background-position-control input[type="radio"]:focus ~ .button {
 	border-color: var(--wp-admin--radio--border--focus, #4f94d4);
 	box-shadow: inset 0 2px 5px -3px
-				var(--wp-admin--themes--card--box-shadow, rgba(0, 0, 0, 0.5)),
-				0 0 3px var(--wp-admin--radio--box-shadow, rgba(34, 113, 177, 0.8));
+	var(--wp-admin--themes--card--box-shadow, rgba(0, 0, 0, 0.5)),
+	0 0 3px var(--wp-admin--radio--box-shadow, rgba(34, 113, 177, 0.8));
 	color: var(--wp-admin--radio--color--focus, #1d2327);
 }
 
@@ -1661,8 +1664,8 @@ body.full-overlay-active {
 .wp-full-overlay .collapse-sidebar:hover .collapse-sidebar-arrow,
 .wp-full-overlay .collapse-sidebar:focus .collapse-sidebar-arrow {
 	box-shadow:
-		0 0 0 1px var(--wp-admin--themes--icon--shadow--hover, #4f94d4),
-		0 0 2px 1px var(--wp-admin--themes--surface--box-shadow, rgba(79, 148, 212, 0.8));
+			0 0 0 1px var(--wp-admin--themes--icon--shadow--hover, #4f94d4),
+			0 0 2px 1px var(--wp-admin--themes--surface--box-shadow, rgba(79, 148, 212, 0.8));
 }
 
 .wp-full-overlay .collapse-sidebar-label {
@@ -1751,9 +1754,9 @@ body.full-overlay-active {
 	border-top: 1px solid transparent;
 	border-bottom: 4px solid transparent;
 	transition:
-		.15s color ease-in-out,
-		.15s background-color ease-in-out,
-		.15s border-color ease-in-out;
+			.15s color ease-in-out,
+			.15s background-color ease-in-out,
+			.15s border-color ease-in-out;
 }
 
 .wp-full-overlay-footer .devices button:focus {
@@ -1996,8 +1999,8 @@ body.full-overlay-active {
  * HiDPI Displays
  */
 @media print,
-  (-webkit-min-device-pixel-ratio: 1.25),
-  (min-resolution: 120dpi) {
+(-webkit-min-device-pixel-ratio: 1.25),
+(min-resolution: 120dpi) {
 	.wp-full-overlay .collapse-sidebar-arrow {
 		background-image: url(../images/arrows-2x.png);
 		background-size: 15px 123px;
