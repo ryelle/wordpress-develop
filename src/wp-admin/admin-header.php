@@ -74,6 +74,7 @@ _wp_admin_html_begin();
 <title><?php echo esc_html( $admin_title ); ?></title>
 <?php
 
+wp_enqueue_style( 'wp-admin' );
 wp_enqueue_style( 'colors' );
 wp_enqueue_script( 'utils' );
 wp_enqueue_script( 'svg-painter' );
@@ -132,7 +133,7 @@ do_action( 'admin_print_scripts' );
 /**
  * Fires in head section for a specific admin page.
  *
- * The dynamic portion of the hook, `$hook_suffix`, refers to the hook suffix
+ * The dynamic portion of the hook name, `$hook_suffix`, refers to the hook suffix
  * for the admin page.
  *
  * @since 2.1.0

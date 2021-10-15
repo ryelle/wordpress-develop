@@ -2028,6 +2028,7 @@ function iframe_header( $title = '', $deprecated = false ) {
 	?>
 <title><?php bloginfo( 'name' ); ?> &rsaquo; <?php echo $title; ?> &#8212; <?php _e( 'WordPress' ); ?></title>
 	<?php
+	wp_enqueue_style( 'wp-admin' );
 	wp_enqueue_style( 'colors' );
 	?>
 <script type="text/javascript">

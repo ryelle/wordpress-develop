@@ -1,49 +1,3 @@
-body {
-	--wp-admin--admin-menu--background: #1d2327;
-
-	--wp-admin--admin-menu--icon--color: #a7aaad;
-	--wp-admin--admin-menu--link--color: #f0f0f1;
-
-	--wp-admin--admin-menu--submenu--background: #2c3338;
-	--wp-admin--admin-menu--submenu-link--color: #c3c4c7;
-	--wp-admin--admin-menu--submenu-header--color: #fff;
-	--wp-admin--admin-menu--submenu--box-shadow: rgba(0, 0, 0, 0.2);
-
-	--wp-admin--admin-menu--tertiary--background: #3c434a;
-
-	--wp-admin--admin-menu--link--background--hover: var(--wp-admin--admin-menu--background);
-	--wp-admin--admin-menu--link--color--hover: #72aee6;
-	--wp-admin--admin-menu--icon--color--hover: var(--wp-admin--admin-menu--link--color--hover);
-
-	--wp-admin--admin-menu--link--background--current: #2271b1;
-	--wp-admin--admin-menu--link--color--current: #fff;
-	--wp-admin--admin-menu--icon--color--current: var(--wp-admin--admin-menu--link--color--current);
-
-	--wp-admin--admin-menu--notification--background: var(--wp-admin--theme--notification);
-	--wp-admin--admin-menu--notification--color: var(--wp-admin--theme--notification--contrast);
-	--wp-admin--admin-menu--notification--background--current: var(--wp-admin--admin-menu--notification--background);
-	--wp-admin--admin-menu--notification--color--current: var(--wp-admin--admin-menu--notification--color);
-}
-
-body.admin-color-ectoplasm {
-	--wp-admin--admin-menu--background: #523f6d;
-
-	--wp-admin--admin-menu--icon--color: #ece6f6;
-	--wp-admin--admin-menu--link--color: #fff;
-
-	--wp-admin--admin-menu--submenu--background: #413256;
-	--wp-admin--admin-menu--submenu-link--color: #cbc5d3;
-	--wp-admin--admin-menu--submenu-header--color: #cbc5d3;
-
-	--wp-admin--admin-menu--link--background--hover: #a3b745;
-	--wp-admin--admin-menu--link--color--hover: #fff;
-
-	--wp-admin--admin-menu--link--background--current: #a3b745;
-
-	--wp-admin--admin-menu--notification--background: #d46f15;
-	--wp-admin--admin-menu--notification--background--current: #413256;
-}
-
 #adminmenuback,
 #adminmenuwrap,
 #adminmenu,
@@ -85,7 +39,7 @@ body.admin-color-ectoplasm {
 .icon16 {
 	height: 18px;
 	width: 18px;
-	padding: 6px 6px;
+	padding: 6px;
 	margin: -6px 0 0 -8px;
 	float: left;
 }
@@ -207,7 +161,6 @@ body.admin-color-ectoplasm {
 #adminmenu li {
 	margin: 0;
 	padding: 0;
-	cursor: pointer;
 }
 
 #adminmenu a {
@@ -390,7 +343,7 @@ body.admin-color-ectoplasm {
 }
 
 #adminmenu .wp-menu-image img {
-	padding: 9px 0 0 0;
+	padding: 9px 0 0;
 	opacity: 0.6;
 	filter: alpha(opacity=60);
 }
@@ -531,7 +484,7 @@ ul#adminmenu > li.current > a.current:after {
 #adminmenu li.wp-menu-separator {
 	height: 5px;
 	padding: 0;
-	margin: 0 0 6px 0;
+	margin: 0 0 6px;
 	cursor: inherit;
 }
 
@@ -546,7 +499,7 @@ ul#adminmenu > li.current > a.current:after {
 	font-weight: 400;
 	font-size: 14px;
 	padding: 5px 4px 5px 11px;
-	margin: -7px 0px 4px -5px;
+	margin: -7px 0 4px -5px;
 	border-width: 3px 0 3px 5px;
 	border-style: solid;
 	border-color: transparent;
@@ -699,7 +652,7 @@ li#wp-admin-bar-menu-toggle {
 	.auto-fold #adminmenu .wp-has-current-submenu.opensub .wp-submenu,
 	.auto-fold #adminmenu a.menu-top:focus + .wp-submenu,
 	.auto-fold #adminmenu .wp-has-current-submenu a.menu-top:focus + .wp-submenu {
-		top: 0px;
+		top: 0;
 		left: 36px;
 	}
 
