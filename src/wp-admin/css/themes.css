@@ -1689,7 +1689,7 @@ body.full-overlay-active {
 }
 
 .wp-full-overlay-footer .devices button.active {
-	border-bottom-color: var(--wp-admin--button--border);
+	border-bottom-color: var(--wp-admin--text-secondary--color);
 }
 
 .wp-full-overlay-footer .devices button:hover,
@@ -1699,7 +1699,7 @@ body.full-overlay-active {
 
 .wp-full-overlay-footer .devices button:focus,
 .wp-full-overlay-footer .devices button.active:hover {
-	border-bottom-color: var(--wp-admin--button--border--hover);
+	border-bottom-color: var(--wp-admin--button-primary);
 }
 
 .wp-full-overlay-footer .devices button.active:before {

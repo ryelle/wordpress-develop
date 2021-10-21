@@ -48,8 +48,6 @@ body {
 	--wp-admin--button--hover: #f0f0f1;
 	--wp-admin--button--focus: var(--wp-admin--theme--primary);
 	--wp-admin--button--shadow: #dcdcde;
-	--wp-admin--button--border: #1d2327; /* color seems like it's an alternate profile to other button types. */
-	--wp-admin--button--border--hover: var(--wp-admin--theme--primary);
 	--wp-admin--button--border--disabled: #dcdcde;
 	--wp-admin--button-primary: var(--wp-admin--theme--primary);
 	--wp-admin--button-primary--hover: var(--wp-admin--theme--primary--step-10);
@@ -90,6 +88,7 @@ body {
 
 	--wp-admin--tab-bar--color: #2c3338;
 	--wp-admin--tab-bar--color-focus: #1d2327;
+
 	/* Needs work */
 	--wp-admin--rating--fill: #dba617;
 	--wp-admin--rating--base: #dcdcde;
