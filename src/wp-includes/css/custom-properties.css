@@ -165,7 +165,7 @@ body {
 
 	--wp-admin--post-submit-meta-box--icon--color: #8c8f94;
 
-	--wp-admin--modern-tabbed-page--accent: #3582c4;
+	--wp-admin--modern-tabbed-page--box-shadow: inset 0 -3px #3582c4;
 	--wp-admin--modern-tabbed-page--color--focus: #8b9399;
 	--wp-admin--modern-tabbed-page--outline--focus: #787c82;
 	--wp-admin--modern-tabbed-page-icon--border: #50575e;
@@ -256,7 +256,6 @@ body {
 	--wp-admin--themes--button--background: none;
 	--wp-admin--themes--button--box-shadow: none;
 	--wp-admin--themes--border--focus: none;
-	--wp-admin--themes--button--background--after: var(--wp-admin--themes--black-0);
 	--wp-admin--themes--button--border-color--after: transparent;
 	--wp-admin--themes--text--help: #50575e; /* p tag, so opted not to use: --wp-admin--heading-secondary--color */
 	--wp-admin--themes--control--background: #50575e;

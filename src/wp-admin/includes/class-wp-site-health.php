@@ -1890,7 +1890,7 @@ class WP_Site_Health {
 	 * @return array The test results.
 	 */
 	public function get_test_available_updates_disk_space() {
-		$available_space       = function_exists( 'disk_free_space' ) ? (int) @disk_free_space( WP_CONTENT_DIR . '/upgrade/' ) : false;
+		$available_space       = function_exists( 'disk_free_space' ) ? (int) @disk_free_space( WP_CONTENT_DIR . '/upgrade/' ) : 0;
 		$available_space_in_mb = $available_space / MB_IN_BYTES;
 
 		$result = array(
@@ -2767,7 +2767,7 @@ class WP_Site_Health {
 	 *
 	 * @return object The test results.
 	 */
-	function detect_plugin_theme_auto_update_issues() {
+	public function detect_plugin_theme_auto_update_issues() {
 		$mock_plugin = (object) array(
 			'id'            => 'w.org/plugins/a-fake-plugin',
 			'slug'          => 'a-fake-plugin',
@@ -2850,7 +2850,7 @@ class WP_Site_Health {
 	 *
 	 * @return object The test results.
 	 */
-	function can_perform_loopback() {
+	public function can_perform_loopback() {
 		$body    = array( 'site-health' => 'loopback-test' );
 		$cookies = wp_unslash( $_COOKIE );
 		$timeout = 10;

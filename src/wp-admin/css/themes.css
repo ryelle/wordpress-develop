@@ -274,7 +274,6 @@ body.js .theme-browser.search-loading {
 	display: block;
 	content: "";
 	background: transparent;
-	background: var(--wp-admin--themes--button--background--after);
 	position: absolute;
 	top: 0;
 	left: 0;
