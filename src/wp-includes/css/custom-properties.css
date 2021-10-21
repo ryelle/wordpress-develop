@@ -245,51 +245,34 @@ body {
 	--wp-admin--themes--input-checked--box-shadow: inset 0 2px 5px -3px var(--wp-admin--themes--card--box-shadow);
 	--wp-admin--themes--input-radio-checked--box-shadow: inset 0 2px 5px -3px var(--wp-admin--themes--card--box-shadow),
 														 0 0 3px var(--wp-admin--radio--box-shadow);
-	--wp-admin--themes--theme-add-new--text-shadow: none;
 
 	/* Page Level Elements */
-	--wp-admin--themes--page--background: var(--wp-admin--themes--white-65);
 	--wp-admin--themes--surface--box-shadow: var(--wp-admin--themes--light-blue);
-	--wp-admin--themes--page--overlay: var(--wp-admin--themes--white-9);
 
 	/* misc individual elements */
-	--wp-admin--themes--button--background: none;
-	--wp-admin--themes--button--box-shadow: none;
-	--wp-admin--themes--border--focus: none;
-	--wp-admin--themes--button--border-color--after: transparent;
-	--wp-admin--themes--text--help: #50575e; /* p tag, so opted not to use: --wp-admin--heading-secondary--color */
 	--wp-admin--themes--control--background: #50575e;
-	--wp-admin--themes--selected--background: transparent;
-	--wp-admin--themes--button--border--focus: none;
-	--wp-admin--themes--error--border: transparent;
-	--wp-admin--themes--error--background: transparent;
 
 	/* icon */
 	--wp-admin--themes--icon--background: #dcdcde;
-	--wp-admin--themes--icon--background-contrast: var(--wp-admin--themes--alpha-gray);
 	--wp-admin--themes--icon--background--hover: var(--wp-admin--theme--primary);
 	--wp-admin--themes--icon--color: #8c8f94;
 	--wp-admin--themes--icon--color--hover: var(--wp-admin--surface--background);
 	--wp-admin--themes--icon--color--hover-contrast: var(--wp-admin--theme--black);
 	--wp-admin--themes--icon--shadow--hover: #4f94d4;
 	--wp-admin--themes--icon--background--disabled: var(--wp-admin--surface--border);
-	--wp-admin--themes--icon--background--close: transparent;
-	--wp-admin--themes--icon--navigation--background: transparent;
-	--wp-admin--themes--icon--navigation--background--disabled: inherit;
 
 	/* Theme Card */
 	--wp-admin--themes--card--background-contrast: var(--wp-admin--admin-menu--background);
-	--wp-admin--themes--card--background--hover: var(--wp-admin--admin-menu--background); /* this would likely be tied to admin-menu bg color */
-	--wp-admin--themes--card--background--hover-alpha: var(--wp-admin--themes--black-7);
+	--wp-admin--themes--card--background--hover: var(--wp-admin--admin-menu--background);
 
-	--wp-admin--themes--card--text-contrast: var(--wp-admin--theme--notification--contrast);
 	--wp-admin--themes--card--text-shadow: 0 1px 0 var(--wp-admin--themes--black-6);
 	--wp-admin--themes--card--box-shadow: var(--wp-admin--themes--black-5);
 	--wp-admin--themes--card--border--focus: var(--wp-admin--surface--background);
 
 	--wp-admin--themes--card--box-shadow--focus: 0 0 2px var(--wp-admin--themes--surface--box-shadow);
-	--wp-admin--themes--card-details--box-shadow--focus: 0 0 0 1px var(--wp-admin--themes--card--border--focus),
-											 			 0 0 0 3px var(--wp-admin--input--border--focus);
+	--wp-admin--themes--card-details--box-shadow--focus:
+		0 0 0 1px var(--wp-admin--themes--card--border--focus),
+		0 0 0 3px var(--wp-admin--input--border--focus);
 
 	--wp-admin--themes--card-theme-active--box-shadow: inset 0 1px 1px var(--wp-admin--themes--card--box-shadow);
 

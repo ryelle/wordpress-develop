@@ -157,7 +157,7 @@ body.js .theme-browser.search-loading {
 	left: 20%;
 	width: 60%;
 	background: var(--wp-admin--themes--card--background--hover);
-	color: var(--wp-admin--themes--card--text-contrast);
+	color: var(--wp-admin--text-contrast--color);
 	font-size: 15px;
 	text-shadow: var(--wp-admin--themes--card--text-shadow);
 	-webkit-font-smoothing: antialiased;
@@ -198,7 +198,7 @@ body.js .theme-browser.search-loading {
  */
 .theme-browser .theme.active .theme-name {
 	background: var(--wp-admin--themes--card--background-contrast);
-	color: var(--wp-admin--themes--card--text-contrast);
+	color: var(--wp-admin--text-contrast--color);
 	padding-right: 110px;
 	font-weight: 300;
 	box-shadow: var(--wp-admin--themes--card-theme-active--box-shadow);
@@ -303,7 +303,7 @@ body.js .theme-browser.search-loading {
 	margin-left: -50px;
 	text-indent: -4px;
 	padding: 0;
-	text-shadow: var(--wp-admin--themes--theme-add-new--text-shadow);
+	text-shadow: none;
 	z-index: 4;
 }
 
@@ -313,7 +313,7 @@ body.js .theme-browser.search-loading {
 
 .theme-browser .theme.add-new-theme a:hover .theme-screenshot,
 .theme-browser .theme.add-new-theme a:focus .theme-screenshot {
-	background: var(--wp-admin--themes--button--background);
+	background: none;
 }
 
 .theme-browser .theme.add-new-theme a:hover span:after,
@@ -324,16 +324,16 @@ body.js .theme-browser.search-loading {
 
 .theme-browser .theme.add-new-theme a:hover:after,
 .theme-browser .theme.add-new-theme a:focus:after {
-	border-color: var(--wp-admin--themes--button--border-color--after);
+	border-color: transparent;
 	color: var(--wp-admin--themes--icon--color--hover);
 	background: var(--wp-admin--themes--icon--background--hover);
 	content: "";
 }
 
 .theme-browser .theme.add-new-theme .theme-name {
-	background: var(--wp-admin--themes--button--background);
+	background: none;
 	text-align: center;
-	box-shadow: var(--wp-admin--themes--button--box-shadow);
+	box-shadow: none;
 	font-weight: 400;
 	position: relative;
 	top: 0;
@@ -344,7 +344,7 @@ body.js .theme-browser.search-loading {
 
 .theme-browser .theme.add-new-theme a:hover .theme-name,
 .theme-browser .theme.add-new-theme a:focus .theme-name {
-	color: var(--wp-admin--theme--notification--contrast);
+	color: var(--wp-admin--text-contrast--color);
 	z-index: 2;
 }
 
@@ -383,7 +383,7 @@ body.js .theme-browser.search-loading {
 	float: right;
 	border: 0;
 	border-left: 1px solid var(--wp-admin--surface--border-step-2);
-	background-color: var(--wp-admin--themes--icon--background--close);
+	background-color: transparent;
 	transition: color .1s ease-in-out, background .1s ease-in-out;
 }
 
@@ -400,7 +400,7 @@ body.js .theme-browser.search-loading {
 .theme-overlay .theme-header .left {
 	cursor: pointer;
 	color: var(--wp-admin--icon--fill);
-	background-color: var(--wp-admin--themes--icon--navigation--background);
+	background-color: transparent;
 	height: 48px;
 	width: 54px;
 	float: left;
@@ -429,8 +429,8 @@ body.js .theme-browser.search-loading {
 .theme-overlay .theme-header .close:focus,
 .theme-overlay .theme-header .right:focus,
 .theme-overlay .theme-header .left:focus {
-	box-shadow: var(--wp-admin--themes--button--box-shadow);
-	outline: var(--wp-admin--themes--border--focus);
+	box-shadow: none;
+	outline: none;
 }
 
 .theme-overlay .theme-header .left.disabled,
@@ -438,7 +438,7 @@ body.js .theme-browser.search-loading {
 .theme-overlay .theme-header .left.disabled:hover,
 .theme-overlay .theme-header .right.disabled:hover {
 	color: var(--wp-admin--themes--icon--background--disabled);
-	background: var(--wp-admin--themes--icon--navigation--background--disabled);
+	background: inherit;
 	cursor: inherit;
 }
 
@@ -513,9 +513,9 @@ body.folded .theme-browser ~ .theme-overlay .theme-wrap {
 .theme-overlay .theme-actions .delete-theme {
 	color: var(--wp-admin--button-delete--text);
 	text-decoration: none;
-	border-color: var(--wp-admin--themes--error--border);
-	box-shadow: var(--wp-admin--themes--button--box-shadow);
-	background: var(--wp-admin--themes--error--background);
+	border-color: transparent;
+	box-shadow: none;
+	background: transparent;
 }
 
 .theme-overlay .theme-actions .delete-theme {
@@ -614,7 +614,7 @@ body.folded .theme-browser ~ .theme-overlay .theme-wrap {
 }
 
 .theme-overlay .screenshot.selected {
-	background: var(--wp-admin--themes--selected--background);
+	background: transparent;
 	border: 2px solid var(--wp-admin--themes--modal--border--selected);
 }
 
@@ -638,7 +638,7 @@ body.folded .theme-browser ~ .theme-overlay .theme-wrap {
 
 .theme-overlay .current-label {
 	background: var(--wp-admin--input--color);
-	color: var(--wp-admin--themes--card--text-contrast);
+	color: var(--wp-admin--text-contrast--color);
 	font-size: 11px;
 	display: inline-block;
 	padding: 2px 8px;
@@ -1071,7 +1071,7 @@ body.folded .theme-browser ~ .theme-overlay .theme-wrap {
 
 .upload-theme .install-help,
 .upload-plugin .install-help {
-	color: var(--wp-admin--themes--text--help); /* #f1f1f1 background */
+	color: var(--wp-admin--heading-secondary--color); /* #f1f1f1 background */
 	font-size: 18px;
 	font-style: normal;
 	margin: 0;
@@ -1336,7 +1336,7 @@ body.full-overlay-active {
 }
 
 .wp-full-overlay {
-	background: var(--wp-admin--themes--selected--background);
+	background: transparent;
 	z-index: 500000;
 	position: fixed;
 	overflow: visible;
@@ -1432,7 +1432,7 @@ body.full-overlay-active {
 	z-index: 10;
 	margin: 0;
 	border-top: none;
-	box-shadow: var(--wp-admin--themes--button--box-shadow);
+	box-shadow: none;
 }
 
 .wp-full-overlay-sidebar .wp-full-overlay-header a.back {
@@ -1443,7 +1443,7 @@ body.full-overlay-active {
 	bottom: 0;
 	border-bottom: none;
 	border-top: none;
-	box-shadow: var(--wp-admin--themes--button--box-shadow);
+	box-shadow: none;
 }
 
 .wp-full-overlay-sidebar .wp-full-overlay-sidebar-content {
@@ -1550,9 +1550,9 @@ body.full-overlay-active {
 	color: var(--wp-admin--text-secondary--color);
 	outline: 0;
 	line-height: 1;
-	background-color: var(--wp-admin--themes--selected--background) !important;
+	background-color: transparent !important;
 	border: none !important;
-	box-shadow: var(--wp-admin--themes--button--box-shadow) !important;
+	box-shadow: none !important;
 	border-radius: 0 !important;
 }
 
@@ -1659,12 +1659,12 @@ body.full-overlay-active {
 
 .wp-full-overlay-footer .devices button {
 	cursor: pointer;
-	background: var(--wp-admin--themes--selected--background);
+	background: transparent;
 	border: none;
 	height: 45px;
 	padding: 0 3px;
 	margin: 0 0 0 -4px;
-	box-shadow: var(--wp-admin--themes--button--box-shadow);
+	box-shadow: none;
 	border-top: 1px solid transparent;
 	border-bottom: 4px solid transparent;
 	transition:
@@ -1674,8 +1674,8 @@ body.full-overlay-active {
 }
 
 .wp-full-overlay-footer .devices button:focus {
-	box-shadow: var(--wp-admin--themes--button--box-shadow);
-	outline: var(--wp-admin--themes--button--border--focus);
+	box-shadow: none;
+	outline: none;
 }
 
 .wp-full-overlay-footer .devices button:before {
@@ -1897,7 +1897,7 @@ body.full-overlay-active {
 	z-index: -1;
 	margin: -10px 0 0 -10px;
 	transform: translateZ(0);
-	background: var(--wp-admin--themes--selected--background) url(../images/spinner.gif) no-repeat center center;
+	background: transparent url(../images/spinner.gif) no-repeat center center;
 	background-size: 20px 20px;
 }
 
