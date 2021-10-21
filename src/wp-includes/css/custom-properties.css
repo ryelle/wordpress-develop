@@ -155,7 +155,7 @@ body {
 
 	--wp-admin--post-submit-meta-box--icon--color: #8c8f94;
 
-	--wp-admin--modern-tabbed-page--accent: #3582c4;
+	--wp-admin--modern-tabbed-page--box-shadow: inset 0 -3px #3582c4;
 	--wp-admin--modern-tabbed-page--color--focus: #8b9399;
 	--wp-admin--modern-tabbed-page--outline--focus: #787c82;
 	--wp-admin--modern-tabbed-page-icon--border: #50575e;
