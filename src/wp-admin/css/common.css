@@ -1001,7 +1001,6 @@ th.action-links {
 	box-shadow: 0 1px 1px rgb(var(--wp-admin--shadow) / 0.04);
 	border: 1px solid var(--wp-admin--surface--border-step-1);
 	background: var(--wp-admin--surface--background);
-	color: ;
 	font-size: 13px;
 }
 
@@ -2417,7 +2416,6 @@ body.iframe {
 
 .importer-action {
 	line-height: 1.55; /* Same as with .updating-message */
-	color: ;
 	margin-bottom: 1em;
 }
 
